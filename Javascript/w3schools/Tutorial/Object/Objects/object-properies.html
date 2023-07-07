@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Properties</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        // Object Propeties //
+
+        let a = {
+            first_name: "keyur",
+            last_name: "Pansuriya",
+            age: 18
+        };
+
+        // Adding Vaule //
+
+        a["Class"] = "sybca";
+        a.Class = "sybca";
+
+        // Delete Value //
+
+        delete a["Class"];
+        delete a.Class;
+
+        document.getElementById("demo").innerHTML = a.first_name;
+        document.getElementById("demo1").textContent =
+            a["first_name"];
+
+        // JavaScript for...in Loop
+        let b = "";
+        for (let x in a) {
+            b = b + a[x]; //or b+=a[x]
+        }
+        document.getElementById("demo2").innerHTML = b;
+
+        // Nested Object //
+
+        const obj = {
+            name: "keyur",
+            age: 18,
+            cars: {
+                car1: "Odi",
+                car2: "Bmw"
+            }
+        };
+
+        let p1 = "car1";
+        let p2 = "car2";
+
+        document.write(obj["cars"]["car1"]);
+        document.write("<br>" + obj["cars"][p1]);
+
+        const myObj = {
+            name: "John",
+            age: 30,
+            cars: [
+                { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+                { name: "BMW", models: ["320", "X3", "X5"] },
+                { name: "Fiat", models: ["500", "Panda"] }
+            ]
+        }
+
+        let x="";
+        for (let i in myObj["cars"])
+        {
+            x=x+"<h2>"+myObj.cars[i].name+"</h2>";
+             for(let j in myObj["cars"][i].models)
+             {
+                x=x+myObj.cars[i].models[j]+"<br>";
+             }
+        }
+
+        document.write(x);
+
+
+    </script>
+</body>
+
+</html>

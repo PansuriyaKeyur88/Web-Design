@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Invocation</title>
+</head>
+
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        const mul = function (a, b) {
+            return a * b;
+        }
+        // document.write(mul(10, 5));
+
+        document.getElementById("demo").innerHTML = mul(10, 2);
+        
+        function k()
+        {
+            return this;
+        }
+        document.write(k());
+
+        const j = {
+            firstName:"keyur",
+            lastName:"Pansuriya",
+            fullname : function()
+            {
+               return  this.firstName+" "+this.lastName;
+            }
+        }
+        document.write(j.fullname());
+    </script>
+
+</body>
+
+</html>

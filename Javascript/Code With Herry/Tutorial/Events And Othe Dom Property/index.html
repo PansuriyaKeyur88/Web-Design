@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events And Othe Dom Property</title>
+</head>
+<body>
+    Hello My Name is Keyur Pansuriya
+    <span>I Live in Surat</span>
+    <h1>hello</h1>
+    <br>
+    <h2 hidden id="e"> i am hidden</h2>
+
+    <h3 id="firts" style="color: blue;" data-name="shyam"> Hello How Are You </h3>
+
+    <script>
+        console.log(document.getElementsByTagName("span")[0])
+        console.log(document.getElementsByTagName("h1")[0])
+        console.dir(document.getElementsByTagName("h1")[0])
+
+        console.log(document.body.firstElementChild.innerHTML)
+        console.log(document.body.firstElementChild.outerHTML)
+
+        console.log(document.body.textContent)
+
+        e.hidden=true;
+
+        // Process By Element //
+
+        let a=document.getElementById("firts");
+        let b=a.getAttribute("class")
+        console.log(b)
+
+        let c= a.hasAttribute("style")
+        console.log(c)
+
+        let d=a.setAttribute("class","keyur")
+
+        let e=a.removeAttribute("class","keyur")
+
+        console.log(a.attributes)
+
+        // insertion Method //
+
+        let p= document.createElement("div");
+        console.log(p)
+
+        document.body.insertAdjacentElement("beforebegin","keyur")
+        
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes</title>
+</head>
+<body>
+
+    <script>
+
+        function person(first,last,age){
+            this.firsname=first;
+            this.lastname=last;
+            this.age=age;
+            this.language="english";
+        }
+
+        person.prototype.sub="guj";
+
+        person.prototype.name= function(){
+            return this.firsname+" "+this.lastname;
+        }
+
+        const i = new person("keyur","pansuriya",18);
+        document.write(JSON.stringify(i)+"<br>");
+        document.write(Object.values(i));
+        document.write("<br>","My Favourit Subject = ",i.sub);
+        document.write("<br>"+i.name());
+
+    </script>
+</body>
+</html>

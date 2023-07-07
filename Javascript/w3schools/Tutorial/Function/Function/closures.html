@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Closures</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="touch()">Count</button>
+    <p id="demo">0</p>
+
+    <script>
+
+        // Global varible = Can Access Inside The Function //
+
+        // const x= function()
+        // {
+        //     let a=4;
+        //     return 4*4;
+        // }
+        // document.write("Inside The Function Access = " + x());
+
+        // // Can Access OutSide The Function //
+
+        // let b=4;
+        // const y=function()
+        // {
+        //     return b*b;
+        // }
+        // document.write("<br>OutSide The Function Access ="+y());
+
+        // // Created Inside The Function //
+        // k();
+        // document.write("<br>",d*d);
+
+        // function k(){
+        //    d=4;
+        // }
+
+        // // Counting Global Varible //
+
+        // let c=0;
+        // function count()
+        // {
+        //     c+=1;
+        // }
+
+        // count();
+        // count();
+        // count();
+        // document.write("<br>",c);
+
+
+        // Increment Counter //
+
+        let count = 0; // Golbal varible
+        function add() {
+            count += 1;
+            return count;
+        }
+
+        function touch() {
+            document.getElementById("demo").innerHTML = add();
+        }
+
+        // Local Varible //
+
+        (function add(){
+            let count = 0;
+            return function () {
+                count += 1;
+                return count;
+            };
+        })()
+
+        function touch() {
+            document.getElementById("demo").innerHTML = add();
+        }
+
+    </script>
+</body>
+
+</html>

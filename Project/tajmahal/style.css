@@ -1,0 +1,166 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image:url(./image/wp2037797.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 60px;
+    font-size: 30px;
+    display: inline-block;
+    color: white;
+}
+
+header nav 
+{
+    display: inline-block;
+    padding-left: 700px;
+}
+
+header nav ul li
+{
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 17px;
+}
+
+header nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+header nav ul li a:hover
+{
+   color:#02cfa6;
+}
+
+.k
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: 35px;
+    color: white;
+}
+
+.l
+{
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.change
+{
+  color: #02cfa6;
+}
+
+.k2
+{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: 20px;
+    color: white;
+}
+
+.first
+{
+    position: absolute;
+    top: 62%;
+    left: 37%;
+    height: 34px;
+    width: 193px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.first a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.first:hover
+{
+    background-color: #02cfa6;
+    border: 1px solid #02cfa6;
+    cursor: pointer;
+}
+
+.second
+{
+    position: absolute;
+    top: 62%;
+    left: 52%;
+    height: 34px;
+    width: 193px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-transform: uppercase; 
+    text-decoration: none;
+    color: black;
+}
+
+.second a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.second:hover
+{
+    background-color: #02cfa6;
+    border: 1px solid #02cfa6;
+    cursor: pointer;
+}
+
+.change::after
+{
+    content:'';
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    20%{content:"Agra";}
+    35%{content: "Jaipur";}
+    60%{content: "Kerala";}
+    80%{content: "Delhi";}
+    100%{content: "Mumbai";}
+}

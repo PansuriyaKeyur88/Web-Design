@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+        const letter = new Set()
+        letter.add("a");
+        letter.add("b");
+        document.write(letter.size+"<br>");
+        letter.add("c");
+        letter.add("d");
+
+        
+        const letter1=new Set(["a","b","c"]);
+
+        let text="";
+        // letter1.forEach(function(values)
+        // {
+        //    text=text+values+"<br>";   
+        // })
+
+        // document.write(text);
+
+        // // Values Method() //
+
+        // for(let i in letter.values())
+        // {
+        //     text=text+i+"<br>";
+        // }
+        // document.write("<br>"+text)
+
+        // Entries Method //
+
+        let k=letter1.entries();
+
+        for (const enyry of k)
+        {
+            text+= enyry + "<br>";
+        }
+        document.write("<br>"+text);
+
+        // Typeof
+
+        document.write(typeof(letter)+"<br>");
+
+        // Instance of
+
+        document.write(letter instanceof Set);
+     </script>    
+</body>
+</html>

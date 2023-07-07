@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Map</title>
+</head>
+<body>
+
+
+
+    <script>
+        // const a= new Map([
+        //     ["keyur",5000],
+        //     ["kevin",1000],
+        //     ["sujal",1000]
+        // ]);
+
+        // document.write(a);
+
+        // // Second Method Craete Map //
+
+        // const b = new Map()
+
+        // b.set("keyur","sujal");
+        // b.set("chintan","Mihir");
+
+        // document.write("<br>" + b);
+
+        // // Get () Method Used to key element // 
+
+        // document.write("<br>"+b.get("keyur"));
+
+        // // Size() Methid To Retun To Number of Element in Map //
+
+        // document.write("<br>",a.size);
+
+        // // Delete() Method is Used to  Delete Element in Map //
+
+        // document.write("<br>",a.delete("keyur"));
+
+        // // Clear() Method is Used to All Remove Element //
+
+        // document.write("<br>",a.clear());
+
+        // document.write("<br>",a.size);
+
+        // // has() Mehod is used to Map in Element Yes Or No //
+
+        // document.write("<br>",a.has("keyur")); // --> Return True
+    
+        // // TypeOf()
+
+        // document.write("<br",typeof b);
+
+        // document.write(b instanceof Map);
+
+        // Map ForEach Method()
+
+        const c=new Map([
+            ["Keyur",50000],
+            ['sujal',4500],
+            ['shyam',4600]
+        ]);
+
+        document.write("<br>",c.size,"<br>");
+
+        text="";
+        c.forEach(function(value,key){
+            text=text+key+"="+value+"<br>";
+        })
+
+        document.write(text);
+
+        // entirs() Method //
+        
+        for(const a of c.entries()){
+            text=text+a+"<br>";
+        }
+
+        document.write(text);
+
+        // key() Method //
+
+        for(const i of c.keys())
+        {
+            text=text+i+"<br>";
+        }
+
+        document.write("<br>",text);
+
+        // Map Values()
+
+        for(const i of c.values())
+        {
+            text=text+i+"<br>";
+        }
+
+        document.write("<br",text);
+
+        // Sum Values Method 
+
+        total=0;
+        for(const i of c.values())
+        {
+            total=total+i;
+        }
+
+        document.write("<br>",total);
+
+    </script>  
+</body>
+</html>

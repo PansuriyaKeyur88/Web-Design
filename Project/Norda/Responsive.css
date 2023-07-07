@@ -1,0 +1,176 @@
+/* @media screen and (max-device-width:1024px) and (max-device-width:1200px){
+    .right-side {
+        width: 49%;
+    }
+
+    .right-side-2 {
+        width: 0%;
+    }
+    
+    .right-side-2 {
+        width: 20%;
+    }
+    
+    .center-2 li {
+        padding-left: 15px;
+    }
+    
+    .left-side-2 {
+        padding-left: 150px;
+    }
+
+    .last{
+        top: 23vh;
+    }
+} */
+
+/* All i-pad or tablet */
+    
+@media screen and (max-device-width:991px) and (min-device-width: 769px){
+    .left-side {
+        width: 100%;
+    }
+
+    .logo {
+        padding-left: 5px;
+    }
+
+    .fa-twitter {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+    
+    .fa-facebook-f {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    
+    .fa-instagram {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    
+    .fa-youtube {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    
+    .fa-facebook-messenger {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    .left-side-2 {
+        padding-left: 0px;
+    }
+
+    .fa-magnifying-glass {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+    
+    .fa-heart {
+        padding-left: 35px;
+        font-size: 30px;
+    }
+    
+    .fa-cart-shopping {
+        padding-left: 35px;
+        font-size: 30px;
+    }
+    
+    .fa-user {
+        padding-left: 35px;
+        font-size: 30px;
+    }
+
+    .last{
+        top: 8vh;
+    }
+
+}
+
+/* Smart Phone  */
+
+@media screen and (max-device-width:768px) {
+
+    .left-side {
+        width: 100%;
+    }
+
+    .fa-twitter {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    
+    .fa-facebook-f {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .fa-instagram {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .fa-youtube {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .fa-facebook-messenger {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    .left-side-2 {
+        width: 64%;
+        padding-left: 1px;
+    }
+
+    .fa-magnifying-glass {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    
+    .fa-heart {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .fa-cart-shopping {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .fa-user {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .last {
+        top: 7vh;
+    }
+
+    .last-second{
+        padding-left: 15px;
+    }
+    
+    .last-third{
+        padding-left: 15px;
+    }
+    
+    .last-fourth{
+        padding-left: 15px;
+    }
+
+}
+
+
+/* @media screen and (min-device-width:992){
+
+    .left-side {
+        width: 100%;
+    }
+    
+} */

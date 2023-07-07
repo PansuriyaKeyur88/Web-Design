@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript in The Brower</title>
+</head>
+<style>
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Data</li>
+            <li>Content</li>
+        </ul>
+    </nav>
+    <script>
+
+        // Problem -01
+
+        document.getElementsByTagName("li")[3].style.color="red";
+
+        // Problem-02
+
+        document.getElementsByTagName("ul")[0].firstElementChild.style.color="red";
+        document.getElementsByTagName("ul")[0].lastElementChild.style.color="red";
+        
+        // Problem -03
+        
+        document.getElementsByTagName("nav")[0].style.background="cyan";
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    background-color: black;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+
+.search input{
+    height: 10vh;
+    width: 20vw;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.row1 input{
+    margin-top: 2vh;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid white;
+    border-radius:8px;
+    background-color: black;
+    color: white;
+}
+
+#ac{
+    padding: 15px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+#de{
+    padding: 15px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+#dot{
+    padding: 15px 25px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+#slash{
+    padding: 15px 25px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+.row2 input{
+    margin-top: 2vh;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid white;
+    border-radius:8px;
+    background-color: black;
+    color: white;
+}
+
+#seven{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#eight{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#nine{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#mul{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+.row3 input{
+    margin-top: 2vh;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid white;
+    border-radius:8px;
+    background-color: black;
+    color: white;
+}
+
+
+#four{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+#five{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#six{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#sub{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+.row4 input{
+    margin-top: 2vh;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid white;
+    border-radius:8px;
+    background-color: black;
+    color: white;
+}
+
+
+#one{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#two{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#three{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+#add{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+.row5 input{
+    margin-top: 2vh;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius:8px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+
+#zero2{
+    padding: 15px 20px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#zero{
+    padding: 15px 23px;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+
+#equl{
+    padding: 15px 55px;
+    font-size: 18px;
+    margin-left:10px;
+}

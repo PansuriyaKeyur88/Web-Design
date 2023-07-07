@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error javascript</title>
+</head>
+<body>
+    <script>
+        
+        // Simpale Use //
+
+        try{
+            keyyr();
+        }
+        catch(Error){
+            console.log(Error.stack);
+        }
+        finally{
+            console.log("Finally")
+        }
+         
+        // SetTime Use //
+
+        setTimeout(function(){
+            try{
+                keyur;
+            }
+            catch(error){
+                console.log(error.name);
+                console.log(error.message);
+                console.log(error.stack);
+            }
+        },1000);
+
+        // if...else Condition  use //
+
+        try{
+            eval("alert('Hello)");
+        }
+        catch(error){
+            if(error instanceof ReferenceError)
+            {
+                console.log("Refernce Error");
+            }
+            else if(error instanceof TypeError)
+            {
+                console.log("Type Error");
+            }
+            else if (error instanceof SyntaxError)
+            {
+                console.log("Syntex Error");
+            }
+            else{
+                console.log("Unknown Error");
+            }
+        }
+    </script>
+</body>
+</html>

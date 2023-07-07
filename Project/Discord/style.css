@@ -1,0 +1,72 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand{
+     margin-left: 10vw;
+     color: white;
+}
+
+.navbar-nav{
+    padding-left: 12vw;
+}
+
+.nav-item{
+    margin-left: 2vw;
+}
+
+.btn{
+        border-radius: 20px;
+        margin-left: 8vw;
+}
+
+.button{
+    border-radius: 12px;
+}
+
+.first-btn button{
+    margin-right:80px;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 12px;
+    border: 0px;
+}
+
+.first-btn button:hover{
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+.tital{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10vh;
+    font-weight: 700;
+    color: white;
+}
+
+.des{
+    font-size:15px;
+    text-align: center;
+    display: grid;
+    color: white;
+}
+
+.first-btn{
+    position: absolute;
+    left: 34%;
+    
+}
+
+.first-btn button{
+    height: 7vh;
+    width: 15vw;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+
+
+

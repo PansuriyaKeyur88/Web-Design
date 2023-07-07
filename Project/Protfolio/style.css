@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.title {
+    font-size: 5vh;
+    text-transform: uppercase;
+}
+
+.item {
+    margin-top: 1vh;
+}
+
+.item li {
+    margin-top: 1vh;
+    font-size: 2.8vh;
+}
+
+.item li a {
+    font-size: 2.8vh;
+    text-transform: uppercase;
+}
+
+.logo i{
+    padding-left: 10px;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.space {
+    margin-right: 2vh;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter h5 {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.all {
+    width: 4vw;
+    border: 0px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.color {
+    margin-left: 10px;
+    width: 8vw;
+    border: 0px;
+    background-color: white;
+    color: black;
+}
+
+.color:hover {
+    background-color: gray;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.hr {
+    border: 5px solid gray;
+}
+
+.c-1 {
+    width: 30%;
+}
+
+.card-img-top {
+    height: 35vh;
+}
+
+.card-title {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.card-text {
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.btn-group {
+    position: relative;
+    left: 42%;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn a:hover {
+    color: white;
+    background-color: black;
+}
+
+.btn-group button:hover {
+    color: white;
+    background-color: black;
+}
+
+.look {
+    display: flex;
+}
+
+.look img {
+    width: 50%;
+    height: 55vh;
+}
+
+.pic {
+    margin-left: 1vw;
+}
+
+.about {
+    margin-bottom: 3vh;
+}
+
+.about h2 {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.skill h2 {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.upper {
+    background-color: rgb(105, 98, 98);
+    height: 5vh;
+}
+
+.first-01 {
+    margin-bottom: 2vh;
+}
+
+.first-01 .upper .box h4 {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    width: 95%;
+    padding-top: 1vh;
+    height: 5vh;
+}
+
+.second-02 {
+    margin-bottom: 2vh;
+}
+
+.second-02 .upper .box h4 {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    width: 85%;
+    padding-top: 1vh;
+    height: 5vh;
+}
+
+.third-03 {
+    margin-bottom: 2vh;
+}
+
+.third-03 .upper .box h4 {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    width: 80%;
+    padding-top: 1vh;
+    height: 5vh;
+}
+
+.downlond h4 {
+    background: rgb(61, 61, 61);
+    width: 20%;
+    text-align: center;
+    height: 6vh;
+    padding-top: 1vh;
+    color: white;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.downlond h4:hover {
+    background: gray;
+    color: black;
+}
+
+.charge h2 {
+    margin-bottom: 3vh;
+}
+
+/* Box-01 */
+
+.box-01 {
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 2vw;
+    width: 40%;
+}
+
+.box-01 h2 {
+    text-align: center;
+    background: rgb(61, 61, 61);
+    color: white;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-01 h3 {
+    text-align: center;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-01 h4 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.box-01 h5 {
+    padding-top: 1vh;
+}
+
+/* Box-01 Hover */
+
+.box-01 h2:hover{
+    background-color: black;
+}
+
+/* BOX-02 */
+
+.box-02 {
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 2vw;
+    width: 40%;
+}
+
+.box-02 h2 {
+    text-align: center;
+    background: rgb(61, 61, 61);
+    color: white;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-02 h3 {
+    text-align: center;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-02 h4 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.box-02 h5 {
+    padding-top: 1vh;
+}
+
+/* BOX-03 */
+
+.box-03 {
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 2vw;
+    width: 40%;
+}
+
+.box-03 h2 {
+    text-align: center;
+    background: rgb(61, 61, 61);
+    color: white;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-03 h3 {
+    text-align: center;
+    height: 15vh;
+    padding-top: 5vh;
+}
+
+.box-03 h4 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.box-03 h5 {
+    padding-top: 1vh;
+}
+
+.space {
+    color: black;
+    text-align: center;
+    height: 5vh;
+}
+
+.diff{
+    margin-bottom: 8vh;
+}
+
+.edit {
+    border-radius: 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+.hor {
+    display: flex;
+}
+
+footer {
+    background-color: gray;
+}
+
+.conatct h2 {
+    padding-top: 2vh;
+    color: white;
+}
+
+.size {
+    margin-top: 3vh;
+    background-color: rgb(61, 61, 61);
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height: 15vh;
+    color: white;
+    text-align: center;
+}
+
+.size h4{
+    padding-top: 10px;
+}
+
+.size i{
+    padding-top: 30px;
+}
+
+.size-01:hover {
+    background-color: aqua;
+}
+
+.hr2 {
+    border: 2px solid white;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-group h1 {
+    border-radius: 0px;
+    width: 15%;
+}
+
+.last {
+    background-color: rgb(62, 61, 61);
+    margin-top: 5vh;
+    display: flex;
+    color: white;
+    padding-top: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 5vh;
+}
+
+.foot {
+    width: 40%;
+}
+
+.foot h1,
+p {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog {
+    width: 35%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.first {
+    display: flex;
+}
+
+.first img {
+    width: 12%;
+    height: 12%;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.second {
+    display: flex;
+}
+
+.second img {
+    width: 12%;
+    height: 12%;
+}
+
+.tag {
+    width: 25%;
+    margin-left: 12px;
+}
+
+.tag h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.by {
+    background-color: black;
+    color: white;
+    padding-bottom: 8vh;
+}
+
+
+.by h5 {
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.by h5 a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}

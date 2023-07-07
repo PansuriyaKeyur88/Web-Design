@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(./image/beautiful_beach_wallpapers_54_cb59a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1
+{
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    width: 185px;
+    position: relative;
+    top:31px;
+    left: 40px;
+    letter-spacing: 3px;
+    padding: 5px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav ul {
+    padding-top: 10px;
+    padding-left: 698px;
+    display: inline;
+}
+
+header nav ul li {
+    display: inline;
+    padding:43px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    text-transform: capitalize;
+    font-size: 24px;
+    width: 50px;
+ 
+    
+}
+
+header nav ul li a:hover {
+    background-color: aliceblue;
+    color: black;
+    padding: 2px 2px;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.first {
+    position: absolute;
+    left: 45%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    word-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+}
+
+.first:hover
+{
+    color:black;
+    background-color: white;
+}
+
+.second
+{
+    position: absolute;
+    left: 57%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+}
+
+.second:hover
+{
+    color:black;
+    background-color: white;
+}

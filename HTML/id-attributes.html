@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id Attributes </title>
+    <style>
+        #head{
+            background-color: aqua;
+            padding:40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>The id Attribute</h1>
+    <h1 id="head">My Header</h1>
+
+    <h1 id="change">Hello World!</h1>
+    <button onclick="text()">Cahnge Taxt</button>
+    <button onclick="same()">Before Taxt</button>
+
+    <script>
+        function text()
+        {
+            let a=document.getElementById("change").textContent="Have Nice Day!";
+        }
+        
+        function same()
+        {
+            let a=document.getElementById("change").textContent="Hello World!";
+        }
+
+    </script>
+</body>
+</html>

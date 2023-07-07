@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class intro</title>
+</head>
+<body>
+
+    <script>
+        class student{
+            constructor(rno,name,year)
+            {
+                this.rno=rno;
+                this.name=name;
+                this.year=year;
+            }
+            age()
+            {
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        const a= new student (1,"keyur",2015)
+        const b= new student (2,"Sujal",2015)
+        document.write(a);
+        document.write("<br>",Object.values(a));
+        document.write("<br>",Object.values(b));
+
+        let text="";
+        for(let i in a)
+        {
+            text=text+" " +a[i];
+        }
+        document.write("<br>",text);
+
+        document.write("<br>",a.age());
+
+        // Strick Mode //
+
+        class student1
+        {
+            constructor(name,mark)
+            {
+                this.name=name;
+                this.mark=mark;
+            }
+
+            dif()
+            {
+                const marks=50;
+                return marks - this.mark;
+            }
+        }
+        const x= new student1("keyur",30);
+        document.write(Object.values(x));
+        document.write("<br>"+"Differnt = "+x.dif());
+    </script>
+    
+</body>
+</html>

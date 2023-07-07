@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaSCript</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+
+        // SerTimeout()
+
+        function code() {
+            document.write("<h1>" + "I Love You !!" + "</h1>");
+        }
+        setTimeout(code, 300);
+
+        // const keyur = function () {
+        //     document.write("Hello");
+        // }
+        // setTimeout(keyur, 300)
+
+        setTimeout(function () {
+            keyur("Keyur")
+        }, 3000);
+
+        document.write(keyur(values));
+
+        // Setinterval()
+        
+        setInterval(time,1000);
+
+        function time()
+        {
+            let date = new Date();
+            document.getElementById("demo").innerHTML= (date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+        }
+
+        function myfunction()
+        {
+            return  document.write("Keyur Pansuriya");
+        }
+
+        setTimeout(myfunction,3000);
+
+        // Set IntervalTime //
+
+        function myfunction()
+        {
+            let a=new Date();
+            document.querySelector("#demo").innerHTML=(a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds());
+        }
+        
+        setInterval(myfunction,1000);
+
+
+    </script>
+</body>
+</html>

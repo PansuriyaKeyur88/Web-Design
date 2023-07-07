@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Definitions</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+    <h1 id="demo6"></h1>
+    <script>
+
+        // Function First Method //
+
+        function add(a,b)
+        {
+            return a+b;
+        }
+        let a=document.body.querySelector("#demo").innerHTML=add(5,45);
+
+        // Function Write Second Method //
+
+        let b=function(a,b)
+        {
+            return a+b;
+        }
+        document.body.querySelector("#demo1").innerHTML=b(50,45);
+
+        // Function Write Third Method //
+
+        const myfunction = new Function("a","b","return a+b");
+        
+        document.body.querySelector("#demo2").innerHTML=myfunction(10,521);
+
+
+
+        (function(){
+             document.body.querySelector("#demo3").innerHTML="Hello! I Called mySelf";
+        })
+
+        // Function Are Object //
+
+        // argument.length
+
+        const c = function(a,b)
+        {
+            return arguments.length;
+        }
+
+        document.getElementById("demo4").innerHTML="Arguments length =" + " " + c(5,40,20,50);
+
+        // Method = ToString()
+
+        document.body.querySelector("#demo5").innerHTML=b.toString();
+
+        // ==> Arrow Function
+
+        const j = (a,b) =>{
+            return a+b;
+        }
+
+        document.body.querySelector("#demo6").innerHTML=j("Sum = "+4,5);
+
+
+
+    </script>
+</body>
+</html>

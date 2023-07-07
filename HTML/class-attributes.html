@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attributes</title>
+</head>
+<body>
+    <h1>Use of The class Attribute in JavaScript</h1>
+    <p>Click the button to hide all elements with class name "city":</p>
+    <button onclick="hide()">Hide Element</button>
+    <button onclick="seen()">Seen Attribut</button>
+     <h1 class="city">London</h1>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sunt iusto expedita minima nesciunt. Dicta adipisci labore id blanditiis pariatur!</p>
+     <h1 class="city">Paris</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere voluptas possimus quidem quam repellat autem reiciendis, minima temporibus harum.</p>
+
+     <script>
+        function hide()
+        {
+            let a=document.getElementsByClassName("city");
+            for (let i=0;i<a.length;i++)
+            {
+                a[i].style.display = "none";
+            }
+       }
+
+       function seen() {
+        let a=document.getElementsByClassName("city");
+            for (let i=0;i<a.length;i++)
+            {
+                a[i].style.color="red";
+                a[i].style.display="block";
+            }
+        
+       }
+     </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+header{
+    background-image: url("./images/food-wallpaper-20100313193312-2048x1365.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+
+.logo img{
+    border-radius: 50px;
+    height: 42px;
+    width: 40px;
+    margin-left: 8px;
+    margin-right: 10px;
+    z-index: -1;
+}
+
+.navbar{
+    background-color:rgba(52, 51, 51, 0.451);
+    background-size:cover;
+}
+
+.first{
+    width: 100%;
+}
+
+.leftside{
+    width: 5%;
+}
+
+.righside{
+    width: 95%;
+}
+
+.nav-item a{
+    color: white;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.tital{
+    display: grid;
+    place-items: center;
+}
+
+.tital h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    word-spacing: -1px;
+    color: white;
+}
+
+.tital p{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first-btn{
+    color: white;
+    border-radius:7px ;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid white;
+    background: transparent;
+    text-align: center;
+}
+
+.service{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.service h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.card{
+    background-color: bisque;
+    border: 2px solid red;
+    width: 25rem;
+}
+
+.card-body img{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+}
+
+.card-body{
+    display: grid;
+    place-items: center;
+}
+
+.card-title{
+    font-weight: 500;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-2{
+    margin-left: 50px;
+}
+
+.menu-3{
+    margin-left: 50px;
+}
+
+.supported{
+    width:100%;
+    background-image: url("./images/491a924f10d7988a9ab2d3ff4f7121c8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
+
+.supported h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.supported img{
+    height: 100px;
+    width: 100px;
+}
+
+.clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.clint-name{
+    padding-left: 20px;
+    height: 200px;
+    width: auto;
+}
+
+footer{
+    background-image: url("./images/istockphoto-1311934969-170667a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 9px 20px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.information input,.information textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+form{
+    width: 40%;
+}
+
+#second-btn{
+    width: 101%;   
+}
+
+#second-btn:hover{
+    color:white;
+    background-color: red;
+}
+

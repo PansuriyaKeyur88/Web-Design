@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Html</title>
+</head>
+
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+
+        // Function Borrwing 
+
+        // const person = {
+        //     first_name: "keyur",
+        //     last_name: "Pansuriya",
+        //     full_Name: function () {
+        //         return this.first_name + " " + this.last_name;
+        //     }
+        // };
+
+        // const member = {
+        //     first_name:"Sujal",
+        //     last_name:"Padsala"
+        // };
+
+        // let fullName =person.full_Name.bind(member)
+        // document.write(fullName());
+
+        // const person1={
+        //     first_name:"Shaym",
+        //     last_name:"Bhanusali"
+        // }
+
+        // let x = person.full_Name.bind(person1);
+        // document.write("<br>"+ x());
+
+        // const person = {
+        //     first_name: "keyur",
+        //     last_name: "Pansuriya",
+        //     full_Name: function () {
+        //         let x=document.getElementById("demo");
+        //         x.innerHTML= this.first_name+this.last_name;
+        //     }
+        // };
+        // person.full_Name();
+
+        const person1 ={
+            first_name:"Sujal",
+            last_name:"Padsala",
+            full_Name:function()
+            {
+                let x=document.getElementById("demo").innerHTML = this.first_name+" " +this.last_name;
+            }
+        };
+
+        // person1.full_Name();
+
+        let x=person1.full_Name.bind(person1)
+
+        setTimeout(x,3000)
+    </script>
+</body>
+
+</html>

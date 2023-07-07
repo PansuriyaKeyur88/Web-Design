@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+header h2
+{
+    display: inline;
+    text-transform: uppercase;
+    color: black;
+    width: 185px;
+    position: relative;
+    top:31px;
+    left: 40px;
+    letter-spacing: 5px;
+    padding: 5px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+header nav ul {
+    padding-top: 0px;
+    padding-left: 460px;
+    display: inline;
+}
+
+header nav ul li {
+    display: inline;
+    padding:50px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    text-transform: capitalize;
+    font-size: 24px;
+    width: 50px;  
+}
+
+header nav ul li a:hover{
+    font-weight: bold;
+}
+
+ body
+{
+    background-image: url(image/business-office-design-background-ui-ux-design_155807-298.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:80px;
+    height: 50px;
+}
+
+main img
+{
+    height: 46px;
+    position: relative;
+    top: -44px;
+    left: 93px;
+}
+
+main h1
+{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 400;
+}
+
+.p
+{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%,50%);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.first 
+{
+    position: absolute;
+    left: 44%;
+    top: 48%;
+    transform: translate(-50%,50%); 
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.first a
+{
+    text-decoration: none;
+    color:orangered;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.first:hover{
+    background-color: orangered;
+}
+
+.first a:hover
+{
+    color: white;
+}
+
+.second
+{
+    position: absolute;
+    left: 55%;
+    top: 48%;
+    transform: translate(-50%,50%); 
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.second a
+{
+    text-decoration: none;
+    color: orangered;
+    font-size: 15px;
+    font-family: 500;
+}
+
+.second:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.second a:hover{
+    color: white;
+}
+
+.first-p
+{
+  color: white;
+  width: 1500px;
+}

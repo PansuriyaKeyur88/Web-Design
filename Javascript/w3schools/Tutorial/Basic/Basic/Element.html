@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Elements</title>
+</head>
+<body>
+    <h3><b>Finding value</b></h3>
+    <p id="demo">Pansuriya</p>
+    <p id="demo1"></p>
+
+    <h3><b> Finding HTML Elements by Tag Name.</b></h3>
+    <p id="demo2"></p>
+
+    <h3><b>Finding HTML Elements by Class Name.</b></h3>
+    <p class="demo3">Keyur</p>
+    <p class="demo4"></p>
+
+    <h3><b>Finding HTML Elements by Query Selector</b></h3>
+    <p id="demo5">Keyur</p>
+    <p class="demo6"></p>
+
+    <h3><b>Create Form</b></h3>
+
+    <form action="" id="form1">
+        First Name: <input type="text" id="first" value="Keyur">
+        <br><br>
+        Last Name: <input type="text" id="last" value="Pansuriya">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="demo7"></p>
+
+    <script>
+        const a = document.body.getElementsByTagName("p")[0];
+        document.getElementById("demo1").innerHTML="Keyur"+" "+a.innerHTML;
+
+        // Finding HTML Elements by Tag Name.
+
+        const b=document.getElementById("demo2");
+        document.body.getElementsByTagName("p")[2].innerHTML="Keyur"+b.innerHTML;
+
+        // Finding HTML Elements by Class Name.
+
+        const c = document.getElementsByClassName("demo3")[0];
+        document.body.getElementsByTagName("p")[4].innerHTML = "Pansuriya" + " " + c.innerHTML;
+
+        // Finding HTML Elements by Query Selector
+
+        const d=document.body.querySelector("#demo5");
+        document.body.getElementsByClassName("demo6")[0].innerHTML= d.innerHTML +" " + "Pansuriya"; 
+
+        // Form 
+
+        // 1St method
+
+        const e = document.forms["form1"];
+        let text=" ";
+        for(let i=0;i<=e.length-1;i++)
+        {
+            text=text+e.elements[i].value+"<br>";
+        }
+        document.getElementById("demo7").innerHTML=text;
+
+        // 2nd Method
+
+        let f = document.getElementById("form1");
+        for(let i=0; i<f.length ; i++)
+        {
+            text+=f[i].value+"<br>";
+        }
+        document.getElementById("demo7").innerHTML=text;
+
+
+    </script>
+</body>
+</html>

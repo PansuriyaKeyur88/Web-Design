@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Apply()</title>
+</head>
+
+<body>
+
+    <script>
+
+        function person() {
+            return this.firstName+this.lastName;
+        }
+
+        const person1 = {
+            firstName:"keyur",
+            lastName:"Pansuriya"
+        }
+
+        const person2={
+            firstName:"Sujal",
+            lastName:"Padsala"
+        }
+
+        document.write(person.apply(person1))
+        document.write("<br>"+ person.apply(person2))
+        document.write("<br>");
+        document.write(Math.max(1,2,5,5)) 
+        document.write("<br>");
+        document.write(Math.max.apply(null,[1,2,34,56,7,9])) // Working Array
+        document.write("<br>");
+        document.write(Math.max.apply(0,[1,2,3,45,67])) 
+    </script>
+</body>
+
+</html>

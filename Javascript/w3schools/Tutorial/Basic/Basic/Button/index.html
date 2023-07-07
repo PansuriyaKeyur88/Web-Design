@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My First JavaScript</title>
+</head>
+
+<body>
+    <h1 class="class-01">My First JavaScript </h1>
+
+    <!-- Click To Button Seen  Time  -->
+
+    <button onclick="document.getElementById('demo').innerHTML = Date() ">Click</button>
+    <p id="demo"></p><br>
+
+    <!-- Click To Button Seen Name -->
+
+    <button onclick="document.getElementsByClassName('demo1')[0].innerHTML = 'keyur Pansuriya' ">Click</button>
+    <br><br>
+    <div class="demo1"></div><br>
+
+    <!-- Click To Button Seen Change Name -->
+    <button onclick="document.getElementsByClassName('demo2')[0].innerHTML = 'Deep Pansuriya'"> Click</button>
+    <br><br>
+    <div class="demo2">Keyur Pansuriya</div>
+    <br>
+
+    <!-- Click To image -->
+
+    <button onclick="document.getElementsById('demo10').src='image/off.png' ">off</button>
+
+    <img src="image/off.jpg" alt="image" id="demo10" style="width: 100px;">
+    
+    <button onclick='document.getElementsById("demo10").src = "image/on.png" '>on</button>
+    <br><br>
+
+    <!-- ==> Click To Style  -->
+
+    <!-- 1. Click To Button display None -->
+
+    <br>
+    <div id="demo3">Keyur Pansuriya</div>
+    <button type="button" onclick="document.getElementById('demo3').style.display = 'none'"> Click</button>
+    <br><br>
+    <br>
+    
+
+    <!-- 2. Click To Butto Font Size Change -->
+
+    <div id="demo4">Keyur Pansuriya</div>
+    <button type="button" onclick="document.getElementById('demo4').style.fontSize= '100px'"> Click</button>
+    <br><br>
+    <br>
+
+    <!-- 3.Click To Font Color Change And Change Text -->
+
+    <div class="demo5">Keyur Pansuriya</div>
+    <button type="button" onclick="btn()">Try it!</button>
+    
+
+    <script>
+        function btn() {
+          document.getElementsByClassName("demo5")[0].style.color="red"
+          document.getElementsByClassName("demo5")[0].style.fontSize="100px"
+          document.getElementsByClassName("demo5")[0].innerHTML="Deep Pansuriya"
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Defination</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    
+    <script>
+        let a="keyur Pansuriya";
+        document.querySelector("#demo").textContent=a;
+          
+        const b={
+            first_name:"keyur",
+            second_name:"pansuriya",
+            add:"88 Balkrishna Socity",
+            phone:953735095
+        };
+        document.querySelector("#demo1").textContent=b.first_name + " " + b.second_name + " " + b.add + " " + b.phone;
+
+        const c={};
+        c.first_name="keyur";
+        c.second_name="pansuriya";
+        c.age=18;
+        c.phone=953735095;
+        document.querySelector("#demo2").innerHTML = c.first_name + " " + c.second_name ;
+
+        const person = c;
+        person.age=10;
+        document.querySelector("#demo3").textContent = person.age;
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.head img{
+    width: 100%;
+    height: 90vh;
+    opacity: 0.7;
+}
+
+.tital{
+    position: absolute;
+    left: 48%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    color: black;
+}
+
+.tital h1{
+    font-size: 10vh;
+    font-family: 'Great Vibes', cursive;
+    margin-left: 5vh;
+    letter-spacing: 5px;
+    color: black;
+    text-shadow: 2px 5px 5px white;
+}
+
+.tital h4{
+    color:rgb(231, 0, 0);
+    padding-left: 5vw;
+    font-size: 8vh;
+    margin-left: 5vh;
+    text-shadow: 2px 5px 5px white;
+}
+
+.tital h2{
+    font-size: 5vh;
+    word-spacing: 20px;
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize; 
+    text-shadow: 2px 5px 5px white;
+}
+
+.tital p{
+    font-size: 5vh;
+    margin-top: 1vh;
+    margin-left: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 5px 5px white;
+}
+
+.navbar{
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    box-shadow:0 20px 30px black;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 90%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding-left: 16vw;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+
+.navbar ul li a{
+    font-family: 'Great Vibes', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vh;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.home{
+    text-align: center;
+    padding-top: 8vh;
+    background-color: pink;
+    padding-bottom: 8vh;
+}
+
+.home h1{
+    margin-bottom: 5vh;
+    font-size: 8vh;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 6px;
+}
+
+.home img{
+    width: 70%;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.home p{
+    margin-top: 8vh;
+    width: 72%;
+    text-align: justify;
+    margin-left: 30vh;
+    font-family: 'Great Vibes', cursive;
+    word-spacing: 5px;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.btn {
+    margin-top: 8vh;
+    padding: 2vh;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.invite img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+.invite-tital {
+    position: absolute;
+    left: 50%;
+    top: 312%;
+    transform: translate(-50%,-50%);
+}
+
+.invite-tital h1{
+    font-size: 10vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.invite-tital p{
+    margin-top: 5vh;
+    margin-left: 12vw;
+    font-size: 4vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+.data{
+    background-color: pink;
+}
+
+.home-02{
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.home-02 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5vh;
+    font-size: 8vh;
+}
+
+.home-02 img{
+    width: 70%;
+    height: 90vh;
+    border-radius: 5px;
+    margin-top: 4vh;
+}
+
+.when{
+    margin-top: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.when-01{
+    margin-top: 5vh;
+    padding-right: 10vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.when-01 h1{
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.when-01 h5{
+    font-size: 2vh;
+    word-spacing: 2px;
+}
+
+.when-02{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5vh;
+    padding-left: 8vw;
+}
+
+.when-02 h1{
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.when-02 h5{
+    font-size: 2vh;
+    word-spacing: 2px;
+}
+
+.data-02{
+    padding-top: 10vh;
+    text-align: center;
+    background-color: antiquewhite;
+    padding-bottom: 8vh;
+}
+
+/* #demo{
+    background-color: white;
+    position: absolute;
+    width: 35%;
+    left: 32%;
+    height: 30%;
+} */
+
+.center h1{
+    font-size: 5vh;
+}
+
+.center h4{
+    margin-top: 3vh;
+    font-size: 3vh;
+}
+
+.center button{
+    margin-top: 5vh;
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: palevioletred;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 12%;
+    font-size: 25px;
+    border: 0px;
+}
+
+.center button:hover{
+    opacity: 0.5;
+}
+
+.foot{
+    background-color: black;
+    color: white;
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.foot p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.foot a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+

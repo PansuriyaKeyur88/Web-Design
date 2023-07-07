@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class Inheritance</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //  class car{
+        //     constructor(brand)
+        //     {
+        //         this.car=brand;
+        //     }
+        //     present()
+        //     {
+        //         return 'I Have ' + this.car;
+        //     }
+        // }
+
+        // class model extends car{
+        //     constructor(brand,model)
+        //     {
+        //         super(brand);
+        //         this.model=model;
+        //     }
+
+        //     show()
+        //     {
+        //         return this.present()+" "+ 'It is a '+this.model;
+        //     }
+        // }
+
+        // const a = new model ("BMW",2546);
+        // document.write(Object.values(a));
+        // document.write("<br>",a.show());
+
+        // class student {
+        //     constructor(rno)
+        //     {
+        //         this.r=rno;
+        //     }
+        //     n(){
+        //         return 'my rno = '+this.r;
+        //     }
+        // }
+
+        // class k extends student{
+        //     constructor(rno,name)
+        //     {
+        //         super(rno);
+        //         this.name=name;
+        //     }
+        //     show()
+        //     {
+        //         return this.n() +"<br>"+ 'my name = '+this.name;
+        //     }
+        // }
+
+        // let z=new k(1,"keyur");
+        // document.write(Object.values(k));
+        // document.write("<br>",z.show()); 
+
+
+        // Getter And Setter Method //
+
+        // class Car {
+        //     constructor(brand) {
+        //         this.carname = brand;
+        //     }
+        //     get cnam() {
+        //         return this.carname;
+        //     }
+        //     set cnam(x) {
+        //         this.carname = x;
+        //     }
+        // }
+
+        class car{
+            constructor(barnd)
+            {
+                this._carname=brand;
+            }
+            set carname(x)
+            {
+                 this._carname=x;   
+            }
+            get carname()
+            {
+                return this._carname;
+            }
+        }
+        
+
+        const myCar = new Car("Ford");
+        document.write(myCar.cnam);
+
+    </script>
+</body>
+</html>

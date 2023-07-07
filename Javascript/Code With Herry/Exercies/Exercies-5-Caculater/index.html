@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="Caculater">
+            <div class="search">
+                <input type="text" name="display">
+            </div>
+            <div class="row1">
+                <input type="button" id="ac" value="AC"  onclick="Caculater.display.value = Caculater.display.value.toString().slice(20,-1)">
+                <input type="button" id="de" value="DE"   onclick="Caculater.display.value+=''">
+                <input type="button" id="dot" value="."   onclick="Caculater.display.value+='.'">
+                <input type="button" id="slash" value="/"   onclick="Caculater.display.value+='/'">
+            </div>
+            <div class="row2">
+                <input type="button" id="seven" value="7"   onclick="Caculater.display.value+='7'" >
+                <input type="button" id="eight" value="8"   onclick="Caculater.display.value+='8'">
+                <input type="button" id="nine" value="9"   onclick="Caculater.display.value+='9'">
+                <input type="button" id="mul" value="*"   onclick="Caculater.display.value+='*'">
+            </div>
+            <div class="row3">
+                <input type="button" id="four" value="4"   onclick="Caculater.display.value+='4'">
+                <input type="button" id="five" value="5"   onclick="Caculater.display.value+='5'">
+                <input type="button" id="six" value="6"   onclick="Caculater.display.value+='6'">
+                <input type="button" id="sub" value="-"   onclick="Caculater.display.value+='-'">
+            </div>
+            <div class="row4">
+                <input type="button" id="one" value="1"   onclick="Caculater.display.value+='1'">
+                <input type="button" id="two" value="2"   onclick="Caculater.display.value+='2'">
+                <input type="button" id="three" value="3"   onclick="Caculater.display.value+='3'">
+                <input type="button" id="add" value="+"   onclick="Caculater.display.value+='+'">
+            </div>
+            <div class="row5">
+                <input type="button" id="zero2" value="00"  onclick="Caculater.display.value+='00'">
+                <input type="button" id="zero" value="0"   onclick="Caculater.display.value+='0'">
+                <input type="button" id="equl" value="="   onclick="Caculater.display.value =eval(display.value)">
+            </div>
+        </form>
+    </div>
+    <h1> My Caculater</h1>
+</body>
+</html>

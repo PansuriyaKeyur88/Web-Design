@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+</head>
+<body>
+    
+    <script>
+
+        function person(first,last,age,eye)
+        {
+            this.firstName=first;
+            this.LastName=last;
+            this.age=age;
+            this.eye=eye;
+            this.language="English";
+        }
+
+        const myfather=new person("keyur","pansuriya",50,"blue");
+
+        const mymother=new person("sally","relly",48,"green")
+
+        document.write(myfather.firstName);
+
+        document.write("<br>"+ mymother.LastName)
+
+        // Adding Property //
+
+        myfather.nationally="india";
+
+        document.write("<br>","Adding Value in ",myfather.nationally)
+
+        // Adding Method //
+
+        myfather.name = function(){
+            return this.firstName+this.LastName;
+        }
+
+        document.write("<br>",myfather.name())
+    </script>
+</body>
+</html>

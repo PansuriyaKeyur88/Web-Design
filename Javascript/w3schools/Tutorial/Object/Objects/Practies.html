@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let a={
+            first_name:"keyur",
+            last_name:"pansuriya",
+            today:new Date()
+        };
+        document.write(a["first_name"] + " " + a["last_name"] );
+
+        let x="";
+        for(let i in a)
+        {
+             x=x+a[i];
+        }
+        document.write("<br>"+ x );
+
+        document.write(Object.values(a));
+        document.write(JSON.stringify(a));
+    </script>
+</body>
+</html>

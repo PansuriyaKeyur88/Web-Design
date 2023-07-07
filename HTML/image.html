@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZAq08u4YaR0Jsu2CgeptdxC74y-9QEeFYEAb6YHP&s" usemap="#phone" width="1000" height="500" alt="Phone">
+    <map name="phone">
+        <area shape="rect" coords="34,84,270,350" href="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"  onclick="camera()" alt="camera">
+    </map>
+
+    <picture>
+        <source media="(min-width:500px )" srcset="https://img.freepik.com/premium-photo/image-colorful-galaxy-sky-generative-ai_791316-9864.jpg?w=2000">
+        <source media="(max-width: 300px)" srcset="vira.png">
+        <img src="viar.png" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZAq08u4YaR0Jsu2CgeptdxC74y-9QEeFYEAb6YHP&s">
+    </picture>
+
+    <script>
+        function camera()
+        {
+            confirm("Click To camera")
+        }
+    </script>
+</body>
+</html>

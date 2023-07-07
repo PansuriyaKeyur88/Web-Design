@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"> </h1>
+    <h1 id="demo5"></h1>
+    <script>
+        // function myfuction(x,y)
+        // {
+        //     if(y==undefined)
+        //     {
+        //         y=2;
+        //     }
+        //     return x*y;
+        // }
+        // document.getElementById("demo").innerHTML=myfuction(8);
+
+        function myfuction(x,y)
+        {
+            y=2;
+            return x*y;
+        }
+        document.getElementById("demo").innerHTML=myfuction(4);
+
+        function sum(x,y=10)
+        {
+            return x+y;
+        }
+        document.body.querySelector("#demo1")
+        .innerHTML=sum(20);
+
+        // Sum N Number....
+
+        function sum(...args)
+        {
+            let sum=0;
+            for(let arg of args)
+            {
+                sum=sum+arg;
+            }
+            return sum;
+        }
+        let x=sum(1,2,3,4,5);
+        document.getElementById("demo2").innerHTML=x;
+
+        function mul(...num)
+        {
+            let total=1
+            for(let mul of num)
+            {
+                total = total * mul;
+            } 
+            return total;
+        }
+        let y=mul(12,2);
+        document.getElementById("demo3").innerHTML=y;
+
+        // largest Number //
+
+        function findmax()
+        {
+            let max=-Infinity;
+            for (let i=0;i<arguments.length;i++)
+            {
+                if(arguments[i]>max)
+                {
+                    max=arguments[i];
+                }
+            }
+            return max;
+        }
+        let z=findmax(4,5,6);
+        document.getElementById("demo4").innerHTML="Sum Of = " + z;
+
+
+        // function findmin()
+        // {
+        //     let min=Infinity;
+        //     for(let i=0;i<=arguments.length;i++)
+        //     {
+        //         if(arguments[i]<min)
+        //         {
+        //             min=arguments[i];
+        //         }
+        //     }
+        //     return min;
+        // }
+
+        // document.getElementById("demo4").innerHTML=findmin(4,5,3);
+
+
+        function sumAll()
+        {
+            let sum=0;
+            for (let i=0;i<arguments.length;i++)
+            {
+                sum=sum+arguments[i];
+            }
+            return sum;
+        }
+        let k=sumAll(11,45)
+        document.body.querySelector("#demo5").innerHTML=k;
+
+
+    </script>
+    
+</body>
+</html>

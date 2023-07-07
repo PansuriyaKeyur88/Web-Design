@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(https://t3.ftcdn.net/jpg/04/99/00/16/360_F_499001665_e6HqHSLEblw7tTkWsLRN8JNMgJLLKKFq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-30%,-30%);
+}
+
+#text{
+    background-color: white;
+    color: rgb(0, 0, 65);
+    text-transform: uppercase;
+    word-spacing: 3px;
+    width: 9vw;
+    padding-left: 10px;
+    margin-left: 5px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tital{
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12vh;
+}
+
+.box{
+    display: flex;
+    position:absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+}
+
+.box-1 h1{
+    background-color: rgb(240, 28, 28);
+    color: white;
+    border-radius: 5px;
+    height: 11vh;
+    width: 13vh;
+    text-align: center;
+    font-size: 8vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dot-1{
+    font-size: 4vh;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.box-2 h1{
+    background-color: rgb(51, 148, 51);
+    color: white;
+    border-radius: 5px;
+    height: 11vh;
+    width: 13vh;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 8vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dot-2{
+    font-size: 4vh;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.box-3 h1{
+    background-color:rgb(179, 179, 17);
+    color: white;
+    border-radius: 5px;
+    font-size: 10vh;
+    height: 11vh;
+    width: 13vh;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 8vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tools{
+    display: flex;
+    position:absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-62%);
+    background-color:black;
+    width: 50vh;
+    border-radius: 5px;
+    height: 4vh;
+    border: 2px solid gray;
+}
+
+.tools-1 h3{
+    color: white;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tools-2{
+    display: flex;
+    padding-left: 55px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tools-2 h3{
+    color: white;
+}
+
+.tools-3{
+    color: white;
+    padding-left: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5px;
+}

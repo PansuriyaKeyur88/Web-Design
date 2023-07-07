@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid button{
+    border: none;
+}
+
+.navbar-toggler-icon{
+    color: rgb(12, 0, 0);
+}
+
+.close button{
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    margin:20px 0px 20px 10px;
+}
+
+.tital{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mail{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.color{
+    background-color:white;
+}
+
+.nav-item{
+    font-size: 25px;
+    margin-right:50px;
+}
+
+.food-first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.edit{
+    margin-left: 30px;
+}
+
+.edit h5,p{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.edit img{
+    height: 70vh;
+    border: 2px solid black;
+}
+
+.btn-group{
+    position: relative;
+    left: 42%;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn a:hover{
+    color: white;
+    background-color: black;
+}
+
+.btn-group button:hover{
+    color: white;
+    background-color: black;
+}
+
+.about{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about h4{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about img{
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.about h5{
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about p{
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center
+}
+
+.dec{
+    margin-bottom: 15vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.last{
+    display:flex;   
+}
+
+.foot{
+    width: 40%;
+}
+
+.foot h1,p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog{
+    width: 35%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.first{
+    display: flex;
+}
+
+.first img{
+    width: 12%;
+    height: 12%;
+}
+
+.info{
+    margin-left: 20px;
+}
+
+.second{
+    display: flex;
+}
+
+.second img{
+    width: 12%;
+    height: 12%;
+}
+
+.tag{
+    width: 25%;
+    margin-left: 12px;
+}
+
+.tag h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+

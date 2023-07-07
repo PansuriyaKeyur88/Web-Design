@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Static Methods</title>
+</head>
+<body>
+    
+    <script>
+
+        class student1{
+            constructor(rno,name)
+            {
+                this.rno=rno;
+                this.name=name;
+            }
+            static hello(x,y)
+            {
+                return "hello" + x.rno + x.name;
+            }
+        }
+
+        const k = new student1(1,"keyur Pansuriya");
+        document.write(k);
+        let text="";
+        for(let i in k)
+        {
+            text=text+" "+k[i];
+        }
+        document.write("<br>"+ text)
+        document.write("<br>" + Object.values(k));
+        document.write("<br>"+ student1.hello()); // But Not Error
+        // document.write("<br>",k.hello()); // Error
+        document.write("<br>",student1.hello(k)); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+@media only screen and (max-device-width:500px) and (min-device-width:220px) {
+
+    .head img {
+        width: 404%;
+        height: 100vh;
+    }
+
+    .tital {
+        position: absolute;
+        left: 190%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tital h1 {
+        font-size: 10vh;
+        margin-left: 5vh;
+    }
+
+    .tital h4 {
+        font-size: 8vh;
+        margin-left: 12vh;
+    }
+
+    .tital h2 {
+        font-size: 5vh;
+        word-spacing: 5px;
+    }
+
+    .tital p {
+        font-size: 4vh;
+        margin-left: 6vh;
+    }
+
+    .home {
+        width: 404%;
+        margin-left: 1px;
+    }
+
+    .home img {
+        width: auto;
+    }
+
+    .home p {
+        width: auto;
+        text-align: center;
+        margin-left: 1vh;
+    }
+
+    .btn {
+        margin-right: 50px;
+        padding: 25px;
+    }
+
+    .invite img {
+        width: 404%;
+    }
+
+    .invite-tital {
+        position: absolute;
+        left: 195%;
+        top: 320%;
+        transform: translate(-50%, -50%);
+        font-size: 5vh;
+    }
+
+    .invite-tital h1 {
+        font-size: 10vh;
+        text-align: center;
+    }
+
+    .data{
+        width: 404%;
+    }
+
+    .data-02{
+       width: 404%;
+    }
+
+    .foot{
+        width: 404%;
+    }
+}
+
+@media only screen and (max-device-width:1000px) and (min-device-width:501px) {
+
+     .head img {
+        width: 404%;
+        height: 150vh;
+    }
+
+    .tital {
+        position: absolute;
+        left: 190%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tital p {
+        font-size: 4vh;
+        margin-left: 10vh;
+    }
+
+   .tital h1{
+    font-size: 25vh;
+   }
+
+   .tital h4{
+    font-size: 15vh;
+    margin-left: 25vh;
+   }
+
+   .tital h2{
+    font-size: 10vh;
+   }
+
+   .tital p{
+    font-size: 8vh;
+   }
+
+   .home{
+    width: 404%;
+   }
+
+   .home h1{
+    font-size: 20vh;
+   }
+
+   .home img{
+    height: 150vh;
+   }
+
+   .home p{
+    width: auto;
+    text-align: center;
+    margin-left: 1vh;
+    font-size: 10vh;
+   }
+
+   .btn{
+    padding: 6vh;
+    font-size: 45px;
+    border-radius: 10px;
+   }
+
+   .invite img{
+    width: 404%;
+    height: 200vh;
+    }
+
+    .invite-tital {
+        position: absolute;
+        left: 195%;
+        top: 600%;
+        transform: translate(-50%, -50%);
+        font-size: 5vh;
+    }
+
+    .invite-tital h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .data{
+        width: 404%;
+    }
+
+    .home-02 h1{
+        font-size: 20vh;
+    }
+    
+    .home-02 img{
+        height: 150vh;
+    }
+
+    .when-01{
+        margin-right: 50vh;
+    }
+
+    .when-01 h1{
+        font-size: 15vh;
+    }
+
+    .when-01 h5{
+        font-size: 8vh;
+    }
+
+    .when-02{
+        margin-left: 20vh;
+
+    }
+
+    .when-02 h1{
+        font-size: 15vh;
+    }
+
+    .when-02 h5{
+        font-size: 8vh;
+        margin-left: 5vh;
+    }
+
+    .data-02{
+        width: 404%;
+    }
+
+    .center h1{
+        font-size: 20vh;
+    }
+
+    .center h4{
+        margin-top: 5vh;
+        font-size: 10vh;
+    }
+
+    .center button{
+        margin-top: 10vh;
+        padding: 6vh;
+        font-size: 45px;
+    }
+
+    .foot{
+        width: 404%;
+    }
+
+    .foot p{
+        font-size: 8vh;
+    }
+}
+

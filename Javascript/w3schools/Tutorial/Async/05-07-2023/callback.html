@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Js</title>
+</head>
+<body>
+    
+    <script>
+        function display(num)
+        {
+            document.write(num);
+        }
+        function first()
+        {
+            display("Keyur");
+        }
+        function second()
+        {
+            display("Pansuriya");
+        }
+        first();
+        second();
+
+        // // Sum of Number //
+
+        function sum(c)
+        {
+            document.write("<br>"+c);
+        }
+        function a(a,b)
+        {
+            let sum=a+b;
+            return sum;
+        }
+        let result = a(5,10);
+        sum(result);
+
+        function sum(some)
+        {
+            document.write("<br>"+some);
+        }
+        function value(num1,num2)
+        {
+            let result = num1+num2;
+            return result;
+        }
+        let ans = value(10,15)
+        sum(ans);
+
+
+        // // Callback Function //
+
+        function display(some)
+        {
+            document.write("<br>"+some);
+        }
+
+        function caculter (num1,num2,callback)
+        {
+            let sum =num1+num2;
+            callback(sum);
+        }
+        caculter(5,5,display);
+
+        // // Second Callback Function //
+
+        function display(some)
+        {
+            document.write("<br>"+some);
+        }
+        function caculate(num1,num2,callback)
+        {
+                let sum=num1+num2;
+                callback(sum);
+        }
+        function print()
+        {
+            caculter(5,50,display);
+        }
+        print()
+
+        function myfunction(some)
+        {
+            document.write(some);
+        }
+        function a()
+        {
+            myfunction("Keyur");
+        }
+        function b()
+        {
+            myfunction(" "+"Pansuriya");
+        }
+        a();
+        b();
+
+        function myfunction(some)
+        {
+            document.write(some);
+        }
+        function sum(num1,num2)
+        {
+            let sum;
+            sum=num1+num2;
+            myfunction(sum)
+        }
+        sum(10,35);
+
+        // Call Back Function //
+
+        function myfunction(some)
+        {
+            document.write(some);
+        }
+        function sum(num1,num2,callback)
+        {
+            let sum=num1+num2;
+            callback(sum);
+        }
+        sum(10,15,myfunction)
+
+    </script>
+</body>
+</html>

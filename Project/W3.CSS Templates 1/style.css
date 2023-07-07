@@ -1,0 +1,153 @@
+.nav-tital{
+    padding-left: 20px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color:black;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+}
+
+.leftside li{
+    padding-left: 20px;
+}
+
+.navbar-toggler{
+    color: black;
+    background-color: white;
+    border: 0px;
+    border-radius: 0px;
+    background-size: cover;
+}
+
+.tital{
+    text-align: center;
+}
+
+.tital h1{
+    letter-spacing: 5px;
+}
+
+.tital h5{
+    font-style: italic;
+    font-weight: 200;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conatin{
+    background-color: black;
+    width: 100%;
+    height: 80%;
+}
+
+.data{
+    color: white;
+    text-align: center;
+}
+
+.data h1{
+    letter-spacing: 5px;
+}
+
+.data p{
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.box{
+    color: white;
+}
+
+.list-group{
+    border-radius: 0px;
+}
+
+.card{
+    border-radius: 0px;
+    border: 0px;
+}
+
+.card-img-top{
+    border-radius: 0px;
+}
+
+.list-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 59%;
+}
+
+.keyur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyur-2{
+    padding-left: 20px;
+}
+
+.keyur-3{
+    padding-left: 20px;
+}
+
+.footer-contain{
+    text-align: center;
+}
+
+.footer-contain h1{
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+}
+
+.footer-contain h5{
+    font-style: italic;
+    font-weight: 100;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal{
+    margin-right: 200px;
+}
+
+.bnt{
+    color:white;
+    margin-left: 373px;
+    background-color: black;
+    width: 64px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.bnt:hover{
+    background-color:gray;
+    color: black;
+}
+
+.last{
+    text-align: center;
+}

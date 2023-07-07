@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Object Accessors </title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Getter Keyword // 
+
+        const person = {
+            name: "keyur",
+            lname: "pansuriya",
+            get keyur() {
+                return this.name;
+            },
+            fullname:function(){
+                return this.name +" " + this.lname+"<br>"
+            }
+        };
+
+        document.write(person.fullname());
+        document.write(person.keyur)
+        document.write(" " + person.lname)
+
+
+        // Setter Keyword //
+
+        const person1={
+            name:"keyur",
+            lname:"pansuriya",
+            language:"english",
+            set lang(value){
+                this.language=lang;
+            }
+        }
+
+        person1.lang("English")
+
+        document.write(person1.language);
+
+        // JavaScript in getter function //
+
+        const k = {
+            name: "keyur",
+            lname: "pansuriya",
+            get fullname() {
+                return this.name + " " + this.lname;
+            }
+        };
+
+        document.write(k.fullname)
+
+        // Data Qulity //
+
+        const l = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "en",
+            get la(){
+                return this.language.toUpperCase();
+            }
+        }
+        
+        document.write(l.la);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+@media only screen and (max-device-width:369px) and (min-device-width:200px){
+
+    .topic{
+        width: 110%;
+    }
+    
+    .leftside{
+        width: 80%;
+    }
+    
+    .rightside{
+        width: 30%;
+    }
+
+    .nav-link {
+        margin-left: 1px;
+        padding-left: 10px;
+    }
+
+    .carousel-caption{
+        color:black;
+    }
+
+    .content {
+        display: grid;
+        grid-row-gap: 50px;
+    }
+
+    #pizza {
+        padding-left: 1px;
+        width: 100%;
+    }
+
+    #food {
+        height: 40vh;
+        width: 99%;
+        padding-left: 5px;
+        opacity: 1;
+    }
+
+    footer{
+        background-color: gray;
+        height: 50vh;
+    }
+
+}
+
+
+@media only screen and (max-device-width:480px) and (min-device-width:370px) {
+    
+    .topic{
+        width: 100%;
+    }
+    
+    .leftside{
+        width: 0%;
+    }
+    
+    .rightside{
+        width: 100%;
+    }
+
+    .nav-link {
+        margin-left: 1px;
+        padding-left: 10px;
+    }
+
+    .carousel-caption{
+        color:black;
+    }
+
+    .content {
+        display: grid;
+        grid-row-gap: 50px;
+    }
+
+    #pizza {
+        padding-left: 1px;
+        width: 100%;
+    }
+
+    .des {
+        text-align: justify;
+        padding-right: 20px;
+    }
+
+    #food {
+        height: 40vh;
+        width: 99%;
+        padding-left: 5px;
+        opacity: 1;
+    }
+
+    footer{
+        background-color: gray;
+        height: 20vh;
+    }
+
+}
+
+@media only screen and (max-device-width:990px) and (min-device-width:481px){
+
+    .topic{
+        width: 100%;
+    }
+    
+    .leftside{
+        width: 0%;
+    }
+    
+    .rightside{
+        width: 100%;
+    }
+
+    .nav-link {
+        margin-left: 1px;
+        padding-left: 10px;
+    }
+
+    .content {
+        display: grid;
+        grid-row-gap: 50px;
+    }
+
+    #pizza {
+        padding-left: 1px;
+        width: 100%;
+    }
+
+    .des {
+        text-align: justify;
+        padding-right: 20px;
+    }
+
+    #food {
+        height: 80vh;
+        width: 99%;
+        padding-left: 5px;
+        opacity: 1;
+    }
+
+
+}

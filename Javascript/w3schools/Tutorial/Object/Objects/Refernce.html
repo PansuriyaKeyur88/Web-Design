@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refence Html</title>
+</head>
+<body>
+    
+    <script>
+
+        const person={
+            firstName:"keyur",
+            lastName:"pansuriya"
+        };
+
+        Object.defineProperty(person,"lastName",{value:"Pansuriya"}); // Change Value 
+
+        document.write(person.lastName); 
+
+        // Object.defineProperties(person,"lastName",{enumerable:false})
+
+        document.write("<br>",Object.getOwnPropertyNames(person)); // Check Property Name
+
+        Object.defineProperty(person,"Age",{value:"18"}); // Adding Value
+
+        document.write(person.Age); 
+
+       
+
+    </script>
+</body>
+</html>

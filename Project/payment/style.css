@@ -1,0 +1,13 @@
+
+body
+{
+  text-transform: capitalize;
+  font-style:normal;
+  font-weight: bold;
+}
+
+.style
+{
+    background-color: aliceblue;
+    padding: 10px;
+} 

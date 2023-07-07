@@ -1,0 +1,105 @@
+@media only screen and (max-device-width:650px) and (min-device-width:200px) {
+    .food-first {
+        display: grid;
+    }
+
+    .edit {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .edit h1,
+    p {
+        text-align: center;
+    }
+
+    .btn-group {
+        left: 30%;
+    }
+
+    .dec {
+        text-align: center;
+        margin-bottom: 8vh;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .foot {
+        width: 100%;
+    }
+
+    .foot h1,
+    p {
+        text-align: center;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .blog h1 {
+        text-align: center;
+    }
+
+    .tag {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tag h1 {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-device-width:1000px) and (min-device-width:651px) {
+    .food-first {
+        display: grid;
+    }
+
+    .edit {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .btn-group {
+        left: 38%;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .foot {
+        width: 100%;
+    }
+
+    .foot h1,
+    p {
+        text-align: center;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .blog h1 {
+        text-align: center;
+    }
+
+    .tag {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tag h1 {
+        text-align: center;
+    }
+
+
+}

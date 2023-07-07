@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Walking The Dom</title>
+</head>
+<body>
+    <div class="first" name="serch">
+        <h1>Keyur Pansuriya</h1>
+        <h1>Shyam</h1>
+        <h3>Raj</h3>
+        <h4>Ram</h4>
+    </div>
+    <div class="first">
+        <h1>Deep Pansuriya</h1>
+    </div>
+    <div class="first">
+        <h1>Sneha Pansuriya</h1>
+    </div>
+    <script>
+        console.log(document.body.firstChild)
+        console.log(document.body.lastChild)
+        console.log(document.body.nextSibling)
+        let a=document.body.getElementsByClassName("first")[0]
+        console.log(a.parentNode)
+        console.log(a.parentElement)
+        let b=prompt("ENter your Color")
+        document.write(b)
+
+        // Serching Of Dom // 
+
+        console.log(document.getElementsByClassName("first")[0].style.color="red");
+        console.log(document.getElementById("Third").style.color="green")
+
+        let k= document.querySelectorAll(".first")
+        k[0].style.color="red";
+        k[1].style.color="blue";
+        k[2].style.color="green";
+
+        let k=document.getElementsByTagName("h1")[2].style.color="red";
+
+        let k=document.getElementsByName("serch")[0].style.color="red";
+
+    </script>
+</body>
+</html>

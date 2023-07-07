@@ -1,0 +1,131 @@
+@media only screen and (max-device-width:600px) and (min-device-width:200px) {
+
+    .text {
+        margin-right: 5vw;
+    }
+
+    .filter button{
+        width: 20%;
+    }
+
+    .downlond h4 {
+        width: 60%;
+    }
+
+    .look{
+        display: grid;
+    }
+
+    .look img{
+        margin-bottom: 10px;
+    }
+
+    .look img{
+        width: 100%;
+    }
+
+    .about p{
+        text-align: justify;
+    }
+
+    .hor{
+        display: grid;
+    }
+
+    .box-01 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .box-02 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .box-03 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .message h1{
+        width: 60%;
+    }
+
+    .btn-group {
+        left: 25%;
+    }
+
+    .size{
+        height:10vh;
+    }
+
+    .size-01{
+        height: 10vh;
+    }
+
+    .contact h4{
+        font-size: 10px;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .foot {
+        width: 100%;
+    }
+
+    .foot h1,
+    p {
+        text-align: center;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .blog h1 {
+        text-align: center;
+    }
+
+    .tag {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tag h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-device-width:1000px) and (min-device-width:601px) {
+
+    .filter button{
+        width: 30%;
+    }
+
+    .downlond h4 {
+        width: 40%;
+    }
+
+    .message h1{
+        width: 40%;
+    }
+
+    .btn-group {
+        left: 30%;
+    }
+
+    .size{
+        height:10vh;
+    }
+
+    .size-01{
+        height: 10vh;
+    }
+
+    .contact h4{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,25 @@
+.k
+{
+    background-color: rgb(92, 189, 92);
+    height: 150px;
+    color: aliceblue; 
+    margin: 100px;
+    padding: 75px;
+    height: 50px;  
+    width: 950px; 
+}
+
+.shaym
+{
+    background: whitesmoke;
+    text-transform: capitalize;
+    margin: 100px;
+    padding: 75px;
+    font-weight: bold;
+    width: 950px;
+}
+
+.html
+{
+    height: 5px;
+}
