@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Document</title>
+</head>
+<body>
+    <!-- Tag Name Use -->
+    <h1></h1>
+    <button type="button" onclick="myfunction()">Click</button>
+    <h1></h1>
+    <!-- By Class Name Use -->
+    <h1 class="demo"></h1>
+
+    <script>
+        document.body.getElementsByTagName("h1")[0].innerHTML="keyur";
+
+        function myfunction()
+        {
+           return document.body.getElementsByTagName("h1")[1].innerHTML="keyur";
+        }
+
+        document.body.getElementsByClassName("demo")[0].innerHTML="Pansuriya";
+    </script>
+</body>
+</html>
