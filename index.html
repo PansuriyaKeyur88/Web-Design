@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <title>12 Jun 2023</title>
+  <title>Web Design</title>
   <style>
     body {
       background: url(https://media.zicxa.com/5065813);
@@ -34,6 +34,13 @@
 
     .Javascript {
       margin-left: 17vw;
+    }
+
+    #task{
+      position: absolute;
+      left: 43%;
+      top: 35%;
+      width:14vw;
     }
 
     #HTML {
@@ -75,17 +82,18 @@
       box-shadow: 1px 10px 20px rgba(250, 251, 251, 0.64);
     }
 
-    @media only screen and (max-device-width:300px) and (min-device-width:200px) {
+    @media only screen and (max-device-width:359px) and (min-device-width:200px) {
       body {
-        background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
+        background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
         background-repeat: no-repeat;
         background-size: cover;
+        height:30vh;
       }
 
       .button {
         display: grid;
-        margin-left: 15vw;
-        margin-top: 5vh;
+        margin-left:10vw;
+      margin-top: 5vh;
       }
 
       .project {
@@ -97,13 +105,20 @@
       }
 
       .edit {
-        width: 30vh;
+        width: 20vh;
+      }
+
+      #task{
+        position: relative;
+        top: 14%;
+        left: 18%;
+        width:20vh;
       }
     }
 
-    @media only screen and (max-device-width:500px) and (min-device-width:301px) {
+    @media only screen and (max-device-width:500px) and (min-device-width:360px) {
       body {
-        background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
+        background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -123,21 +138,29 @@
       }
 
       .edit {
-        width: 30vh;
+        width: 26vh;
+      }
+
+      #task{
+        position: absolute;
+        top:10%;
+        left: 30%;
+        width:20vh;
       }
     }
 
     @media only screen and (max-device-width:700px) and (min-device-width:501px) {
       body {
-        background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
+        background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
         background-repeat: no-repeat;
         background-size: cover;
+        height: 50vh;
       }
 
       .button {
         display: flex;
         margin-left: 16vw;
-        margin-top: 18vh;
+        margin-top: 25vh;
       }
 
       .project {
@@ -149,21 +172,29 @@
       }
 
       .edit {
-        width: 34vh;
+        width: 25vh;
+      }
+
+      #task{
+        position: absolute;
+        top:25%;
+        left: 40%;
+        width:20vh;
       }
     }
 
     @media only screen and (max-device-width:1000px) and (min-device-width:701px) {
       body {
-        background: url(https://media.zicxa.com/5065813);
+        background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80);
         background-repeat: no-repeat;
         background-size: cover;
+        height: 50vh;
       }
 
       .button {
         display: flex;
-        margin-left: 25vw;
-        margin-top: 40vh;
+        margin-left: 16vw;
+        margin-top: 15vh;
       }
 
       .project {
@@ -177,6 +208,13 @@
       .edit {
         width: 25vw;
       }
+
+      #task{
+        position: absolute;
+        top:15%;
+        left: 34%;
+        width: 15vh;
+      }
     }
   </style>
 </head>
@@ -184,6 +222,7 @@
 <body>
   <!-- HTML AND CSS Project -->
   <h1>Sulok Digital Solutions PVP Ltd</h1>
+  <a class="btn btn-light edit" id="task" href="./task/task.html" target="_blank" role="button">Task</a>
   <div class="button">
     <nav class="navbar">
       <div class="container-fluid project">

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Changing CSS</title>
+</head>
+
+<body>
+
+    <p id="demo1">Keyur Pansuriya</p>
+
+    <button id="demo" type="button" onclick="myfunction()">click</button>
+    <button id="demo" type="button" onclick="fu()">Click To Color Black</button>
+    <p id="demo2">My function</p>
+
+    <script>
+        let a = document.getElementById("demo1");
+        a.style.color = "red";
+        a.style.fontSize = "10vh";
+        a.style.fontFamily = "Arial";
+
+        function myfunction() {
+            document.getElementById("demo2").style.color = "green";
+        }
+
+        function fu() {
+            document.getElementById("demo2").style.color = "black";
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
