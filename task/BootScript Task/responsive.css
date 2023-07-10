@@ -1,0 +1,878 @@
+/* Moblie View */ 
+
+@media only screen and (max-device-width:549px) and (min-device-width:200px) {
+
+    .navbar {
+        background-color: rgb(15, 23, 50, .80);
+    }
+
+    .picture {
+        width: 130%;
+        height: 200vh;
+        background-position: center;
+    }
+
+    .navbar-nav {
+        margin-left: 1vw;
+    }
+
+    .nav-link {
+        color: white;
+        margin-left: 1px;
+        font-size: 2.3vh;
+    }
+
+    .first-btn {
+        width: 15vh;
+        color: white;
+        margin-left: 1px;
+        border-radius: 0px;
+    }
+
+    .flex {
+        display: grid;
+        position: absolute;
+        top: 15%;
+        left: 28%;
+        width: 100%;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+    .title h5 {
+        margin-top: 20px;
+        width: auto;
+        text-align: justify;
+        word-spacing: 2px;
+    }
+
+    .second-btn {
+        border-radius: 0px;
+        width: 50vw;
+        margin-top: 20px;
+        margin-left: 3vh;
+    }
+
+    .hero img {
+        margin-top: 5vh;
+        height: 50vh;
+        margin-left: -7vh;
+    }
+
+    .master {
+        margin-left: 1vh;
+        width: 100%;
+    }
+
+    .merge {
+        display: grid;
+    }
+
+    .about {
+        padding-left: 1px;
+        margin-bottom: 5vh;
+    }
+
+    .first img {
+        height: 25vh;
+        margin-left:-2vh;
+    }
+
+    .second img {
+        height: 15vh;
+        margin-left: 10px;
+        margin-top: 10vh;
+    }
+
+    .third img {
+        height: 15vh;
+        margin-top: 10px;
+        margin-left: 15vw;
+    }
+    
+    .fourth img {
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 25vh;
+    }
+
+    .personal {
+        display: grid;
+        width: 100%;
+    }
+
+    .number h1 {
+        font-size: 6vh;
+    }
+
+    .year{
+        margin-top:-2vh;
+    }
+
+    .year p {
+        font-size: 1vh;
+        margin-left: 30px;
+    }
+    
+    .year h5 {
+        margin-top: -2vh;
+        padding-left: 20px;
+        font-size: 1vh;
+        position: static;
+    }
+
+    .box {
+        left: 10%;
+    }
+
+    .box-01 {
+        display: flex;
+        padding-left: 10px;
+    }
+
+    .info {
+        padding-left:1vh;
+    }
+    
+    .grid{
+        display: grid;
+    }
+
+    .menu{
+        width: 110%;
+    }
+
+    .m-info p {
+        margin-top: -10px;
+        font-style: italic;
+        font-size: 1.5vh;
+    }
+
+    .list{
+        margin-bottom: -20vh;
+    }
+
+    .ad {
+        display: grid;
+        margin-bottom: 55vh;
+    }
+
+    .video {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .video video{
+        margin-bottom: 10vh;
+    }
+
+    .form {
+        width: 100%;
+        margin-bottom: -10vh;
+        margin-left: 2vh;
+    }
+
+    #name {
+        width: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    #email{
+        width: 20vh;
+        margin-bottom: 2vh;
+    }
+    
+    #date{
+        width: 20vh;
+        margin-top: 0vh;
+    }
+
+    #number{
+        width: 20vh;
+    }
+
+    #req{
+        width: 35vh;
+    }
+
+    .fourth-btn{
+        width: 20vh;
+    }
+
+    .test{
+        display: grid;
+    }
+
+    .test-1{
+        margin-top: 5vh;
+    }
+
+    .p-3{
+        margin-top: 5vh;
+        margin-left: 5vh;
+    }
+
+    .test{
+        margin-bottom: -10vh;
+    }
+
+    .test-1{
+
+        margin-left: 5vh;
+    }
+    
+    .cust{
+        padding-top: 10px;
+    }
+
+    .round{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        margin-left: 3vh;
+    }
+
+    .foot {
+        display: grid;
+    }
+
+    .color{
+        width: 130%;
+    }
+
+    .com {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .cont {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .opening {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .news {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    #mail {
+        height: 8vh;
+        width: 90%;
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 3vh;
+    }
+
+    #sign {
+        left: 100%;
+        margin-top: 1vh;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .copy {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav ul li{
+        padding-left: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-device-width:768px) and (min-device-width:550px) {
+
+    .navbar {
+        background-color: rgb(15, 23, 50, .80);
+    }
+
+    .picture {
+        width: 130%;
+        height: 180vh;
+        background-position: center;
+    }
+
+    .navbar-nav {
+        margin-left: 1vw;
+    }
+
+    .nav-link {
+        color: white;
+        margin-left: 1px;
+        font-size: 2.3vh;
+    }
+
+    .first-btn {
+        width: 10vh;
+        color: white;
+        margin-left: 1px;
+        border-radius: 0px;
+    }
+
+    .flex {
+        display: grid;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        width: 100%;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+    .title h5 {
+        margin-top: 20px;
+        width: auto;
+        text-align: center;
+        word-spacing: 2px;
+    }
+
+    .second-btn {
+        border-radius: 0px;
+        width: 30vw;
+        margin-top: 20px;
+        margin-left: 10vh;
+    }
+
+    .hero img {
+        margin-top: 5vh;
+        height: 70vh;
+        margin-left: -7vh;
+    }
+
+    .master {
+        margin-left: 1vh;
+        width: 100%;
+    }
+
+    .merge {
+        display: grid;
+    }
+
+    .about {
+        padding-left: 1px;
+        margin-bottom: 5vh;
+    }
+
+    .first img {
+        height: 25vh;
+        margin-left:-2vh;
+    }
+
+    .second img {
+        height: 15vh;
+        margin-left: 10px;
+        margin-top: 10vh;
+    }
+
+    .third img {
+        height: 15vh;
+        margin-top: 10px;
+        margin-left: 15vw;
+    }
+    
+    .fourth img {
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 25vh;
+    }
+
+    .personal {
+        display: grid;
+        width: 100%;
+    }
+
+    .number h1 {
+        font-size: 6vh;
+    }
+
+    .year{
+        margin-top:-2vh;
+    }
+
+    .year p {
+        font-size: 2vh;
+        margin-left: 30px;
+    }
+    
+    .year h5 {
+        margin-top: -2vh;
+        padding-left: 20px;
+        font-size: 2vh;
+        position: static;
+    }
+
+    .box {
+        left: 5%;
+    }
+
+    .box-01 {
+        display: flex;
+        padding-left: 0px;
+    }
+
+    .info {
+        padding-left:1px;
+    }
+    
+    .grid{
+        display: grid;
+    }
+
+    .menu{
+        width: 110%;
+    }
+
+    .m-info p {
+        margin-top: -10px;
+        font-style: italic;
+        font-size: 1.5vh;
+    }
+
+    .ad {
+        display: grid;
+        margin-bottom: 65vh;
+    }
+
+    .video {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .form {
+        width: 100%;
+        padding-left: 50px;
+        margin-bottom: -10vh;
+    }
+
+    .top{
+        text-align: center;
+    }
+
+    #name {
+        width: 40vh;
+        margin-bottom: 2vh;
+    }
+
+    #email{
+        width: 40vh;
+        margin-bottom: 2vh;
+    }
+    
+    #date{
+        width: 40vh;
+        margin-top: 0vh;
+    }
+
+    #number{
+        width: 40vh;
+    }
+
+    #req{
+        width: 40vh;
+    }
+
+    .fourth-btn{
+        width: 20vh;
+    }
+
+    .test{
+        display: grid;
+    }
+
+    .test-1{
+        margin-top: 5vh;
+    }
+
+    .p-3{
+        margin-top: 5vh;
+    }
+
+    .color{
+        width: 130%;
+    }
+    
+    .cust{
+        padding-top: 10px;
+    }
+
+    .foot {
+        display: grid;
+    }
+
+    .com {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .cont {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .opening {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .news {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    #mail {
+        height: 10vh;
+        width: 90%;
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 3vh;
+    }
+
+    #sign {
+        left: 100%;
+        margin-top: 1vh;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .copy {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav ul li{
+        padding-left: 10px;
+    }
+}
+
+/* Desktop Size */
+
+@media only screen and (max-device-width:991px) and (min-device-width:768px) {
+
+    .navbar {
+        background-color: rgb(15, 23, 50, .80);
+    }
+
+    .picture {
+        width: 180%;
+        height: 110vh;
+        background-position: center;
+    }
+
+    .navbar-nav {
+        margin-left: 1vw;
+    }
+
+    .nav-link {
+        color: white;
+        margin-left: 1px;
+        font-size: 2.3vh;
+    }
+
+    .first-btn {
+        width: 20vh;
+        color: white;
+        margin-left: 1px;
+        border-radius: 0px;
+    }
+
+    .flex {
+        display: flex;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        width: 100%;
+    }
+
+    .title h1 {
+        text-align: left;
+    }
+
+    .title h5 {
+        margin-top: 20px;
+        width: auto;
+        text-align: left;
+        word-spacing: 2px;
+    }
+
+    .second-btn {
+        border-radius: 0px;
+        width: 30vw;
+        margin-top: 20px;
+        margin-left: 1vh;
+    }
+
+    .hero img {
+        margin-top: 5vh;
+        height: 70vh;
+        margin-left: 10vh;
+    }
+
+    .master {
+        left: 95%;
+        width: 100%;
+    }
+
+    .merge {
+        display: grid;
+    }
+
+    .about {
+        padding-left: 50vh;
+        margin-bottom: 5vh;
+    }
+
+    .third img{
+        margin-left: 20vh;
+    }
+   
+    .personal {
+        display: flex;
+        width: 100%;
+    }
+
+    .number h1 {
+        font-size: 10vh;
+    }
+
+    .year{
+        margin-top:-2vh;
+    }
+
+    .year p {
+        font-size: 3vh;
+        margin-left: 30px;
+    }
+    
+    .year h5 {
+        margin-top: -2vh;
+        padding-left: 20px;
+        font-size: 3vh;
+        position: static;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .box-01 {
+        display: flex;
+        padding-left: 30px;
+    }
+
+    .info {
+        padding-left:1px;
+    }
+    
+    .grid{
+        display: grid;
+        width: 100%;
+    }
+
+    .list{
+        margin-left: 10vh;
+        width: 100%;
+    }
+
+    .menu{
+        width: 130%;
+    }
+
+    .pic img{
+        height: 30vh;
+    }
+
+    .m-info{
+        width: 100%;
+    }
+
+    .m-info h5{
+        font-size: 5vh;
+    }
+
+    .m-info span{
+        margin-left: 15vh;
+    }
+
+    .m-info p {
+        margin-top: -10px;
+        font-style: italic;
+        font-size: 4vh;
+    }
+
+    .ad {
+        display: grid;
+        margin-bottom: 65vh;
+    }
+
+    .video {
+        width: 90%;
+        margin-bottom: 2vh;
+        margin-left: 40vh;
+    }
+
+    .form {
+        width: 90%;
+        padding-left: 50px;
+        margin-bottom: -10vh;
+        height: 70vh;
+        margin-left: 40vh;
+    }
+
+    .top{
+        text-align: center;
+    }
+
+    #name {
+        width: 60vh;
+        margin-bottom: 2vh;
+    }
+
+    #email{
+        width: 60vh;
+        margin-bottom: 2vh;
+    }
+    
+    #date{
+        width: 60vh;
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    #number{
+        width: 60vh;
+    }
+
+    #req{
+        width: 120vh;
+    }
+
+    .fourth-btn{
+        width: 120vh;
+    }
+
+    .test{
+        display: grid;
+    }
+
+    .test-1{
+        margin-top: 5vh;
+    }
+
+    .p-3{
+        margin-top: 5vh;
+    }
+    
+    .cust{
+        padding-top: 10px;
+    }
+
+    .color{
+        width: 180%;
+    }
+
+    .foot {
+        display: flex;
+    }
+
+    .com {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .cont {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .opening {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .news {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    #mail {
+        height: 10vh;
+        width: 90%;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    #sign {
+        left: 165%;
+        margin-top: 1vh;
+    }
+
+    .last {
+        display: grid;
+    }
+
+    .copy {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav ul li{
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-device-width:1329px) and (min-device-width:992px) {
+
+    .picture {
+        width: 105%;
+    }
+
+    .nav-link {
+        margin-left: 5vh;
+    }
+
+    .first-btn {
+        width: 10vw;
+    }
+
+    .color{
+        width: 105%;
+    }
+}
