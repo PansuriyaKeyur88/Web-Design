@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HTML DOM EventListener</title>
+    <style>
+        #myDIV {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- // AddEvenListener() -->
+
+    <button id="btn">TRY IT</button>
+
+    <h1 id="demo"></h1>
+
+    <!-- 2nd Example -->
+
+    <button id="mybtn">Click</button>
+
+    <!-- 3rd Example -->
+    <br><br>
+    <button id="touch">Button</button>
+
+    <!-- 4th Example -->
+    <br><br>
+    <button id="Button">try it</button>
+    <p id="text"></p>
+
+    <p>Try resizing this browser window to trigger the "resize" event handler.</p>
+
+    <p id="demo2"></p>
+
+
+    <div id="myDIV">
+        <p>This div element has an onmousemove event handler that displays a random number every time you move your
+            mouse inside this orange field.</p>
+        <p>Click the button to remove the div's event handler.</p>
+
+        <button onclick="removeHandler()" id="mybtn">Remove</button>
+
+        <p id="demo3"></p>
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click", touch); // AddEvenlisner in must be wri
+
+        function touch() {
+            document.getElementById("demo").innerHTML = new Date();
+        }
+
+        document.getElementById('mybtn').addEventListener("click", function () {
+            alert("Hello");
+        })
+
+        let x = document.getElementById("touch");
+        x.addEventListener("click", myfun);
+        x.addEventListener("click", some);
+
+        function myfun() {
+            alert("Hello Word");
+        }
+
+        function some() {
+            alert("First Function was also executed");
+        }
+
+        let y = document.getElementById("Button");
+        y.addEventListener("mouseover", over);
+        y.addEventListener("mouseout", out);
+        y.addEventListener("click", click);
+
+        function over() {
+            document.getElementById("text").innerHTML += "Mouse Over <br>";
+        }
+
+        function out() {
+            document.getElementById("text").innerHTML += "Mouse Out The Box <br>";
+        }
+
+        function click() {
+            document.getElementById("text").innerHTML += "Mouse Click <br>";
+        }
+
+        window.addEventListener("resize", function () {
+            document.getElementById("demo3").innerHTML = Math.random();
+        });
+
+        document.getElementById("myDIV").addEventListener("mousemove",myfunction);
+
+        function myfunction() {
+            document.getElementById("demo3").innerHTML = Math.random();
+        }
+
+        function removeHandler() {
+            document.getElementById("myDIV").removeEventListener("mousemove",myfunction)
+        }
+    </script>
+</body>
+
+</html>

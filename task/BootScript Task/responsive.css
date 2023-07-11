@@ -1,6 +1,6 @@
 /* Moblie View */ 
 
-@media only screen and (max-device-width:549px) and (min-device-width:200px) {
+@media only screen and (max-device-width:549px) and (min-device-width:330px) {
 
     .navbar {
         background-color: rgb(15, 23, 50, .80);
@@ -151,12 +151,12 @@
     }
 
     .list{
-        margin-bottom: -20vh;
+        margin-bottom: -2vh;
     }
 
     .ad {
         display: grid;
-        margin-bottom: 55vh;
+        margin-bottom: 40vh;
     }
 
     .video {
@@ -170,8 +170,9 @@
 
     .form {
         width: 100%;
-        margin-bottom: -10vh;
+        margin-bottom: -5vh;
         margin-left: 2vh;
+        height: 65vh;
     }
 
     #name {
@@ -462,6 +463,7 @@
         width: 100%;
         padding-left: 50px;
         margin-bottom: -10vh;
+        height: 70vh;
     }
 
     .top{
@@ -583,7 +585,7 @@
     }
 
     .picture {
-        width: 180%;
+        width: 230%;
         height: 110vh;
         background-position: center;
     }
@@ -647,7 +649,9 @@
     }
 
     .about {
-        padding-left: 50vh;
+        position: relative;
+        left: 50%;
+        width: 100%;
         margin-bottom: 5vh;
     }
 
@@ -690,7 +694,7 @@
     }
 
     .info {
-        padding-left:1px;
+        padding-left:10px;
     }
     
     .grid{
@@ -698,8 +702,21 @@
         width: 100%;
     }
 
+    .us{
+        position: relative;
+        left: 50%;
+        width: 100%;
+    }
+
+    .item{
+        position: relative;
+        left: 50%;
+        width: 100%;
+    }
+
     .list{
-        margin-left: 10vh;
+        position: relative;
+        left: 50%;
         width: 100%;
     }
 
@@ -730,22 +747,24 @@
     }
 
     .ad {
+        margin-top: 5vh;
         display: grid;
-        margin-bottom: 65vh;
+        margin-bottom: 100vh;
+        position: relative;
+        left: 50%;
     }
 
     .video {
-        width: 90%;
+        width: 100%;
         margin-bottom: 2vh;
-        margin-left: 40vh;
+        margin-left: 10px;
     }
 
     .form {
-        width: 90%;
+        width: 100%;
         padding-left: 50px;
         margin-bottom: -10vh;
         height: 70vh;
-        margin-left: 40vh;
     }
 
     .top{
@@ -840,6 +859,21 @@
         margin-top: 1vh;
     }
 
+    .image{
+        position: relative;
+        left: 50%;
+    }
+
+    .t{
+        position: relative;
+        left: 50%; 
+    }
+
+    .test{
+        position: relative;
+        left: 50%;
+    }
+
     .last {
         display: grid;
     }
@@ -861,7 +895,8 @@
 @media only screen and (max-device-width:1329px) and (min-device-width:992px) {
 
     .picture {
-        width: 105%;
+        width: 130%;
+
     }
 
     .nav-link {
@@ -873,6 +908,6 @@
     }
 
     .color{
-        width: 105%;
+        width: 150%;
     }
 }
