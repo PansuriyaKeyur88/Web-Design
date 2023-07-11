@@ -208,7 +208,7 @@ body {
     padding-left: 20px;
     font-size: 3vh;
     position: absolute;
-    top: 180%;
+    top: 166%;
 }
 
 .popular {
@@ -227,7 +227,6 @@ body {
 }
 
 /* Most Popluar Item */
-
 
 .def h5 {
     font-family: 'Pacifico', cursive;
@@ -289,7 +288,6 @@ body {
     margin-top: 2vh;
 }
 
-
 .pic img {
     padding-right: 10px;
 }
@@ -314,12 +312,11 @@ body {
 .ad {
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: 56.1vh;
 }
 
 .video video {
     width: 100%;
-    height: 60vh;
 }
 
 .video {
@@ -329,8 +326,9 @@ body {
 .form {
     width: 50%;
     padding-left: 50px;
-     background-color: black;
-     color: white;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
 }
 
 .form h4 {
@@ -380,7 +378,6 @@ body {
     width: 60vh;
     margin-top: 10px;
     border-radius: 0px;
-    margin-bottom: 20px;
     background-color: orange;
     color: white;
 }

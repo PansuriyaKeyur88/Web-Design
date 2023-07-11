@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        #demo{
+            background:black;
+            color:white;
+            font-size: 4vh;
+            margin-top: -1vh;
+            text-align: center;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Events</h1>
+    <!-- inline use events -->
+    <h1 onclick="this.innerHTML= 'Keyur Pansuriya'">Keyur [Click]</h1>
+    <h1 onclick="changetext(this)" >Keyur[Click]</h1>
+
+    <button onclick="touch(this)">Click</button>
+
+    <!-- date function -->
+    <br>
+    <br>
+    <button onclick="date(this)">Click</button>
+    <br>
+    <br>
+    <button id="mybtn">Try it</button>
+    <br><br>
+    <p id="demo"></p>
+    <br>
+
+    <!-- Mouse Hover -->
+
+    <p id="demo1" onmouseover="t(this)"
+    style="color: white;background-color: red
+    ;width: 20%;text-align: center;height: 5vh;
+    padding-top: 2vh;">Mouse Over Me</p>
+
+    <!-- The onmousedown, onmouseup and onclick Events -->
+    
+    <div onmousedown="down(this)" onmouseup="up(this)" style="background-color:#f82206;width:90px;height:20px;padding:40px;color: white;font-size: 2vh;">Click Me</div>
+
+    <script>
+
+        // function Events
+
+        function changetext(a)
+        {
+            a.innerHTML="Keyur Pansuriya";
+        }
+
+        // Function use button
+
+        function touch(b)
+        {
+            b.innerHTML="Hello";
+        }
+
+        // Function Use Date
+
+        function date(time)
+        {
+            time.innerHTML=new Date();
+        }
+
+        // Function use mybtn
+
+        document.getElementById("mybtn").onclick=date;
+
+        function date()
+        {
+           document.getElementById("demo").innerHTML=new Date();
+        //    let a= document.getElementById("demo");
+        //    a.style.color="Red";
+        //    a.style.background="black";
+        //    a.style.width="20vw";
+        //    a.style.height="8vh";
+        }
+
+        // Mouse Hover
+
+        function t(keyur)
+        {
+            keyur.innerHTML="Thank You";
+            let a=document.getElementById("demo1");
+        }
+
+        // <!-- The onmousedown, onmouseup and onclick Events -->
+
+        function down(obj)
+        {
+            obj.innerHTML="Sorry";
+            obj.style.backgroundColor = "#1ec5e5";
+        }
+
+        function up(obj)
+        {
+            obj.innerHTML="Thank You";
+            obj.style.backgroundColor="red";
+        }
+    
+
+    </script>
+</body>
+</html>
