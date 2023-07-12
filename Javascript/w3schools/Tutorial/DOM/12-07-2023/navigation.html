@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HTML DOM Navigation</title>
+</head>
+<body>
+    <h1 id="i101">My First Page</h1>
+    <p id="i102"></p>
+
+    <p id="101">Keyur</p>
+    <h1 id="102"></h1>
+
+    <p id="demo">First Page</p>
+    <p id="demo2"></p>
+
+    <h1 id="node"> Page </h1>
+    <h1 id="node1"></h1>
+
+    <script>
+        document.getElementById("i102").innerHTML=document.getElementById("i101").innerHTML;
+
+        document.getElementById("102").innerHTML=document.getElementById("101").firstChild.nodeValue;
+
+        document.getElementById("demo2").innerHTML=document.getElementById("demo").childNodes[0].nodeValue;
+
+        document.getElementById("node1").innerHTML=document.getElementById("node").nodeName;
+    </script>
+    
+</body>
+</html>
