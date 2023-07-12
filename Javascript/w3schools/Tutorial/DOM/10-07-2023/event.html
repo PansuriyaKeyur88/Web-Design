@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        .btn
+        {
+            background-color: red;
+            width:90px;
+            height:20px;
+            padding:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>javaScript touch</h1>
+    <h1 onclick="this.innerHTML='Pansuriya Keyur'">Keyur</h1>
+    
+    <h1 onclick="this.innerHTML='Keyur Pansuriya'">Deep Pansuriya</h1>
+
+    <button type="button" onclick="t(this)">Onclick</button>
+
+    <p id="demo"></p>
+
+    <div class="btn">
+        <button>Click Me</button>
+    </div>
+
+    <script>
+
+        function t(id){
+                id.innerHTML="Opps!"
+        }
+
+        function cooks()
+        {
+            var text="";
+            if(navigator.cookieEnabled = true)
+            {
+                text="Cookies Are enable";
+            }
+            else
+            {
+                text="Cookies Are Not enable"
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+
+    </script>
+    
+</body>
+</html>
