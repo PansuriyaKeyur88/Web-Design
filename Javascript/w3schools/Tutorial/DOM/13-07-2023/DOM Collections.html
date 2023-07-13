@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Collections</title>
+</head>
+<body>
+    <h1>JavaScript HTML DOM</h1>
+    <p>Virat Kohli</p>
+    <p>Rohit Sharma</p>
+    <p>M.S Dhoni</p>
+    <p id="demo"></p>
+    <p>Shyam</p>
+
+    <button onclick="myfunction()">Try It</button>
+
+    <script>
+        const coll=document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML="Hardil Pandya"+ " " + coll[2].innerHTML;
+
+        document.getElementById("demo").innerHTML = "This Document Conatins " + coll.length;
+
+        function myfunction()
+        {
+            const k=document.getElementsByTagName("p");
+            for(let i=0;i<=k.length;i++)
+            {
+                k[i].style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>
