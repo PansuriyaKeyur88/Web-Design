@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements (Nodes)</title>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="demo1">Keyur</div>
+        <div class="demo2">Pansuriya</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="div1">
+        <p id="p1">This is Keyur</p>
+        <p id="p2">This is Pansuriya</p>
+    </div>
+
+    <div class="div2">
+        <p id="p101">Keyur</p>
+        <p id="p102">Pansuriya</p>
+    </div>
+
+    <button type="button" onclick="remov1()">Remove Elements</button>
+
+    <script>
+
+        function remov1() {
+            document.getElementById("p102").remove();
+                document.getElementById("p101").remove();
+        }
+
+        // Insert Element //
+
+        let a = document.createElement("h1");
+        let n = document.createTextNode("Keyur Pansuriya");
+        a.appendChild(n);
+        const k = document.getElementsByClassName("demo")[0];
+        k.appendChild(a);
+
+        // inserBefore //
+
+        let x = document.createElement("h1");
+        let y = document.createTextNode("Keyur Pansuriya");
+        x.appendChild(y);
+
+        let e = document.getElementsByClassName("div1")[0];
+        const c = document.getElementById("p1");
+        e.insertBefore(x, c);
+
+        // Remove Element //
+
+        const  parent =document.getElementsByClassName("demo")[0];
+        const child = document.getElementsByClassName("demo1")[0];
+        parent.removeChild(child);
+
+        // Replace Element //
+
+        let p =document.getElementsByClassName("div2")[0];
+        let q=document.getElementById("p101");
+        
+        let r=document.createElement("p");
+        let add=document.createTextNode("Keyur88");
+        r.appendChild(add);
+        p.replaceChild(r,q);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Location</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <button onclick="myfunction()">Google</button>
+
+    <script>
+
+        // Window Location Href //
+
+        document.getElementById("demo").innerHTML = "The Full Url of This Page id :" + window.location.href;
+
+        // Window Location host Name //
+
+        document.getElementById("demo1").innerHTML = "Page hostname is: " + window.location.hostname;
+
+        // Window Loaction Object //
+
+        document.getElementById("demo3").innerHTML = "Pade Path is :" + window.location.pathname;
+
+        // Window Page Prototype //
+
+        document.getElementById("demo4").innerHTML =
+            "The page protocol is: " + window.location.protocol;
+
+
+        function myfunction()
+        {
+            window.location.assign("https://google.com")
+        }
+
+    </script>
+</body>
+
+</html>

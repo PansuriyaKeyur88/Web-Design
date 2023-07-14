@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Window</title>
+</head>
+<body>
+    <p id="width"></p>
+    <p id="height"></p>
+    <p id="open"></p>
+
+    <script>
+        document.getElementById("width").innerHTML = 
+        window.innerWidth+"px";
+        document.getElementById("height").innerHTML = window.innerHeight+"px";
+
+        document.getElementById("open").innerHTML=window.open();
+
+    </script>
+</body>
+</html>
