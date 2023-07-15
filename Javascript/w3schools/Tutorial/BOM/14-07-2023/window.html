@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Navigator</title>
+</head>
+
+<body>
+    <p>The cookieEnabled property returns true if cookies are enabled:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>The appName property returns the application name of the browser:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>The appName property returns the application Codes of the browser:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>The product property returns the product name of the browser.</p>
+
+    <p>Do not rely on it! Most browsers returns "Gecko" as product name!</p>
+
+    <p id="demo3"></p>
+
+    <br>
+
+    <h2>The Navigator Object</h2>
+
+    <p>The appVersion property returns version information about the browser:</p>
+
+    <p id="demo4"></p>
+
+    <br>
+
+
+    <script>
+        document.getElementById("demo").innerHTML = navigator.cookieEnabled;
+
+        document.getElementById("demo1").innerHTML = navigator.appName;
+
+        document.getElementById("demo2").innerHTML = navigator.appCodeName;
+
+        document.getElementById("demo3").innerHTML = navigator.product;
+
+        document.getElementById("demo4").innerHTML = navigator.appVersion;
+
+        document.write(navigator.language);
+
+        document.write("<br>");
+
+        document.write(navigator.onLine);
+    </script>
+</body>
+
+</html>
