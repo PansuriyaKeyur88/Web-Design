@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Events</title>
+    <style>
+        #demo
+        {
+            background-color: black;
+            color: white;
+            width: 20%;
+            text-align: center;
+            font-size: 3vh;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+   <p id="demo"></p>
+   <button onclick="clearInterval(my)">Stop Time</button>
+   <button onclick="start()" >Start Time</button>
+    
+
+    <script>
+        function time()
+        {
+            let date = new Date();
+
+            document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        }
+
+        let my = setInterval(time,1000)
+
+       
+        function start()
+        {
+            let date = new Date();
+
+            document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+            setInterval(start,1000)
+        }
+
+        
+
+    </script>
+</body>
+</html>
