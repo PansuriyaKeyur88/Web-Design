@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes</title>
+</head>
+<body>
+
+    <h1>Altert Box</h1>
+    <button onclick="alert('hello\ngood mornig')">Alert</button> 
+    <br><br>
+    <h1>Confirm Box</h1>
+    <button onclick="myfunction()">Try it</button>
+    <p id="demo"></p>
+    <br>
+    <h1>Prompt Box</h1>
+    <button onclick="k()">Click</button>
+    <p id="demo1"></p>
+
+    <script>
+        function myfunction()
+        {
+            let text;
+            if (confirm("Press a Button")){
+                text="You Pressed Ok!";
+            }
+            else{
+                text="You pressed Cancel!";
+            }
+        document.getElementById("demo").innerHTML=text;
+        }
+
+        function k()
+        {
+            let text;
+            let person = prompt("Enter Your Name:")
+            if(person == null || person =="")
+            {
+                text="user cancelles the";
+            }
+            else
+            {
+                text="Hello"+" "+ person + "\n! How Are You Today?"
+            }
+
+            document.getElementById("demo1").innerHTML=text;
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
