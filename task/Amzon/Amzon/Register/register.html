@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Register Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Register in page -->
+
+    <div class="sign">
+        <div class="logo">
+            <img src="https://www.ecommanagers.com/wp-content/uploads/2020/04/e60.jpg" alt="logo" class="logo">
+        </div>
+        <div class="deta">
+            <div class="titel">
+                <h1>Create Account</h1>
+            </div>
+            <div class="input">
+                <form action="./">
+                    <br>
+                    <h4>Your Name</h4>
+                    <input type="text" id="name" required>
+                    <br><br>
+                    <h4>Mobile Number</h4>
+                    <span>
+                    <select name="p-no" id="number">
+                        <option value="+91">IN +91</option>
+                        <option value="+1">USA +1</option>
+                        <option value="+44">UK +44</option>
+                        <option value="+86">CHA +86</option>
+                        <option value="+61">AUS +61</option>
+                    </select>
+                    <input type="text" id="phone" required></span>
+                    <br><br>
+                    <h4>Email (optional)</h4>
+                    <input type="email" id="email" required>
+                    <br><br>
+                    <h4>Password</h4>
+                    <input type="password" id="password" required placeholder="At least 6 Character"><br>
+                    <br>
+                    <p> <i> </i> Password must be at least 6 Character</p>
+                    <h5>We Will Send you a yext to verfiy your phone.</h5>
+                    <h5>Message and Date retes may apply.</h5>
+                    <br>
+                    <input type="submit" value="Contiue" id="sign-in">
+                    <br><br>
+                </form>
+                <hr>
+                <h5  class="new" >Alredy have an account ? <a  href="#" onclick="back()">Sign in <i></i></a></h5>
+            </div>
+        </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="sign.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
