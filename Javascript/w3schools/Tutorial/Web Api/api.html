@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Api</title>
+</head>
+<body>
+
+    <!-- CheckValidate -->
+    <h1>JavaScript Validate</h1>
+    <p>Enter a Number And Click OK:</p>
+    <input id="demo" type="number" min="100" required>
+    <input type="button" value="OK" onclick="myfunction()">
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+    <p id="demo1"></p>
+    <br>
+
+    <h1>Range OverFlow Function</h1>
+    <p>Enter a Number And Click OK!</p>
+    <input id="id" type="number" max="300" required>
+    <input type="button" value="OK" onclick="myfunction()">
+    <p>If the number is  greater than 300, an error message will be displayed.</p>
+    <p id="id1"></p>
+    <br>
+
+    <h1>Range UnderFlow Function</h1>
+    <p>Enter a Number And Click OK!</p>
+    <input id="class" type="number" min="100" required>
+    <input type="button" value="OK" onclick="myfunction()">
+    <p>If the number is  Less than 100, an error message will be displayed.</p>
+    <p id="class1"></p>
+    <br>
+
+
+    <script>
+
+        // validate //
+
+        function myfunction()
+        {
+            const i =document.getElementById("demo");
+            if(!i.checkValidity())
+            {
+                document.getElementById("demo1").innerHTML=i.validationMessage;
+            } 
+            else{
+                document.getElementById("demo1").innerHTML="INPUT OK";
+            }
+        }
+
+        // Range OverFlow Condtion //
+
+        function myfunction()
+        {
+            let text;
+            let i=document.getElementById("id");
+
+            if(i.validity.rangeOverflow)
+            {
+                text="value Too Large";
+            }
+            else{
+                text="Input Ok";
+            }
+
+            document.getElementById("id1").innerHTML=text;
+        }
+
+        // Range UnderFlow //
+
+        function myfunction()
+        {
+            let text1;
+            let i=document.getElementById("class");
+
+            if(i.validity.rangeUnderflow)
+            {
+                text="value Too Small";
+            }
+            else{
+                text="Input Ok";
+            }
+
+            document.getElementById("class1").innerHTML=text;
+        }
+
+    </script>
+</body>
+</html>

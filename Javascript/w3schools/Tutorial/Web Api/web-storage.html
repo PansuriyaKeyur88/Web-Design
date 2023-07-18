@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage API</title>
+</head>
+
+<body>
+    <h1>Setitem() Method</h1>
+    <br>
+    <p>The localStorage.setItem() method stores a data item in a storage.It takes a name and a value as parameters:</p>
+    <p id="demo"></p>
+
+    <br>
+    <h1>Getitem()</h1>
+    <p id="demo1"></p>
+
+    <script>
+        localStorage.setItem("name", "Keyur Pansuriya");
+        document.getElementById("demo").innerHTML = localStorage.getItem("name");
+
+
+        sessionStorage.setItem("name", "keyur"); document.getElementById("demo1").innerHTML = sessionStorage.getItem("name");
+
+
+    </script>
+</body>
+
+</html>

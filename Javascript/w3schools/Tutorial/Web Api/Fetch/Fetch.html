@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Api</title>
+</head>
+<body>
+    <h1>Fetch API</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        // 1.Method //
+
+       //  let k = "fetch_info.txt";
+
+        // fetch(k)
+        // .then(x => x.text())
+        // .then(y => document.getElementById("demo").innerHTML = y);
+
+        
+        // fetch("fetch_info.txt")
+        // .then (x=>x.text())
+        // .then (y=>document.getElementById("demo").innerHTML=y);
+
+        // 2.Method //
+
+        j("fetch_info.txt");
+        
+        async function j(file)
+        {
+            let x = await fetch(file);
+            let y = await x.text();
+
+            document.getElementById("demo").innerHTML = y;
+        }
+
+        
+    </script>
+</body>
+</html>
