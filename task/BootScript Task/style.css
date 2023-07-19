@@ -204,11 +204,9 @@ body {
 }
 
 .year h5 {
-    margin-top: 10px;
     padding-left: 20px;
     font-size: 3vh;
-    position: absolute;
-    top: 166%;
+    margin-top: -4rem;
 }
 
 .popular {

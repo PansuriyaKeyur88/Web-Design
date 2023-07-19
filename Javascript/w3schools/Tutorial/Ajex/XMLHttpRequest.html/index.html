@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - XMLHttpRequest</title>
+</head>
+
+<body>
+    <h1>AJAX - XMLHttpRequest</h1>
+    <button type="button" onclick="loadDoc()">Request data</button>
+    <p id="demo"></p>
+
+    <script>
+
+        function loadDoc()
+        {
+            let a = new XMLHttpRequest;
+            a.onreadystatechange=function()
+            {
+                if (this.readyState ==4 && this.status==200)
+                {
+                document.getElementById("demo").innerHTML = this.responseText;
+                }
+                else if (this.readyState == 4 && this.status == 404)
+                {
+                    document.getElementById("demo").innerHTML ="Not Response File";
+                }
+            };
+            a.open("GET","k.json")
+            a.send();
+        }
+
+    </script>
+</body>
+
+</html>
