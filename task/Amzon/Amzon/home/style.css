@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+
+/* 1St Navbar */
+
+.nav{
+    background-color: black;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.logo{    
+    margin-top: 10px;
+    height: 8vh;
+    margin-left: 18px;
+    padding-left: 5px;
+}
+
+.logo:hover{
+    border: 2px solid white;
+}
+
+.logo img{
+    width: 60%;
+    height: 2.5vh;
+    margin-left: 20px;
+}
+
+.prime{
+    color: white;
+}
+
+.address{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.address span{
+    padding-left: 10px;
+}
+
+.serch {
+    margin-top: 10px;
+    display: flex;
+}
+
+.serch input{
+    margin-top: 12px;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 105vh;
+    height: 5vh;
+    padding-left: 10px;
+    font-size: 2vh;
+}
+
+.icon i {
+    margin-top: 13px;
+    margin-left: -47px;
+    height: 4.8vh;
+    font-size: 3vh;
+    background-color:orange;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
+    width: 7vh;
+    text-align: center;
+}
+
+#language{
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    font-size: 2.5vh;
+    margin-left: 20px;
+    padding: 10px 10px;
+}
+
+#language:hover{
+    border: 2px solid white;
+    padding: 10px 10px;
+}
+
+.account{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+.order{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.shopping{
+    margin-top: 16px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shop-icon{
+    font-size: 5vh;
+}
+
+.cart h5{
+    padding-top: 4vh;
+    padding-left: 1vh;
+}
+
+
+/* 2nd Navbar */
+
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.fa-sliders{
+    font-size: 4vh;
+}
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.service{
+    position: absolute;
+    left: 2%;
+}
+
+.service ul{
+    display: flex;
+    margin-top: 4vh;
+}
+
+.service ul li{
+    list-style: none;
+    padding-left: 28px;
+}
+
+.service ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vh
+}
+
+.service ul li a:hover{
+    color: orange;
+}
+
+.service-parts{
+    width: 50%;
+}
+
+.prime-logo img{
+    width: 50%;
+    height: 4vh;
+    margin-left: 15vh;
+}
+
+.prime-date p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.clock p{
+    font-size: 2.5vh;
+    color: white;
+    padding-left: 25px;
+}
+
+/* button */
+
+.fa-user{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 5px;
+    font-size: 3vh;
+}
+
+/* Banner */
+
+.banner{
+    height: 50vh;
+}
+
+/* Exchange Seller */
+
+.card img{
+    height: 25vh;
+}
+
+
+.offer{
+    background-color: white;
+    padding-top: 2vh;
+    margin-left: 2vh;
+}
+
+.offer h3{
+    padding-left: 2vh;
+}
+
+.wrapper{
+    display: flex;
+    overflow: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+.item{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* <!-- Blockbuster deals --> */
+
+.deals img{
+    height: 32vh;
+}
