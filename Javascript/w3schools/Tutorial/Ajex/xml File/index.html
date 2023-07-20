@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Files</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The XMLHttpRequest Object</h1>
+    <button type="button" onclick="cd()">Get my CD Collection</button>
+    <br><br>
+    <table id="demo"></table>
+
+    <script>
+
+        // function cd() {
+        //     let a = new XMLHttpRequest();
+        //     a.onload = function () {
+        //         myfunction(this);
+        //     }
+        //     a.open("GET", "k.xml");
+        //     a.send();
+        // }
+
+        // function myfunction(xml) {
+        //     const k = xml.responseXML;
+        //     const x = k.getElementsByTagName("CD");
+        //     let table = "<tr><th>Artist</th><th>Title</th><th>Counntry</th><th>Compant</th><th>Price</th><th>Year</th></tr>";
+        //     for (let i = 0; i < x.length; i++) {
+        //         table += "<tr><td>" +
+        //             x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +"</td><td>" +
+        //             x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +"</td><td>"+
+        //             x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue + "</td><td>"+
+        //             x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +"</td><td>"+
+        //             x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue+"</td><td>"+
+        //             x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue+"</td></td>";
+        //     }
+        //     document.getElementById("demo").innerHTML = table;
+        // }
+
+        function cd()
+        {
+            let a=new XMLHttpRequest();
+            a.onload = function()
+            {
+                myfunction(this)
+            }
+            a.open("GET","k.xml");
+            a.send()
+        }
+
+        function myfunction(a)
+        {
+            let b = a.responseXML;
+            const x = b.getElementsByTagName("CD");
+            let table = "<tr><th>Artist</th><th>Title</th><th>Counntry</th><th>Compant</th><th>Price</th><th>Year</th></tr>";
+            for (let i=0;i< x.length ; i++)
+            {
+                table+="<tr><td>"+
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +"</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +"</td><td>"+
+                    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue + "</td><td>"+
+                    x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +"</td><td>"+
+                    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue+"</td><td>"+
+                    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue+"</td></td>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+
+    </script>
+</body>
+
+</html>
