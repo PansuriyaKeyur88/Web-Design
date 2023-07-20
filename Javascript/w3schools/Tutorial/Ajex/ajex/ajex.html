@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Introduction</title>
+</head>
+<body>
+    <div id="demo">
+        <h1>The AMLHttpRequest Object</h1>
+        <button type="button" onclick="loaddoc()">Change Content</button>
+    </div>
+
+    <script>
+
+
+
+        function loaddoc()
+        {
+            let a= new XMLHttpRequest;
+            a.onload = function()
+            {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            a.open("GET","ajex.txt");
+            a.send();
+        }
+
+
+
+    </script>
+</body>
+</html>
