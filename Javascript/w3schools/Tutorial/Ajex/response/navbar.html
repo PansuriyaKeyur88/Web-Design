@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar HTMl</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color: black;
+            height: 5vh;
+        }
+
+        ul{
+            display: flex;
+            padding-top: 1vh;
+        }
+
+        li{
+            padding-left: 5vh;
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 2vh;
+            cursor: pointer;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        p{
+            font-size: 2vh;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="home()">HOME</a></li>
+            <li><a onclick="about()" >ABOUT</a></li>
+            <li><a onclick="content()"href="#">CONTENT</a></li>
+            <li><a onclick="page()">PAGE</a></li>
+        </ul>
+    </nav>
+    <p id="detail"></p>
+
+    <script>
+
+
+
+        function home()
+        {
+            document.getElementById("detail").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque aliquam, suscipit ipsum quo asperiores assumenda explicabo rem officiis alias consectetur accusantium earum, omnis atque eveniet nesciunt consequatur placeat itaque possimus officia animi molestiae optio minima magni. Fuga reiciendis voluptatum ab commodi quam quasi quo, at vitae ipsam quis harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ducimus vero aperiam expedita culpa, suscipit iusto voluptatibus facere, voluptates veritatis cupiditate enim, inventore ut facilis tempore. Qui officiis tenetur veniam at voluptatum. Perspiciatis dolorem illum quae voluptatum fugiat. Soluta beatae dolore voluptate harum odio quidem officia perspiciatis, quasi animi ut";
+        }
+        
+
+        function about()
+        {
+            let a=new XMLHttpRequest;
+            a.onload = function()
+            {
+                document.getElementById("detail").innerHTML = this.responseText;
+            }
+
+            a.open("GET","about.html");
+            a.send();
+        }
+
+        function content()
+        {
+            let a= new XMLHttpRequest;
+            a.onload = function()
+            {
+                document.getElementById("detail").innerHTML = this.responseText;
+            }
+
+            a.open("GET","content.html");
+            a.send();
+        }
+
+        function page()
+        {
+            let a= new XMLHttpRequest;
+            a.onload = function()
+            {
+                document.getElementById("detail").innerHTML = this.responseText;
+            }
+
+            a.open("GET","page.html");
+            a.send();
+        }
+
+        
+
+
+    </script>
+    
+</body>
+</html>
