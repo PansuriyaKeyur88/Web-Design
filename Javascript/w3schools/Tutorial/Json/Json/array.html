@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Array Literals</title>
+</head>
+<body>
+    <h1>Creating an Array from a Literal</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <br>
+    <h1>Access Array Values</h1>
+    <p id="demo3"></p>
+
+    <script>
+        const a='["keyur","sujal","Shyam"]';
+        let c = JSON.parse(a);
+        document.getElementById("demo").innerHTML=a;
+        document.getElementById("demo1").innerHTML=c[0];
+
+        let x='{"name":"Keyur","age":"30","cars":["ODI","BMW","ROLS ROYAL"]}';
+        let y =JSON.parse(x);
+        // document.getElementById("demo3").innerHTML = y.cars;
+
+        // Or //
+
+        let text="";
+        for(let k in y.cars)
+        {
+            text+=y.cars[k]+", ";
+        }
+        document.getElementById("demo3").innerHTML = text;
+    </script>
+</body>
+</html>

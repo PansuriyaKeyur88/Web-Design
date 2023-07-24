@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Literals</title>
+</head>
+
+<body>
+    <h1>JSON Object  Properties</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const a = '{"name":"keyur","age":18,"city":"surat"}';
+        const b = JSON.parse(a);
+        let text = "";
+        for (const i in b) {
+            text += i +" ";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        const p = '{"name":"keyur","age":18,"city":"surat"}';
+        const q = JSON.parse(p);
+        let tex = "";
+        for (const i in q) {
+            tex += q[i] +" ";
+        }
+        document.getElementById("demo1").innerHTML = tex;
+
+    </script>
+
+
+</body>
+
+</html>
