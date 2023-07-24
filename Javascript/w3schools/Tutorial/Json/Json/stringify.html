@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON.stringify()</title>
+</head>
+<body>
+    <h1>JSON Stringify Object</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <br>
+    <h1>JSON Stringify Array</h1>
+    <p id="demo2"> </p>
+    <br>
+    <h1>JSON Stringify Date</h1>
+    <p id="demo3"> </p>
+
+    <script>
+        // Object //
+        const a = {
+            name : "Keyur Pansuriya",
+            age:"18",
+            city:"surat"
+        };
+        document.getElementById("demo").innerHTML = JSON.stringify(a);
+
+        // Array //
+        const b = ["keyur","sujal","chinatn"];
+        document.getElementById("demo2").innerHTML = JSON.stringify(b);
+
+        // Date //
+
+        const c ={
+            name:"Keyur",
+            date:new Date().getMonth()+1,
+            city:"Surat"
+        };
+
+        document.getElementById("demo3").innerHTML = JSON.stringify(c);
+    </script>
+</body>
+</html>
