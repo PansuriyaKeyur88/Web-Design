@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Ajex</title>
+    <style>
+        th,td {
+          padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The XMLHttpRequest Object</h1>
+    <form action="">
+        <select name="customer" id="" onchange="showCustomer(this.value)">
+            <option value="">Select a customer:</option>
+            <option value="ALFKI">Alfreds Futterkiste</option>
+            <option value="NORTS ">North/South</option>
+            <option value="WOLZA">Wolski Zajazd</option>
+        </select>
+    </form>
+    <br>
+    <div id="demo">Customer info will be listed here...</div>
+
+    <script>
+
+        function showCustomer(str) {
+            if (str == "") {
+                document.getElementById("demo").innerHTML = " ";
+                return;
+            }
+
+            let a = new XMLHttpRequest();
+            a.onload = function () {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            a.open("GET","k.php?q="+str);
+            a.send();
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML APPLICATION</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <Button type="button" onclick="deta()">Get my CD Collection</Button>
+    <br>
+    <br>
+    <table id="demo"></table>
+    <br>
+    <br>
+    <p id="demo1"></p>
+    <input type="button" onclick="previous()" value="<<">
+    <input type="button" onclick="next()" value=">>">
+
+
+    <script>
+
+        function deta() {
+            let a = new XMLHttpRequest();
+            a.onload = function () {
+                myfunction(this)
+            }
+            a.open("GET", "k.xml");
+            a.send()
+        }
+
+        function myfunction(a) {
+            let b = a.responseXML;
+            const x = b.getElementsByTagName("CD");
+            let table = "<tr><th>Artist</th><th>Title</th><th>Counntry</th><th>Compant</th><th>Price</th><th>Year</th></tr>";
+            for (let i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue + "</td></td>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+
+
+        let i = 0;
+        let len;
+        let cd;
+
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            const xmlDoc = xhttp.responseXML;
+            cd = xmlDoc.getElementsByTagName("CD");
+            len = cd.length;
+            myFunction(i);
+        }
+        xhttp.open("GET", "k.xml");
+        xhttp.send();
+
+        function myFunction(i) {
+            document.getElementById("demo1").innerHTML =
+                "Artist: " +
+                cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                "<br>Title: " +
+                cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                "<br>Year: " +
+                cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
+                "<br>Country:"+
+                cd[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
+        }
+
+        function next() {
+            if (i < len - 1) {
+                i++;
+                myFunction(i);
+            }
+        }
+
+        function previous() {
+            if (i > 0) {
+                i--;
+                myFunction(i);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
