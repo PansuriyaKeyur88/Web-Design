@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+</head>
+
+<body>
+    <h2>Finding HTML Elements by Id</h2>
+    <p id="demo1">Keyur</p>
+    <p id="demo2">Pansuriya</p>
+    <p id="demo3">18</p>
+    <p id="demo4"></p>
+    <h1 class="demo5"></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let a = $('p#demo4');
+            $("p#demo4").text("Keyur Pansuriya" + a[0].innerHTML);
+        });
+
+        $(document).ready(function () {
+            $("h1.demo5").text("Keyur Pansuriya");
+        });
+    </script>
+</body>
+
+</html>

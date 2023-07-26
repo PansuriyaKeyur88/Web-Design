@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Html</title>
+</head>
+
+<body>
+    <h2>Text Content Click</h2>
+    <h1 class="demo5">Keyur Pansuriya [Click]</h1>
+    <p id="demo"></p>
+    <h1>virat Kohli Print</h1>
+    <h1 class="demo1">virat Kohli</h1>
+    <h2 class="demo2"></h2>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('h1.demo5').click(function()
+            {
+                $('#demo').text("<h1>Click on Keyur Pansuriya</h1>");
+            })
+
+            let a = $("h1.demo1");
+            $(".demo2").text(a[0].innerHTML);
+        })
+    </script>
+</body>
+
+</html>
