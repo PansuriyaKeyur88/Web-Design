@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP File</title>
+</head>
+<body>
+    <h1>Get JSON Data from a PHP Server</h1>
+    <p id="demo"></p>
+
+    <script>
+        const obj = {"limit":10}
+        const a = JSON.stringify(obj);
+        const b = new XMLHttpRequest();
+        b.onload = function()
+        {
+            const myobj=JSON.parse(this.responseText);
+            let text="";
+            for(let x in myobj)
+            {
+                text += myobj[x].name +"<br>";
+            }
+           document.getElementById("demo").innerHTML = text;
+        };
+        b.open("GET","p.php"+a);
+        b.send();
+    </script>
+</body>
+</html>
