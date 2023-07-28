@@ -1,0 +1,11 @@
+@media only screen and (max-device-width:500px) and (min-device-width:100px)
+{
+    .resume{
+        margin-left: 0rem;
+        height: 80rem;
+    }
+
+    .right{
+        width: 40rem;
+    }
+}

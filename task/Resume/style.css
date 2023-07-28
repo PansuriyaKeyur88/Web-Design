@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* resume */
+
+.resume{
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 2rem;
+}
+
+/*left */
+
+.profil-image img{
+    width: 70%;
+    height: 15rem;
+    background-size: cover;
+    margin: auto;
+    margin: 1rem 1rem;
+    margin-bottom: -1rem;
+}
+
+.left{
+    background-color: rgb(52 51 51);
+    color: white;
+    overflow-y: auto;
+    width: 110%;
+    margin: 1rem 1rem;
+    height: 58.7rem;
+}
+
+.contanct-all{
+    margin: 1rem 1rem;
+}
+
+.contact h3{
+    border-bottom: 5px solid white;
+    border-radius: 0.1rem;
+    padding: 0.5rem 0rem;
+    width: 38%;
+    margin-bottom:1rem;
+}
+
+.contact h3{
+    font-weight: 700;
+}
+.space{
+    margin-bottom: 1rem;
+}
+
+.space h4{
+    margin-bottom: 0px;
+}
+
+.personal-detils{
+    margin: 1rem 1rem;
+}
+
+.personal h3{
+    border-bottom: 5px solid white;
+    border-radius: 0.1rem;
+    padding: 0.5rem 0rem;
+    width: 75%;
+    margin-bottom:1rem;
+}
+
+
+/* right */
+
+.right{
+    background-color:white;
+    color: black;
+    overflow-y: auto;
+    width: 70rem;
+    margin: 1rem 1rem ;
+    padding-left: 1rem;
+}
+
+.side{
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.name{
+    margin: 5rem 0rem 5rem 1rem;
+}
+
+.name h1{
+    font-size: 3.5rem;
+}
+
+.about{
+    width: 99%;
+}
+
+.about h3{
+    border-bottom: 5px solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0rem;
+    width: 12%;
+    margin-bottom:1rem;
+}
+
+.experience h3{
+    border-bottom: 5px solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0rem;
+    width: 12%;
+    margin-bottom:1rem;
+}
+
+.eduction h3{
+    border-bottom: 5px solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0rem;
+    width: 12%;
+    margin-bottom:1rem;
+}
+
+.school{
+    margin-top: 2rem;
+}
+
+.work h3{
+    border-bottom: 5px solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0rem;
+    width: 8%;
+    margin-bottom:2.2rem;
+}
+
