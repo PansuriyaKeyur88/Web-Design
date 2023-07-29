@@ -1,35 +1,33 @@
+$(document).ready(function () {
 
-// Clock //
+    // Clock //
 
-function time()
-{
-    let date = new Date();
-    document.getElementById("demo").innerHTML = date.toLocaleTimeString();
-}
+    setInterval(function () {
+        let date = new Date();
+        $("#demo").text(date.toLocaleTimeString())
+    }, 1000);
 
-setInterval(time,1000);
+    // Choice //
 
-// Choice //
+    $(".option-one").click(function () {
+        $("#one").attr("src", "https://m.media-amazon.com/images/I/41y71UYlbtL._AC_SY175_.jpg");
+        $("#choice-p").text("GRECIILOOKS Women's Tie-Dye Joggers Stretchable Pants | Slim Fit Casual Joggers for Women | Straig…");
+    });
 
-function change1()
-{
-    document.getElementById("one").src="https://m.media-amazon.com/images/I/41y71UYlbtL._AC_SY175_.jpg";
-}
+    $(".option-two").click(function () {
+        $("#one").attr("src", "https://m.media-amazon.com/images/I/611XVaZrn+L._AC_SY175_.jpg");
+        $("#choice-p").text("UZARUS Women's Joggers Stretchable Pants | Slim Fit Casual Joggers for Women | Straight Relaxed Fit Trousers | Gym Pants");
+    });
 
-function change2()
-{
-   document.getElementById("one").src="https://m.media-amazon.com/images/I/611XVaZrn+L._AC_SY175_.jpg";
-   document.getElementById("choice-p").innerHTML="UZARUS Women's Joggers Stretchable Pants | Slim Fit Casual Joggers for Women | Straight Relaxed Fit Trousers | Gym Pants";
-}
+    $(".option-three").click(function () {
+        $("#one").attr("src", "https://m.media-amazon.com/images/I/71DaUoG6QnL._AC_SY175_.jpg");
+        $("#choice-p").text("Cotton colors Classic Joggers");
+    });
 
-function change3()
-{
-    document.getElementById("one").src="https://m.media-amazon.com/images/I/71DaUoG6QnL._AC_SY175_.jpg";
-    document.getElementById("choice-p").innerHTML="Cotton colors Classic Joggers"
-}
+    $(".option-four").click(function () {
+        $("#one").attr("src", "https://m.media-amazon.com/images/I/71Vg6g8iWYL._AC_SY175_.jpg");
+        $("#choice-p").text("Amazon Brand - Symbol Women's Slim Track Pants")
 
-function change4()
-{
-    document.getElementById("one").src="https://m.media-amazon.com/images/I/71Vg6g8iWYL._AC_SY175_.jpg"
-    document.getElementById("choice-p").innerHTML="Amazon Brand - Symbol Women's Slim Track Pants"
-}
+    });
+
+});

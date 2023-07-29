@@ -393,3 +393,26 @@ main{
 .brand-01 img{
    padding-left: 10rem;
 }
+
+/*Amzon-tv*/
+
+#amzon-tv
+{
+    width: 96%;
+    height: 32rem;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgba(15, 23, 43, .9);
+    color: white;
+}
+
+#language-01{
+    background-color: rgba(15, 23, 43, .9);
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+}
+
