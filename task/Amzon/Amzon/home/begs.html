@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in india : Shop Amzon</title>
+    <link rel="shortcut icon"
+        href="https://as2.ftcdn.net/v2/jpg/02/94/54/07/1000_F_294540722_VIwSWyrU6q781SkHWSlzUDXjfouRlj47.jpg"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .card-img-top {
+            height: 15rem;
+        }
+    </style>
+
+<body>
+    <div class="p-4">
+        <div class="offer">
+            <h1 class="p-3">Blockbuster deals <a href="">See all deals</a></h1>
+            <br>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="data:image/jpeg;base64,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"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/514x2pO1BCL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31QoMaHHAGL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31+bdAv8-0L._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31IdsY7yWTL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/71KXIckY8PL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/411Li+2fKCS._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="data:image/jpeg;base64,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"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/514x2pO1BCL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31QoMaHHAGL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31+bdAv8-0L._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31IdsY7yWTL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/71KXIckY8PL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/411Li+2fKCS._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="data:image/jpeg;base64,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"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/514x2pO1BCL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31QoMaHHAGL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31+bdAv8-0L._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31IdsY7yWTL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/71KXIckY8PL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/411Li+2fKCS._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="data:image/jpeg;base64,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"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/514x2pO1BCL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31QoMaHHAGL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31+bdAv8-0L._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/31IdsY7yWTL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/71KXIckY8PL._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-3 p-3">
+                        <div class="card deals" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/411Li+2fKCS._AC_SY200_.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-danger">Up to 44% off</a>
+                                <h5 style="color: red;">Prime Day Deal</h5>
+                                <p class="card-text">AUXTER 36 liters Casual Backpack School Bag-3 Comaprtments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</head>

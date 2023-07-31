@@ -15,91 +15,90 @@ main{
     display: flex;
     color: white;
     flex-direction: row;
-    height: 10vh;
+    height: 5rem;    
 }
 
 .logo{    
-    margin-top: 10px;
-    height: 8vh;
-    margin-left: 18px;
-    padding-left: 5px;
-}
-
-.logo:hover{
-    border: 2px solid white;
+    margin-top: 1rem;
+    height: 4rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .logo img{
-    width: 60%;
-    height: 2.5vh;
-    margin-left: 20px;
+    width: 75%;
+    height: 1.5rem;
+    margin-left:1.2rem ;
 }
 
-.prime{
+.prime h3{
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .address{
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .address span{
-    padding-left: 10px;
+    padding-left: 0.5rem;
 }
 
 .serch {
-    margin-top: 10px;
+    margin-top: 0.8rem;
     display: flex;
 }
 
 .serch input{
-    margin-top: 12px;
-    margin-left: 20px;
-    border-radius: 8px;
-    width: 105vh;
-    height: 5vh;
-    padding-left: 10px;
-    font-size: 2vh;
+    margin-top:0.7rem;
+    margin-left: 1rem;
+    width: 42rem;
+    height: 2.3rem;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
 
 .icon i {
-    margin-top: 13px;
-    margin-left: -47px;
-    height: 4.8vh;
+    margin-top: 0.7rem;
+    margin-left: -3.7rem;
+    height: 2.3rem;
     font-size: 3vh;
     background-color:orange;
     padding: 10px 10px;
-    border-radius: 8px;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 5px 5px 0px;
     width: 7vh;
     text-align: center;
 }
 
 #language{
-    margin-top: 25px;
+    margin-top: 1rem;
     background-color: black;
     color: white;
     border: 0px;
     font-size: 2.5vh;
-    margin-left: 20px;
-    padding: 10px 10px;
-}
-
-#language:hover{
-    border: 2px solid white;
+    margin-left:0.3rem;
     padding: 10px 10px;
 }
 
 .account{
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 1.3rem;
+    margin-left:0.8rem;
 }
 
+.acc-details h6{
+    font-weight: 800;
+    font-size: 1rem;
+}
 
 .order{
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+}
+
+.re-order h6{
+    font-weight: 800;
+    font-size: 1rem;
 }
 
 .shopping{
@@ -109,12 +108,14 @@ main{
 }
 
 .shop-icon{
-    font-size: 5vh;
+    font-size: 2.3rem;
 }
 
 .cart h5{
     padding-top: 4vh;
     padding-left: 1vh;
+    font-weight: 800;
+    font-size: 1rem;
 }
 
 
@@ -140,12 +141,12 @@ main{
 
 .service ul{
     display: flex;
-    margin-top: 4vh;
+    margin-top: 2.6rem;
 }
 
 .service ul li{
     list-style: none;
-    padding-left: 28px;
+    padding-left: 1.2rem;
 }
 
 .service ul li a{
@@ -164,19 +165,20 @@ main{
 
 .prime-logo img{
     width: 50%;
-    height: 4vh;
-    margin-left: 15vh;
+    height: 2rem;
+    margin-left: 3rem;
 }
 
 .prime-date p{
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 0.9rem;
+    padding-left: 1rem;
 }
 
 .clock p{
-    font-size: 2.5vh;
+    font-size:2rem;
     color: white;
-    padding-left: 25px;
+    padding-left: 2rem;
+    margin-top: -0.5rem;
 }
 
 /* button */
@@ -200,24 +202,21 @@ main{
     height: 25vh;
 }
 
-
 .offer{
     background-color: white;
-    padding-top: 2vh;
-    margin-left: 2vh;
+    padding-top: 1rem;
+    margin-left: 1rem;
 }
 
-.offer h3{
-    padding-left: 2vh;
+.offer h5{
+    padding-left: 1.2rem;
 }
 
 .wrapper{
     display: flex;
     overflow: auto;
-}
-
-.wrapper::-webkit-scrollbar{
-    width: 0;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
 }
 
 .item{
@@ -230,3 +229,190 @@ main{
 .deals img{
     height: 32vh;
 }
+
+/* <!-- Realted School Beg --> */
+
+.bag{
+    margin-left: 0rem;
+    display: flex;
+    overflow: auto;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+.diff-beg{
+    padding-left: 1.5rem;
+}
+
+/* <!-- Amazon Live | Watch, Chat & Shop LIVESee more from Amazon Live --> */
+
+.live-shop{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.video iframe{
+    width: 30rem;
+    height: 20.5rem;
+    background-color: black;
+}
+
+.video img{
+    width: 30rem;
+    height: 20.5rem;
+}
+
+.women-shopping{
+    margin-left: 1rem;
+    display: flex;
+    overflow: auto;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+.diff-cloth {
+    margin-left: 1rem;
+}
+
+.border img{
+    height:30rem ;
+}
+
+.diff-cloth h6{
+    text-decoration: line-through;
+}
+
+/* <!-- Realted School Phone --> */
+
+.phone{
+    margin-left: 0rem;
+    display: flex;
+    overflow: auto;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+.diff-phone{
+    padding-left: 1.5rem;
+}
+
+/* <!-- Home Furnishing --> */
+
+.home{
+    background-color: whitesmoke;
+}
+
+.home img{
+    margin: 1rem 18rem 2rem 15rem;
+}
+
+/* <!-- More items to consider --> */
+
+.choice{
+    margin-left:3rem;
+}
+
+.choice img{
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+
+.price{
+    display: flex;
+    margin-left: -1rem;
+}
+
+.before-price{
+    padding-left: 1rem;
+}
+
+.option{
+    display: flex;
+    position: static;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.option-one{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.option-one:active{
+    border: 3px solid blue;
+}
+
+.option-two {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.option-two:active{
+    border: 3px solid blue;
+}
+
+
+.option-three{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.option-three:active{
+    border: 3px solid blue;
+}
+
+.option-four{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.option-four:active{
+    border: 3px solid blue;
+}
+
+/* <!-- Continue shopping for --> */
+
+.brand{
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.brand-01 img{
+   padding-left: 10rem;
+}
+
+/*Amzon-tv*/
+
+#amzon-tv
+{
+    width: 96%;
+    height: 32rem;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgba(15, 23, 43, .9);
+    color: white;
+}
+
+#language-01{
+    background-color: rgba(15, 23, 43, .9);
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+}
+

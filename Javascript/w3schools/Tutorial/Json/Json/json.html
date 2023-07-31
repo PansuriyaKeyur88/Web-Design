@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Html </title>
+</head>
+<body>
+    <h1>jSON Object</h1>
+    <p id="demo"></p>
+    <br>
+    <h1>JSON Array</h1>
+    <p id="demo1"></p>
+    <br>
+    <h1>JSON Date</h1>
+    <p id="demo2"></p>
+    <br>
+    <h1>JSON Function</h1>
+    <p id="demo3"></p>
+
+    <script>
+        // json Object//
+
+        const a ='{"name": "keyur","age":18,"city":"surat"}'
+        const b = JSON.parse(a);
+        document.getElementById("demo").innerHTML = Object.values(b);
+
+        // Json Array //
+
+        const x = JSON.parse('["keyur","sujal","chintan","donda","chavada"]');
+        document.getElementById("demo1").innerHTML =x;
+
+        // JSON Date //
+
+        const txt = '{"name":"Keyur","birth":"2005-08-02","city":"surat"}';
+
+        const k = JSON.parse(txt,function(key,value){
+            if(key=="birth")
+            {
+                let a=new Date(value);
+                return a;
+            }
+            else
+            {
+                return value;
+            }
+        });
+        document.getElementById("demo2").innerHTML = k.name + " ,"+k.birth;
+
+        // JSON Function //
+
+        const p = '{"name":"Keyur","birth":"function() {return 2005-08-02;}","city":"surat"}';
+
+        const q =JSON.parse(p);
+        q.birth = eval("(" + q.birth + ")");
+        document.getElementById("demo3").innerHTML = q.name + " " +q.birth();
+
+    </script>
+</body>
+</html>
