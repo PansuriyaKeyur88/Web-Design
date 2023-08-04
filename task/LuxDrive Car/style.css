@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("./image/Car.png");
+    height: 45rem;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.date input:active {
+    border: none;
+}
+
+.search-vehicle {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    margin-top: -3rem;
+}
+
+.box {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
