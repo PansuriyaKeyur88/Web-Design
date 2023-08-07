@@ -8,30 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="shortcut icon"
-        href="https://c4.wallpaperflare.com/wallpaper/133/741/127/vauxhall-logo-grey-and-red-v-round-decor-wallpaper-preview.jpg"
-        type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet">
 </head>
+<!-- &#61; -->
 
 <body>
-    <div class="onload">
-
-    </div>
-
     <header>
         <!-- navbar -->
+        <br>
         <div class="container-fluid text-white " style="border-radius: 10rem;">
             <nav class="navbar">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="text-white line display-3">&equals;</span>
+                        <i class="fa-solid fa-equals fa-2xl" style="color:rgba(255, 255, 255, 1);"></i>
                     </button>
-                    <img class="navbar-brand text-center" src="./image/logo/Heading.png" alt="Logo">
-                    <div class="login-btn" >
-                        <button type="button" class="btn btn-outline-light" style="border-radius: 10rem;">Login /
+                    <img class="navbar-brand text-center img-logo" src="./image/logo/Heading.png" alt="Logo">
+                    <div class="login-btn">
+                        <button type="button" class="btn btn-outline-light login-btn">Login /
                             Register</button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,55 +50,74 @@
                 </div>
             </nav>
             <div class="container text-center p-5">
-                <h1>Discover the world on wheels <br> with our car rental service</h1>
+                <h1 style="font-family: Figtree;">Discover the world on wheels <br> with our car rental service</h1>
             </div>
         </div>
     </header>
     <main>
-        <!-- Caps Information-->
-        <div class="container">
-            <div class="text-center search-vehicle">
-                <div class="row p-3 ">
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <small> Pick-up location</small>
+        <!-- caps informtion -->
+        <div class="container-fluid ">
+            <div class="container z-3 p-3 caps-information">
+                <div class="row text-center text-md-center text-lg-start  px-3"
+                    style="font-family: 'Figtree', sans-serif; font-size: 17px;">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="car-location">
+                            <small>Pick-up Location</small>
+                        </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <small>Pick-up date</small>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-2">
+                        <div class="car-location">
+                            <small>Pick-up date</small>
+                        </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <small>Drop-off Location</small>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="car-location">
+                            <small>Drop-off Location</small>
+                        </div>
                     </div>
-                    <div class="col-6  col-sm-6 col-md-3">Drop-off</div>
-                </div>
-                <div class="row px-4 gx-3 gy-3 ">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3 box">
-                        <img src="./image/Ets/Location.svg" alt="location">
-                        <input type="text" placeholder="Search a location">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-2 p-3  box">
-                        <!-- <small><input type="date" placeholder="12/12/2023" style="border: none;"></small> -->
-                        <small>06-08-2023</small>
-                        <img src="./image/Ets/Calendar.svg" alt="Calendar">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3  p-3   box">
-                        <img src="./image/Ets/Location.svg" alt="location">
-                        <input type="text" placeholder="Search a location">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-2  p-3  box ">
-                        <!-- <small><input type="date" placeholder="12/12/2023" style="border: none;"></small> -->
-                        <small>12-08-2023</small>
-                        <img src="./image/Ets/Calendar.svg" alt="Calendar">
-                    </div>
-                    <div class="col-12 col-sm-12  col-md-12 col-lg-2">
-                        <button type="button" class="btn btn-dark px-3 py-2 mt-2" style="border-radius: 10rem;">Find a
-                            Vehicle
-                            <img src="./image/Arrows/arrow-right-white-bg.svg" alt="Arrow-Right"></button>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="car-location">
+                            <small>Drop-off date</small>
+                        </div>
                     </div>
                 </div>
-                <br>
+                <div class="row text-center text-md-center text-lg-start p-1 gx-2 gy-2" style="font-family: 'Figtree';">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="location">
+                            <img src="./image/Ets/Location.svg" alt="Location">
+                            <small style="margin-left: 0.5rem;">Search a Location</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="location">
+                            <small>12-06-2023</small>
+                            <img style="margin-left: 1rem;" src="./image/Ets/Calendar.svg" alt="Calendar">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="location">
+                            <img src="./image/Ets/Location.svg" alt="Location">
+                            <small style="margin-left: 0.5rem;">Search a Location</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="location">
+                            <small>12-06-2023</small>
+                            <img style="margin-left: 1rem;" src="./image/Ets/Calendar.svg" alt="Calendar">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                        <div class="text-center">
+                            <button class="btn btn-dark find-vehicle ">Find a Vehicle <img
+                                    src="./image/Arrows/arrow-right-white-bg.svg" alt="Arrow-Right"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </main>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -112,4 +127,3 @@
 </body>
 
 </html>
-
