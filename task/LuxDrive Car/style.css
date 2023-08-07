@@ -1,16 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.onload {
-    /* background: black url("https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2019/12/car-preloader-concept-html-css.png?fit=927%2C582&ssl=1") no-repeat center center;
+/* .onload {
+    background: black url("https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2019/12/car-preloader-concept-html-css.png?fit=927%2C582&ssl=1") no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
-    background-size: cover; */
-}
+    background-size: cover;
+} */
 
 header {
     background-image: url("./image/Header-Car/Car.png");
