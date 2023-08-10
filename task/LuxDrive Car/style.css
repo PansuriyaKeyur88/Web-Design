@@ -89,6 +89,41 @@ header {
     height: 120px;
 }
 
+/* // Colletion car // */
+
+.car-btn{
+    padding: 12px, 19px, 12px, 19px;
+    border-radius: 58px;
+    border: 20px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.car-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.car-information{
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 16px;
+    background: rgba(246, 246, 246, 1);
+    font-weight: 500;
+}
+
+.rent-btn{
+    font-weight: 600;
+}
+
+.see-all{
+    border-radius: 64px;
+    font-size: 17px;
+    font-weight: 700;
+    background: rgba(15, 15, 15, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 0px;
+    padding: 1rem 2rem;
+
+}
 
 @media only screen and (max-device-width:600px) and (min-device-width:200px) {
     .login-btn {
