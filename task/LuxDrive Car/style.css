@@ -69,7 +69,6 @@ header {
     gap: 8px
 }
 
-
 .find-vehicle {
     padding: 0.6rem 1.3rem;
     border-radius: 64px;
@@ -85,45 +84,166 @@ header {
 .brand-boxs {
     border-radius: 8px;
     background: rgba(15, 15, 15, 0.05);
-    width:204px;
+    width: 204px;
     height: 120px;
+}
+
+.brand-boxs:hover {
+    border: 2px solid black;
 }
 
 /* // Colletion car // */
 
-.car-btn{
+.card:hover {
+    border: 2px solid black;
+}
+
+.car-btn {
     padding: 12px, 19px, 12px, 19px;
     border-radius: 58px;
     border: 20px rgba(0, 0, 0, 0.05);
     background-color: rgba(255, 255, 255, 1);
 }
 
-.car-btn:hover{
+.car-btn:hover {
     background-color: black;
     color: white;
 }
 
-.car-information{
+.car-information {
     padding: 8px, 16px, 8px, 16px;
     border-radius: 16px;
     background: rgba(246, 246, 246, 1);
     font-weight: 500;
 }
 
-.rent-btn{
+.rent-btn {
     font-weight: 600;
 }
 
-.see-all{
+.see-all {
     border-radius: 64px;
     font-size: 17px;
     font-weight: 700;
     background: rgba(15, 15, 15, 1);
     color: rgba(255, 255, 255, 1);
     border: 0px;
-    padding: 1rem 2rem;
-
+    padding: 1rem 2.1rem;
 }
+
+.line {
+    width: 20rem;
+    color: rgba(255, 255, 255, 1);
+    height: 10rem;
+}
+
+/* Works */
+
+.brower-select {
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
+
+.thar {
+    border-radius: 24px;
+    background: #F5F5F5;
+    margin-left: -3rem;
+}
+
+.thar img {
+    margin-top: 5rem;
+    width: 625px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+@media (max-device-width:600px){
+    .thar{
+        display: none;
+    }
+    
+    .thar img{
+        display: none;
+    }
+}
+
+@media (max-device-width:1199px)
+{
+    .thar {
+        margin-left: 0rem;
+        width: 39rem;
+    }
+
+    .thar img {
+        margin-left: -3rem;
+        width: 37rem;
+    }
+}
+
+/* Services */
+
+.service {
+    border-radius: 28px;
+    border: 8px solid rgba(255, 255, 255, 0.90);
+    background: #FFF;
+    width: 48px;
+    height: 48px;
+}
+
+/* Reviws */
+
+.round {
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.round-2 {
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: black;
+}
+
+@media only screen and (max-device-width:767px) and (min-device-width:451px) {
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+
+    .nav {
+        margin-left: 5rem;
+    }
+
+    .Social-Media {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-device-width:500px) and (min-device-width:200px) {
+
+    .rent {
+        padding-left: 2rem;
+    }
+
+    .brand {
+        padding-left: 3.8rem;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+
+    .nav {
+        margin-left: 1rem;
+    }
+
+    .Social-Media {
+        margin-top: 1rem;
+    }
+}
+
+
+/* Responsive */
 
 @media only screen and (max-device-width:600px) and (min-device-width:200px) {
     .login-btn {
@@ -152,3 +272,5 @@ header {
         display: none;
     }
 }
+
+
