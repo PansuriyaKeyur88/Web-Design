@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 1rem;
+            color: white;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=search] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 1s;
+        }
+
+        input[type='search']:focus{
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+    First Name
+    <input type="text" value="Keyur">
+    Last Name
+    <input type="text" value="Pansuriya">
+    <h1>Input Search Icon</h1>
+    <!-- icon -->
+    <input type="search" placeholder="Search..">
+</body>
+
+</html>
