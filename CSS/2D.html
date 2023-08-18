@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Routate</title>
+    <style>
+        #myDiv {
+            transform: rotate(320deg);
+            background-color: yellow;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        #left {
+            transform: rotate(60deg);
+            background-color: yellow;
+            border: 1px solid black;
+            width: 200px;
+            position: absolute;
+            margin-left: 8rem;
+            top: 22%;
+        }
+
+        #normal{
+            white-space: nowrap;
+            width:20rem;
+        }
+
+        .p2 {
+            margin: 150px;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: skew(20deg);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #normal1{
+            white-space: nowrap;
+            width:20rem;
+        }
+
+        .p1{
+            margin: 150px;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: scaleY(2deg);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rotate() Methos</h1>
+    <br><br><br><br>
+    <div id="left">
+        Keyur Pansuriya
+    </div>
+    <div id="myDiv">
+        Keyur Pansuriya
+    </div>
+    <br><br><br><br><br>
+    <h1>The scale() Method</h1>
+    <div id="normal">
+    <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptates doloribus exercitationem totam
+        adipisci nisi dolores porro sit assumenda eius!</p>
+    </div>
+    <div id="normal1">
+        <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptates doloribus exercitationem totam
+            adipisci nisi dolores porro sit assumenda eius!</p>
+        </div>
+</body>
+
+</html>
