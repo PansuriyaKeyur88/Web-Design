@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@800&family=Pacifico&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.background{
+.background {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url("./image/hero-section/bg-hero.jpg");
     height: 118vh;
     background-blend-mode: darken;
@@ -15,80 +15,254 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
 }
 
 /* Navbar */
 
-.nav-link{
+.navbar-toggler {
+    background-color: transparent;
+    border: 3px solid gray;
+}
+.nav-link {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
-.nav-link:hover{
+.navbar-toggler{
+    color:gray;
+}
+
+button#navbar-toggler {
+    background-color: red;
+}
+ 
+/* */
+.navbar-expand-lg .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28, 80, 80, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") 
+}
+
+
+.nav-link:hover {
     color: orange;
+}
+
+.dropdown-menu{
+    background-color:rgba(15, 23, 43, .9) ;
+    color: white;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+  background-color: orange;
 }
 
 /* Fisrt Book Table button */
 
-.book-table-btn{
+.book-table-btn {
     background-color: orange;
     color: white;
     padding: 0.3rem 1.5rem;
     border: 0px;
 }
 
-.book-table-btn:hover{
-   color: black;
+.book-table-btn:hover {
+    color: black;
 }
 
 /* Second Book table button */
 
-.book-table-btn-01{
+.book-table-btn-01 {
     background-color: orange;
     color: black;
     padding: 0.8rem 2rem;
     border: 0px;
 }
 
-.book-table-btn-01:hover{
-   color: white;
+.book-table-btn-01:hover {
+    color: white;
 }
 
-.titel{
+.titel {
     margin-top: 5rem;
 }
 
-.titel-height{
+.titel-height {
     margin-top: 8rem;
 }
 
-.dish img{
-    width: 100%;
+.dish img {
+    max-width: 100%;
 }
 
+@media only screen and (max-device-width:991px) and (min-device-width:200px) {
+
+    .background {
+        height: 75rem;
+    }
+
+    .titel-height {
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-device-width:991px) and (min-device-width:501px) {
+
+    .background {
+        height: 90rem;
+    }
+
+    .titel-height {
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+}
+
+
 /* services */
-.services:hover{
+
+.services:hover {
     border: 2px solid orange;
 }
 
-.read-btn{
+.read-btn {
     background-color: orange;
     color: black;
     padding: 0.5rem 2.8rem;
     border: 0px;
 }
 
-.read-btn:hover{
+.read-btn:hover {
     color: white;
+}
+
+/* about */
+
+.about {
+    margin-top: 8rem;
+}
+
+@media only screen and (max-device-width:991px) and (min-device-width:200px) {
+    .about {
+        margin-top: 0rem;
+    }
 }
 
 /* <!-- Most Populat item --> */
 
-.menu-1{
+.menu-1 {
+    padding-bottom: 0.8rem;
     border-bottom: 1px solid black;
 }
 
-.menu-1:hover{
+.menu-1:hover {
     border-bottom: 2px solid orange;
 }
+
+.form-control {
+    border-radius: 0px;
+}
+
+/* form */
+
+input[type=email]:focus{
+    outline: 3px solid orange;
+}
+
+input[type=email]:hover{
+    outline: 3px solid orange;
+}
+
+input[type=datetime-local]:focus{
+    outline: 3px solid orange;
+}
+
+input[type=datetime-local]:hover{
+    outline: 3px solid orange;
+}
+
+input[type=number]:focus{
+    outline: 3px solid orange;
+}
+
+input[type=number]:hover{
+    outline: 3px solid orange;
+}
+
+
+textarea:hover{
+    outline: 3px solid orange;
+}
+
+
+/* radio button */
+
+input[type=radio]#radio {
+    accent-color: orange;
+}
+
+input[type=radio]#radio {
+    accent-color: orange;
+}
+
+/* footer */
+
+.footer {
+    background-color: rgba(15, 23, 43, .9);
+}
+
+.company a::before {
+    content: "> ";
+    font-weight: bold;
+}
+
+.navbar-last ul {
+    text-align: end;
+}
+
+.navbar-last li {
+    display: inline;
+    list-style: none;
+}
+
+.navbar-last li a {
+    text-decoration: none;
+    color: white;
+    margin: 0.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar-last li a:hover {
+    color: orange;
+}
+
+input[type=text]:focus {
+    outline: 3px solid orange;
+  }
+
+  input[type=text]:hover {
+    outline: 3px solid orange;
+  }
+
+@media only screen and (max-device-width:991px) and (min-device-width:200px){
+
+    .navbar-last ul {
+        margin-top: 2rem;
+        text-align: start;
+    }
+
+    .navbar-last li a {
+        margin: 0.5rem;
+    }
+
+}
+
+
