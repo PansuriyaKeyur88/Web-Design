@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        div {
+            height: 5rem;
+            width: 20%;
+            background-color: red;
+            transition: width 4s, height 4s;
+        }
+
+        div:hover {
+            width: 100%;
+            height: 15rem;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+        }
+
+        #demo1{
+            transition-timing-function: linear;
+        }
+
+        #demo2{
+            transition-timing-function: ease;
+        }
+
+        #demo3{
+            transition-timing-function: ease-in;
+        }
+
+        #demo4{
+            transition-timing-function: ease-out;
+        }
+
+        #demo5{
+            transition-timing-function: ease-in-out;
+        }
+
+        p:hover {
+            width: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transitions Property</h1>
+    <div>
+
+    </div>
+    <br><br>
+    <h1>The transition-timing-function Property</h1>
+    <h1>Liner</h1>
+    <p id="demo1">
+    </p>
+    <h1>ease</h1>
+    <p id="demo2"></p>
+    <h1>ease-in</h1>
+    <p id="demo3"></p>
+    <h1>ease-out</h1>
+    <p id="demo4"></p>
+    <h1>ease-in-out</h1>
+    <p id="demo5"></p>
+</body>
+
+</html>

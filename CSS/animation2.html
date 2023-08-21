@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        div {
+            width: 8rem;
+            background-color: red;
+            height: 8rem;
+        }
+
+        #demo:hover {
+            animation-name: box;
+            animation-duration: 5s;
+        }
+
+        @keyframes box {
+            from{
+                background-color: red
+            }
+            to {
+                background-color: green;
+            }
+        }
+
+        #demo2{
+            width: 8rem;
+            background-color: red;
+            height: 8rem;
+            position: relative;
+            animation-name: box-2;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes box-2 {
+
+            0%{
+                background-color: red;
+                left:0px; 
+                top:0px;
+            }
+
+            20%{
+                background-color: green;
+                left:200px; 
+                top:0px;
+            }
+
+            40%{
+                background-color: orange;
+                left:200px;
+                top:200px;
+            }
+
+            60%{
+                background-color: black;
+                left:0px; 
+                top:200px;
+            }
+
+            100%{
+                background-color: red;
+                left:0px; 
+                top:0px;
+            }
+            
+        }
+
+        #demo3{
+            width: 8rem;
+            background-color: red;
+            height: 8rem;
+            position: relative;
+            animation-name: box-2;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS ANIMATIONS</h1>
+    <div id="demo">
+
+    </div>
+    <br>
+    <p id="demo2">
+
+    </p>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <h1>Animation Reverse</h1>
+    <p id="demo3">
+
+    </p>
+</body>
+
+</html>
+
