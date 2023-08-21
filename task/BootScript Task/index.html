@@ -9,507 +9,715 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <div class="picture navbar-expand-lg">
-            <nav class="navbar">
+    <!-- First Navbar -->
+    <div class="contanier-fluid" style="background-color:whitesmoke">
+        <div class="container background" style="font-family: Sans Serif fonts, Rounded fonts;">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <i class="fa fa-utensils me-3 fa-2xl"></i>
-                        <span>Restoran</span>
+                    <a class="navbar-brand d-flex" href="#">
+                        <i class="fa fa-utensils me-3 mt-3 fa-2xl" style="color: orange;"></i>
+                        <h2 style="color: orange;"><b>Restoran</b></h2>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#home" id="home">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#about">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Service</a>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Menu</a>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#menu">Menu</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown mx-1">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Page
+                                    Pages
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Contact</a>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#conatct">Conatct</a>
                             </li>
-                            <li class="nav-item">
-                                <button type="button" class="btn btn-warning first-btn">Book A Table</button>
+                            <li class="nav-item mx-1 mt-2">
+                                <button type="button" class="book-table-btn">Book A Table</button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>
-
-        <div class="container-fluid flex">
-            <div class="title">
-                <h1>Enjoy Our</h1>
-                <h1>Delicious Meal</h1>
-                <h5>Tempor Erat Rebum at Clita. Diam dolor dial ipusum sit. Aliqu diam amet diam eteos. Clinta eaat
-                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erar amet</h5>
-                <button type="button" class="btn btn-warning second-btn">Book A Table</button>
+            <div class="row titel">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="p-2 titel-height">
+                        <div>
+                            <h1 class="display-3"><b>Enjoy Our <br> Delicious Meal</b></h1>
+                        </div>
+                        <div class="mt-2">
+                            <h3 class="fs-5">Tempor Erat Rebum at Clita. Diam dolor dial ipusum sit. Aliqu diam amet
+                                diam eteos. Clinta eaat
+                                ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erar amet</h3>
+                        </div>
+                        <div class="mt-3">
+                            <button type="button" class="book-table-btn-01">Book A Table</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="dish">
+                        <img src="./image/hero-section/hero.png" alt="dish">
+                    </div>
+                </div>
+                <hr style="border: 1.5px solid white;">
             </div>
-            <div class="hero">
-                <img src="./image/hero-section/hero.png" alt="">
-            </div>
         </div>
-    </header>
-    <br><br>
-    <main>
-        <!-- card -->
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-lg-6 mt-3">
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3 master">
-                                <div class="card-body">
-                                    <i class="fa-solid fa-user-tie fa-2xl" style="color: orange;"></i>
-                                    <h4 class="card-title">Master chefs</h4>
-                                    <h6 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Maiores?Lorem ipsum dolor sit amet.</h6>
-                                </div>
+        <!-- Services -->
+        <div class="container"
+            style="background-color:rgb(235, 232, 232);font-family: Sans Serif fonts, Rounded fonts;">
+            <br><br><br>
+            <div class="row gx-3 gy-2">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card p-2" style="border: 0px;" onmouseover="this.style.border='2px solid orange'"
+                        onmouseOut="this.style.border='0px'">
+                        <div class="mt-4">
+                            <div class="mx-4" style="color: orange;">
+                                <i class="fa-solid fa-user-tie fa-2xl"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Master chefs</b></h4>
+                                <h6 class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Maiores?Lorem ipsum dolor sit amet.</h6>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3 master">
-                                <div class="card-body">
-                                    <i class="fa-sharp fa-solid fa-utensils fa-2xl" style="color: orange;"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card p-2" style="border: 0px;" onmouseover="this.style.border='2px solid orange'"
+                        onmouseOut="this.style.border='0px'">
+                        <div class="mt-4">
+                            <div class="mx-4" style="color: orange;">
+                                <i class="fa-sharp fa-solid fa-utensils fa-2xl"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Quality Food</b></h4>
+                                <h6 class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Maiores?Lorem ipsum dolor sit amet.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card p-2" style="border: 0px;" onmouseover="this.style.border='2px solid orange'"
+                        onmouseOut="this.style.border='0px'">
+                        <div class="mt-4">
+                            <div class="mx-4">
+                                <i class="fa-solid fa-cart-plus fa-2xl" style="color: orange;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Online Order</b></h4>
+                                <h6 class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Maiores?Lorem ipsum dolor sit amet.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card p-2" style="border: 0px;" onmouseover="this.style.border='2px solid orange'"
+                        onmouseOut="this.style.border='0px'">
+                        <div class="mt-4">
+                            <div class="mx-4">
+                                <i class="fa-solid fa-headset fa-2xl" style="color: orange;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><b>24/7 service</b></h4>
+                                <h6 class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Maiores?Lorem ipsum dolor sit amet.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!-- about -->
+            <div class="row" id="about">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 " src="./image/about/about-1.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-75" src="./image/about/about-2.jpg"
+                                style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75" src="./image/about/about-3.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-100" src="./image/about/about-4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 about">
+                    <div style="font-family: 'Pacifico', cursive; color: orange;">
+                        <div class="d-flex">
+                            <h3>About us </h3>
+                            <div>
+                                <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="color: black;">
+                        <h1><b>Welcome to Restoran</b></h1>
+                    </div>
+                    <div class="mt-2" style="color: black;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere debitis aut deserunt dolor
+                            tempore voluptatem quam nulla nemo accusantium ullam?</p>
+                    </div>
+                    <div class="mt-2" style="color: black;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere debitis aut deserunt dolor
+                            tempore voluptatem quam nulla nemo accusantium ullam? Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Nesciunt illo eligendi laudantium labore sint aliquid corporis
+                            fugiat adipisci tenetur est!</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                            <div class="d-flex">
+                                <div style="color: orange;font-weight: 800;">
+                                    <h1><b>
+                                            <p><span>|</span> 15</p>
+                                        </b>
                                     </h1>
-                                    <h4 class="card-title">Quality Food</h4>
-                                    <h6 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Maiores? Lorem ipsum dolor sit amet.</h6>
+                                </div>
+                                <div class="px-3" style="color: black;">
+                                    <small style="font-weight: 200;">Year Of </small><br>
+                                    <samll style="font-weight: 800;text-transform: uppercase;">Experince</small>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                            <div class="d-flex">
+                                <div style="color: orange;font-weight: 800;">
+                                    <h1><b><span>|</span> 50</b></h1>
+                                </div>
+                                <div class="px-3" style="color: black;">
+                                    <small style="font-weight: 200;">Popular</small><br>
+                                    <samll style="font-weight: 800;text-transform: uppercase;">Master Chefs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button type="button" class="read-btn">Read Now</button>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-3">
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3 master">
-                                <div class="card-body">
-                                    <i class="fa-solid fa-cart-plus fa-2xl" style="color: orange;"></i>
-                                    <h4 class="card-title">Online Order</h4>
-                                    <h6 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Maiores? Lorem ipsum dolor sit amet.</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-3 ">
-                            <div class="card p-3 master">
-                                <div class="card-body">
-                                    <i class="fa-solid fa-headset fa-2xl" style="color: orange;"></i>
-                                    <h4 class="card-title">24/7 services</h4>
-                                    <h6 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Maiores?. Lorem ipsum dolor sit amet.</h6>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <br><br><br>
+            <!-- Most Populat item -->
+            <div class="text-center" id="menu">
+                <div class="d-flex justify-content-center" style="font-family: 'Pacifico';color: orange;">
+                    <div>
+                        <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-right:0.5rem;">
                     </div>
+                    <div style="text-align: center;">
+                        <h3 class="h-5"><b>Food Item</b></h3>
+                    </div>
+                    <div>
+                        <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                    </div>
+                </div>
+                <h1 style="color: black; font-weight: 800;"><b>Most Popular Item</b></h1>
+                <br>
+                <div class="text-center" data-wow-delay="0.1s">
+                    <ul class="nav d-inline-flex justify-content-center mb-4">
+                        <li class="nav-item menu-1 ">
+                            <div class="d-flex align-items-center text-start mx-3 ms-0 pb-2 " data-bs-toggle="pill"
+                                href="#">
+                                <i class="fa-solid fa-mug-saucer fa-2xl fs-1" style="color: orange;"></i>
+                                <div class="ps-2">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mb-0"><b>Breakfast</b></h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-1 ">
+                            <div class="d-flex align-items-center text-start mx-3 ms-0 pb-2">
+                                <i class="fa-solid fa-burger fa-2xl fs-1"  style="color: orange;"></i>
+                                <div class="ps-3">
+                                    <small>Special</small>
+                                    <h6 class="mb-0"><b>Launch</b></h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-1 ">
+                            <div class="d-flex align-items-center text-start mx-3 ms-0 pb-2 active">
+                                <i class="fa fa-utensils me-3 fa-2xl fs-1"  style="color: orange;"></i>
+                                <div class="ps-1">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0"><b>Dinner</b></h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <br><br>
-
-            <div class="merge">
-                <div class="about ms-3">
-                    <div class="top">
-                        <div class="first">
-                            <img src="./image/about/about-1.jpg" alt="">
-                        </div>
-                        <div class="second">
-                            <img src="./image/about/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="down">
-                        <div class="third">
-                            <img src="./image/about/about-3.jpg" alt="">
-                        </div>
-                        <div class="fourth">
-                            <img src="./image/about/about-4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="us">
-                    <h2>about us --</h2>
-                    <h1>Welcome to <span> <i class="fa fa-utensils me-3"></i></span>Restoran</h1>
-                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, earum! Lorem ipsum dolor, sit
-                        amet consectetur adipisicing elit. Dolore provident dolorum et excepturi inventore voluptas,
-                        nulla voluptatem fuga quisquam sint?</h5>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, placeat. Lorem, ipsum dolor
-                        sit amet consectetur adipisicing elit. Nisi accusantium voluptatem deserunt suscipit cumque
-                        optio sapiente voluptate debitis ullam, iure cupiditate impedit, voluptatibus fuga saepe!</h5>
-                    <div class="personal">
-                        <div class="exe">
-                            <div class="number">
-                                <h1><span>|</span> 15</h1>
-                            </div>
-                            <div class="year">
-                                <p>Year Of</p>
-                                <h5>Experince</h5>
-                            </div>
-                        </div>
-                        <div class="popular">
-                            <div class="number">
-                                <h1><span>|</span> 50</h1>
-                            </div>
-                            <div class="year">
-                                <p>Popular</p>
-                                <h5>Master Chief</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn btn-warning third-btn">Read More</div>
-                </div>
-            </div>
-            <br><br>
-
-            <div class="item">
-                <div class="def">
-                    <h5><span>-</span>Food Item <span>-</span></h5>
-                    <h1>Most Popular Item</h1>
-                </div>
-                <br><br>
-                <div class="row box">
-                    <div class="col-4 box-01">
-                        <div class="break">
-                            <i class="fa-solid fa-mug-saucer fa-2xl"></i>
-                        </div>
-                        <div class="info">
-                            <h6>Popular</h6>
-                            <h5>Breakfast</h5>
-                        </div>
-                    </div>
-                    <div class="col-4 box-01">
-                        <div class="break">
-                            <i class="fa-solid fa-burger fa-2xl"></i>
-                        </div>
-                        <div class="info">
-                            <h6>Special</h6>
-                            <h5>Lunch</h5>
-                        </div>
-                    </div>
-                    <div class="col-4 box-01">
-                        <div class="break">
-                            <i class="fa fa-utensils me-3 fa-2xl"></i>
-                        </div>
-                        <div class="info">
-                            <h6>Lovely</h6>
-                            <h5>Dinner</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br><br><br><br>
-
-            <div class="list">
-                <div class="row ms-1 me-1 row-cols-2 grid">
-                    <div class="col menu">
-                        <div class="pic">
+            <div class="row  px-md-3 gy-3" style="color: black;">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-1.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger <span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatur Lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-2.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-3.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-4.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-5.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-6.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-7.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
-                    <div class="col menu">
-                        <div class="pic">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                    <div class="d-flex">
+                        <div class="">
                             <img src="./image/menu/menu-8.jpg" alt="">
                         </div>
-                        <div class="m-info">
-                            <h5>Chicken Burger<span>$115</span></h5>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, magnam!</p>
+                        <div class="px-3 ">
+                            <samll class="fs-4">Chicken Burger</samll><span class="fs-4"
+                                style="float: right; color: orange;">$115</span>
+                            <hr style="margin-top: 0.1rem;margin-bottom:0.1rem;">
+                            <small style="font-weight: 200;font-style: italic;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam tenetur pariatu lorem .</small>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <br><br><br>
-            <div class="ad">
-                <div class="video">
-                    <video controls  muted loop poster="https://img.freepik.com/free-vector/drawn-recipes-youtube-thumbnail_23-2148926454.jpg" src="./image/video/(3) Jethalal Ke Ghar Dinner_! _ Taarak Mehta Ka Ooltah Chashmah _ TMKOC Comedy _ तारक मेहता - YouTube - Google Chrome 2023-07-10 08-38-35.mp4"></video>
+            <br>
+            <div class="row px-md-3 gy-3" id="services">
+                <div class="col-12 col-sm-12 col-md-6 ">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/STa_UtZP3tg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="form">
-                    <form action="">
-                        <h4>Restoran--</h4>
-                        <h1 class="top">Book A Table Online</h1>
-                        <input type="text" placeholder="Your Name" id="name">
-                        <input type="email" placeholder="Your Email" id="email">
+                <div class="col-12 col-sm-12 col-md-6 bg-dark text-white h-100 align-center ">
+                    <form>
                         <br>
-                        <input type="Date" placeholder="Date &Time" id="date">
-                        <input type="number" placeholder="People Number" id="number">
-                        <br>
-                        <textarea name="req" id="req" placeholder="Request"></textarea>
-                        <br>
-                        <button type="button" class="btn btn-warning fourth-btn">Book A Table</button>
+                        <h4 style="font-family: 'Pacifico';color: orange;">Restoran--</h4>
+                        <h1>Book A Table Online</h1>
+                        <div class="row g-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Name" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Eamil" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                <input type="text" placeholder="Date & Time" class="form-control"
+                                    onmouseenter="(this.type='datetime-local')" onmouseleave="(this.type='text')"
+                                    required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                <input type="text" placeholder="People 1" class="form-control People"
+                                    onmouseenter="(this.type='number')" onmouseleave="(this.type='text')"
+                                    inputmode="numeric" required>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <textarea cols="30" rows="5" placeholder="Please Request" class="form-control" onclick="this.style.outline='3px solid orange'"></textarea>
+                        </div>
+                        <div class="mt-2 d-grid mb-3">
+                            <button type="submit" class="btn btn-warning text-white">Book A Now</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <br><br><br>
-
-            <div class="row ms-2 me-2 image">
-                <div class="col-lg-6 mt-3">
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3">
-                                <div class="card-body staff">
-                                    <img src="./image/team/team-1.jpg" alt="" id="saff">
-                                    <h5 class="card-title">Master Chefs</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
-                            </div>
+            <div class="pt-5 pb-3">
+                <div class="text-center">
+                    <div class="d-flex justify-content-center" style="font-family: 'Pacifico';color: orange;">
+                        <div>
+                            <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-right:0.5rem;">
                         </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3">
-                                <div class="card-body staff">
-                                    <img src="./image/team/team-2.jpg" alt="" id="saff">
-                                    <h5 class="card-title">Master Chefs</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
-                            </div>
+                        <div style="text-align: center;">
+                            <h3 class="h-5"><b>Our Master</b></h3>
+                        </div>
+                        <div>
+                            <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
                         </div>
                     </div>
+                    <div class="pb-5">
+                        <h1><b>Our Master Chefs</b></h1>
+                    </div>
                 </div>
-                <div class="col-lg-6 mt-3">
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3">
-                                <div class="card-body staff">
-                                    <img src="./image/team/team-3.jpg" alt="" id="saff">
-                                    <h5 class="card-title">Master Chefs</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3 col-md-6">
+                        <div class="card text-center rounded overflow-hidden"
+                            onmouseover="this.style.border='3px solid orange'" onmouseOut="this.style.border='0px'"
+                            style="border: 0px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img src="./image/team/team-1.jpg" class="img-fluid" alt="">
                             </div>
+                            <h5 class="mb-0"><b>Full Name</b></h5>
+                            <small class="mb-3" style="font-weight: 100;">Designation</small>
                         </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="card p-3">
-                                <div class="card-body staff">
-                                    <img src="./image/team/team-4.jpg" alt="" id="saff">
-                                    <h5 class="card-title">Master Chefs</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 col-md-6">
+                        <div class="card text-center rounded overflow-hidden"
+                            onmouseover="this.style.border='3px solid orange'" onmouseOut="this.style.border='0px'"
+                            style="border: 0px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img src="./image/team/team-2.jpg" class="img-fluid" alt="">
                             </div>
+                            <h5 class="mb-0"><b>Full Name</b></h5>
+                            <small class="mb-3" style="font-weight: 100;">Designation</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 col-md-6">
+                        <div class="card text-center rounded overflow-hidden"
+                            onmouseover="this.style.border='3px solid orange'" onmouseOut="this.style.border='0px'"
+                            style="border: 0px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img src="./image/team/team-3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <h5 class="mb-0"><b>Full Name</b></h5>
+                            <small class="mb-3" style="font-weight: 100;">Designation</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 col-md-6">
+                        <div class="card text-center rounded overflow-hidden"
+                            onmouseover="this.style.border='3px solid orange'" onmouseOut="this.style.border='0px'"
+                            style="border: 0px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img src="./image/team/team-4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <h5 class="mb-0"><b>Full Name</b></h5>
+                            <small class="mb-3" style="font-weight: 100;">Designation</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <br><br><br>
-
-            <div class="t">
-                <h4>-- Testionally---</h4>
-                <h1>Our Clienst Say!!!</h1>
+            <div class="mt-5">
+                <div class="text-center">
+                    <div class="d-flex justify-content-center" style="font-family: 'Pacifico';color: orange;">
+                        <div>
+                            <hr style="border: 3px solid orange;width:3rem;margin-top: 1.2rem;margin-right:0.5rem;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 class="h-5"><b>Testimonials</b></h3>
+                        </div>
+                        <div>
+                            <hr style="border: 3px solid orange;width:3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <h1><b>Our Clinets Say!!!</b></h1>
+                    </div>
+                </div>
+                <div class="row gy-4 ">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="card px-3 p-3" onmouseover="this.style.background='orange';this.style.color='white'"
+                            onmouseOut="this.style.background='white';this.style.color='black'">
+                            <div>
+                                <i class="fa-sharp fa-solid fa-quote-left display-5" style="font-weight: 800;"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 100;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dignissimos possimus
+                                    doloribus, reprehenderit </p>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <img class="rounded-circle"
+                                        src="./image/review/WhatsApp Image 2023-07-08 at 18.11.36.jpg" alt="">
+                                </div>
+                                <div class="py-3 px-3">
+                                    <h4><b>Clinet Name</b></h4>
+                                    <h6 style="font-weight: 100;">Profession</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="card px-3 p-3" onmouseover="this.style.background='orange';this.style.color='white'"
+                            onmouseOut="this.style.background='white';this.style.color='black'">
+                            <div>
+                                <i class="fa-sharp fa-solid fa-quote-left  display-5" style="font-weight: 800;"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 100;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Dignissimos possimus
+                                    doloribus, reprehenderit </p>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <img class="rounded-circle"
+                                        src="./image/review/WhatsApp Image 2023-07-08 at 18.11.35.jpg" alt="">
+                                </div>
+                                <div class="py-3 px-3">
+                                    <h4><b>Clinet Name</b></h4>
+                                    <h6 style="font-weight: 100;">Profession</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="card px-3 p-3" onmouseover="this.style.background='orange';this.style.color='white'"
+                            onmouseOut="this.style.background='white';this.style.color='black'">
+                            <div>
+                                <i class="fa-sharp fa-solid fa-quote-left display-5" style="font-weight: 800;"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 100;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Dignissimos possimus
+                                    doloribus, reprehenderit </p>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <img class="rounded-circle" src="./image/review/girls.jpg" alt="">
+                                </div>
+                                <div class="py-3 px-3">
+                                    <h4><b>Clinet Name</b></h4>
+                                    <h6 style="font-weight: 100;">Profession</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4 mb-5">
+                    <input type="radio" name="radio" id="radio">
+                    <input type="radio" name="radio" id="radio">
+                    <input type="radio" name="radio" id="radio">
+                    <input type="radio" name="radio" id="radio">
+                </div>
             </div>
-            <div class="row ms-1 me-1 test">
-                <div class="col">
-                    <div class="card test-1">
-                        <div class="card-body">
-                            <i class="fa-sharp fa-solid fa-quote-left"></i>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, deserunt. Lorem ipsum dolor sit amet.</p>
-                            <div class="clinet">
-                                <div class="p">
-                                    <img src="./image/review/WhatsApp Image 2023-07-08 at 18.11.36.jpg" alt="">
-                                </div>
-                                <div class="cust">
-                                    <h5 class="card-title">Clinet Name</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col test-1">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-sharp fa-solid fa-quote-left"></i>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti cum praesentium atque ratione </p>
-                            <div class="clinet">
-                                <div class="p">
-                                    <img src="./image/review/WhatsApp Image 2023-07-08 at 18.11.35.jpg" alt="">
-                                </div>
-                                <div class="cust">
-                                    <h5 class="card-title">Clinet Name</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col test-1">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-sharp fa-solid fa-quote-left"></i>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita sint assume. keyur Pansuriya
-                            </p>
-                            <div class="clinet">
-                                <div class="p">
-                                    <img src="./image/review/girls.jpg" alt="">
-                                </div>
-                                <div class="cust">
-                                    <h5 class="card-title">Clinet Name</h5>
-                                    <p class="card-text">Some</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="round">
-                    <input type="radio" name="first" id="touch">
-                    <input type="radio" name="first">
-                    <input type="radio" name="first">
-                    <input type="radio" name="first">
-                </div>
-            </div>
+            <br>
         </div>
-
-    </main>
-    <br><br><br>
-    <footer>
-
-        <div class="color">
-            <div class="foot">
-                <div class="com">
-                    <h3>Company ---</h3>
-                    <h5><span>&#62;</span><a href="">About Us</a></h5>
-                    <h5><span>&#62;</span><a href="">Contact Us</a></h5>
-                    <h5><span>&#62;</span><a href="">Reservation</a></h5>
-                    <h5><span>&#62;</span><a href="">Private Police</a></h5>
-                    <h5><span>&#62;</span><a href="">Terms & Condition</a></h5>
+        <!-- footer -->
+        <div class="footer container text-white" id="conatct">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-5 pt-5 px-5">
+                    <div class="company">
+                        <h3 class="mb-4" style="font-family: 'Pacifico';color: orange;">
+                            <div class="d-flex">
+                                <h3>Conatct</h3>
+                                <div>
+                                    <hr
+                                        style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                                </div>
+                            </div>
+                        </h3>
+                        <h5 class="nav-item"><a class="nav-link" href="#">About Us</a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#">Contact Us</a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#">Reservation</a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#">Private Police</a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#">Terms & Condition</a></h5>
+                    </div>
                 </div>
-                <div class="cont">
-                    <h3>Conatct ---</h3>
-                    <h5><span><i class="fa-solid fa-location-dot"></i></span>88,balkrishna Socity,india</h5>
-                    <h5><span><i class="fa-solid fa-phone "></i></span>+953775526</h5>
-                    <h5><span><i class="fa-solid fa-envelope"></i></span>keyur@gmail.com</h5>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-5 pt-5 px-5">
+                    <div class="">
+                        <h3 class="mb-4">
+                            <div style="font-family: 'Pacifico', cursive; color: orange;">
+                                <div class="d-flex">
+                                    <h3>Conatct</h3>
+                                    <div>
+                                        <hr
+                                            style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                        <h5 class="mb-3"><span><i class="fa-solid fa-location-dot"></i></span> 88,Balkrishna Soc.india
+                        </h5>
+                        <h5 class="mb-3"><span><i class="fa-solid fa-phone "></i></span> +91 9537735045</h5>
+                        <h5 class="mb-3"><span><i class="fa-solid fa-envelope"></i></span> keyur@gmail.com</h5>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light"  style="border-radius:10rem;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-outline-light mx-2" style="border-radius:10rem;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-outline-light" style="border-radius:10rem;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-outline-light mx-2" style="border-radius: 10rem;">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="opening">
-                    <h3>opening ---</h3>
-                    <h5>Monday - Saturday</h5>
-                    <h5>09AM-09-PM</h5>
-                    <br>
-                    <h5>Sunday</h5>
-                    <h5>10Am-08PM</h5>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-5 pt-5 px-5">
+                    <div class="">
+                        <h3 class="mb-4" style="font-family: 'Pacifico';color: orange;">
+                            <div style="font-family: 'Pacifico', cursive; color: orange;">
+                                <div class="d-flex">
+                                    <h3>Opening </h3>
+                                    <div>
+                                        <hr
+                                            style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                        <h5>Monday - Saturday</h5>
+                        <h5 class="mb-4">09AM-09PM</h5>
+                        <h5>Sunday</h5>
+                        <h5>10Am-08PM</h5>
+                    </div>
                 </div>
-                <div class="news">
-                    <h3>NewsSeller---</h3>
-                    <h5>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur</h5>
-                    <input type="email" placeholder="Your Email" id="mail">
-                    <input type="submit" value="SIGNUP" id="sign">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-5 pt-5 px-5">
+                    <div class="">
+                        <h3 class="mb-4" style="font-family: 'Pacifico';color: orange;">
+                            <div class="d-flex">
+                                <h3>Newseller</h3>
+                                <div>
+                                    <hr style="border: 3px solid orange;width: 3rem;margin-top: 1.2rem;margin-left:0.5rem;">
+                                </div>
+                            </div></h3>
+                        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur</h6>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-warning w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button" class="btn btn-warning  py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                style="border-radius: 0%;">Sign
+                                up</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="last">
-                <div class="copy">
-                    <h5>&copy; <a href="#">keyur , </a>All Right Reserved.Designed By <a href="">Keyur Pansuriya</a>
-                    </h5>
+            <hr style="border: 2px solid white;">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 px-lg-5 ">
+                    <h6>&copy; <a href="#"
+                            style="color: white;text-decoration: none;border-bottom: 1px solid white;padding: 3px;">Keyur,</a>All
+                        Right Reserved.Designed By <a
+                            style="color: white;text-decoration: none;border-bottom: 1px solid white;padding: 3px;"
+                            href="#">HTML Codex</a>
+                    </h6>
                     <br>
-                    <h5>Distribution By <a href="">Sulok</a></h5>
+                    <h6>Distribution By <a href="#"
+                            style="color: white;text-decoration: none;border-bottom: 1px solid white;padding: 3px;">Sulok
+                            Digital PVP Limited</a></h6>
                 </div>
-                <div class="nav">
-                    <nav>
+                <div class="col-12 col-sm-12 col-md-6 px-lg-5 ">
+                    <nav class="navbar-last">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Cookies</a></li>
-                            <li><a href="">Help</a></li>
-                            <li><a href="">FQAS</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">FQAs</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
         </div>
+    </div>
+    <script>
 
-    </footer>
-
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -519,3 +727,5 @@
 </body>
 
 </html>
+
+

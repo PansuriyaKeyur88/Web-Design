@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .c{
+            display: flex;
+        }
+        .card {
+            border: 2px solid black;
+            width: 18rem;
+            text-align: center;
+            padding-bottom: 1rem;
+            margin-left: 1rem;
+        }
+
+        .card img {
+            width: 17rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c">
+        <div class="card">
+            <p>diplay:none</p>
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt=""><br><br>
+            <button onclick="hide()" class="btn">Remove</button>
+            <br>
+        </div>
+        <div class="card">
+            <p>visibility:hidden</p>
+            <img src="https://www.w3schools.com/css/img_forest.jpg" alt=""><br><br>
+            <button onclick="remove()" class="btn">Hide</button>
+            <br>
+        </div>
+        <div class="card">
+            <p>Reset</p>
+            <img src="https://www.w3schools.com/css/img_lights.jpg" alt=""><br><br>
+            <button onclick="reset()" class="btn">Reset All</button>
+            <br>
+        </div>
+    </div>
+    <script>
+        function hide()
+        {
+            document.getElementsByClassName("card")[0].style.display="none";
+        }
+
+        function remove()
+        {
+            document.getElementsByClassName("card")[1].style.visibility="hidden";
+        }
+
+        function reset()
+        {
+            const a=document.querySelectorAll(".card")
+            a[0].style.display="block";
+            a[1].style.visibility="visible";
+        }
+    </script>
+</body>
+
+</html>
