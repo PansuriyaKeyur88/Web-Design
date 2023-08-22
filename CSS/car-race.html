@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Race</title>
+    <style>
+        div {
+            height: 5rem;
+            width: 100px;
+            position: relative;
+            background-color: red;
+            animation: car 5s infinite;
+        }
+
+        #demo1{
+            animation-timing-function: linear;
+            color: black;
+            background-color: green;
+        }
+
+        #demo2{
+            animation-timing-function: ease;
+        }
+
+        #demo3{
+            animation-timing-function: ease-in;
+        }
+
+        #demo4{
+            animation-timing-function: ease-in-out;
+        }
+
+        #demo5{
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes car {
+            form {
+                left: 0px;
+            }
+            to{
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Car Race</h1>
+    <br><br>
+    <!-- <div id="demo1">
+        <img src="../task/LuxDrive Car/image/Rent Car/convertible-red 1.svg" alt="">
+    </div> -->
+    <div id="demo1">
+    
+    </div>
+    <br><br>
+    <div id="demo2">
+        <img src="../task/LuxDrive Car/image/Rent Car/compact-red 1.svg" alt="">
+    </div>
+    <br><br>
+    <div id="demo3">
+        <img src="../task/LuxDrive Car/image/Rent Car/coup-red 1.svg" alt="">
+    </div>
+    <br><br>
+    <div id="demo4">
+        <img src="../task/LuxDrive Car/image/Rent Car/mpv-red 1.svg" alt="">
+    </div>
+    <br><br>
+    <div id="demo5">
+        <img src="../task/LuxDrive Car/image/Rent Car/sedan-red 1.svg" alt="">
+    </div>
+    <br><br>
+    <div id="demo6">
+        <img src="../task/LuxDrive Car/image/Rent Car/pickup-red 1.svg" alt="">
+    </div>
+</body>
+
+</html>
