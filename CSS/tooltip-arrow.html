@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Arrow</title>
+    <style>
+        .tooltip {
+            border-bottom: 1px dotted black;
+            display: inline-block;
+        }
+
+        .tooltip-text {
+            background-color: black;
+            color: white;
+            padding: 0.3rem;
+            position: absolute;
+            z-index: 1;
+            margin-top: -2rem;
+            left: 45%;
+            visibility: hidden;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+
+        .tooltip-text-bootom {
+            background-color: black;
+            color: white;
+            padding: 0.3rem;
+            position: absolute;
+            z-index: 1;
+            margin-left: -5.7rem;
+            margin-top: 2rem;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        .tooltip-text-bootom::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+        }
+
+        .tooltip:hover .tooltip-text-bootom {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Top Tooltip</h1>
+        <br>
+        <div class="tooltip">
+            Hove Over Me <span class="tooltip-text">Tooltip-Text</span>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perspiciatis, voluptas repellat porro
+                obcaecati qui consectetur nobis dolorem, sed inventore dolores doloribus laborum alias. Similique nulla
+                eos quidem commodi fuga.</p>
+        </div>
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+        <h1>Bottom Arrow</h1>
+        <br>
+        <div class="tooltip">
+            Hove Over Me <span class="tooltip-text-bootom">Tooltip-Text</span>
+        </div>
+        <div>
+            <br><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perspiciatis, voluptas repellat porro
+                obcaecati qui consectetur nobis dolorem, sed inventore dolores doloribus laborum alias. Similique nulla
+                eos quidem commodi fuga.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
