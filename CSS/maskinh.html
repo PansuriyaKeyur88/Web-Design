@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking</title>
+    <style>
+        .masking {
+            -webkit-mask-image: url("../task/LuxDrive Car/image/Brands/Audi svg.svg");
+            mask-image: url("../task/LuxDrive Car/image/Brands/Audi svg.svg");
+            /* -webkit-mask-repeat: no-repeat; */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The mask-image Property</h1>
+    <img src="../task/LuxDrive Car/image/Brands/Audi svg.svg" alt="">
+    <br><br><br>
+    <div>
+        <img class="masking" src="https://www.w3schools.com/css/img_5terre.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="">
+    </div>
+</body>
+
+</html>
