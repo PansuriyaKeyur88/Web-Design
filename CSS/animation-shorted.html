@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        .demo{
+            background-color: red;
+            border-radius: 50%;
+            height: 8rem;
+            width: 8rem;
+            position: relative;
+            animation: box 5s ease-in 1s infinite backwards;
+        }
+
+        @keyframes box {
+
+            0%{
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25%{
+                top: 0px;
+                left: 500px;
+                background-color: yellow;
+            }
+
+            50%{
+                top: 200px;
+                left: 500px;
+                background-color: green;
+            }
+
+            75%{
+                top: 200px;
+                left: 0px;
+                background-color: green;
+            }
+
+            100%{
+                background-color:red; 
+                left:0px; 
+                top:0px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="demo">
+
+    </div>
+    
+</body>
+</html>

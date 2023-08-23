@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltip</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip-text {
+            width: 120px;
+            position: absolute;
+            z-index: 1;
+            visibility: hidden;
+            background-color: black;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 0;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+
+        .tooltip-text-left {
+            width: 120px;
+            position: absolute;
+            z-index: 1;
+            visibility: hidden;
+            background-color: black;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 0;
+            top: -5px;
+            right: 105%;
+        }
+
+        .tooltip:hover .tooltip-text-left {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Tooltip</h1>
+        <h3 class="tooltip">Click Me
+            <span class="tooltip-text">
+                Tooltip Text
+            </span>
+        </h3>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus iusto quis explicabo,
+            nostrum non assumenda sit, illo ab minus iure at soluta eos, repellat odit necessitatibus excepturi
+            mollitia? Quos, nostrum. Error eligendi necessitatibus quasi natus odio voluptatibus ipsum, provident,
+            rerum, tempora dolorem officia exercitationem deleniti? Placeat quis dolorum atque quod, distinctio
+            doloribus a eaque illum natus, non repellat amet officia! Natus alias cumque repudiandae porro doloribus
+            dolor voluptatibus amet recusandae voluptas laboriosam optio dolorem consequatur repellat illo voluptatum,
+            soluta quasi libero. Nobis voluptate, ab saepe maiores atque velit, sit magnam dolorem et voluptatum dolores
+            aut consectetur doloribus eum alias natus nemo debitis. Consectetur, dicta nihil! Eos optio odit quae? Fuga
+            odio quasi praesentium sapiente deserunt iste provident delectus? Distinctio dolorem, id illum error amet,
+            et pariatur mollitia aut ea facilis tempora laudantium magnam similique minima, recusandae ducimus
+            perspiciatis. Odit sunt reprehenderit iste pariatur quo. Veritatis omnis incidunt cum veniam, dolores nisi
+            cupiditate, sequi aut eius excepturi deleniti nesciunt laudantium repellendus ea nam saepe, impedit quas
+            earum quibusdam neque. Unde, magnam enim saepe accusantium aperiam distinctio dolorum repellat perferendis?
+            Illo ab, illum earum deserunt repellat exercitationem id hic odit est corporis quis. Enim laborum provident
+            ullam temporibus vel, quas ratione.</p>
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+        <h1>Tooltip</h1>
+        <h3 class="tooltip">Click Me
+            <span class="tooltip-text-left">
+                Tooltip Text
+            </span>
+        </h3>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus iusto quis explicabo,
+            nostrum non assumenda sit, illo ab minus iure at soluta eos, repellat odit necessitatibus excepturi
+            mollitia? Quos, nostrum. Error eligendi necessitatibus quasi natus odio voluptatibus ipsum, provident,
+            rerum, tempora dolorem officia exercitationem deleniti? Placeat quis dolorum atque quod, distinctio
+            doloribus a eaque illum natus, non repellat amet officia! Natus alias cumque repudiandae porro doloribus
+            dolor voluptatibus amet recusandae voluptas laboriosam optio dolorem consequatur repellat illo voluptatum,
+            soluta quasi libero. Nobis voluptate, ab saepe maiores atque velit, sit magnam dolorem et voluptatum dolores
+            aut consectetur doloribus eum alias natus nemo debitis. Consectetur, dicta nihil! Eos optio odit quae? Fuga
+            odio quasi praesentium sapiente deserunt iste provident delectus? Distinctio dolorem, id illum error amet,
+            et pariatur mollitia aut ea facilis tempora laudantium magnam similique minima, recusandae ducimus
+            perspiciatis. Odit sunt reprehenderit iste pariatur quo. Veritatis omnis incidunt cum veniam, dolores nisi
+            cupiditate, sequi aut eius excepturi deleniti nesciunt laudantium repellendus ea nam saepe, impedit quas
+            earum quibusdam neque. Unde, magnam enim saepe accusantium aperiam distinctio dolorum repellat perferendis?
+            Illo ab, illum earum deserunt repellat exercitationem id hic odit est corporis quis. Enim laborum provident
+            ullam temporibus vel, quas ratione.</p>
+    </div>
+</body>
+
+</html>

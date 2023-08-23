@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Forward</title>
+    <style>
+        .box{
+            height: 5rem;
+            width: 5rem;
+            position: relative;
+            background-color: red;
+            animation: box;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes box {
+            from{
+                top: 0px;
+            }
+
+            to{
+                top:10rem;
+                background-color: blue;
+            }   
+        }
+
+        .box2{
+            height: 5rem;
+            width: 5rem;
+            position: relative;
+            background-color: green;
+            animation: box2;
+            animation-duration: 3s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes box2 {
+            from{
+                top: 0px;
+            }
+
+            to{
+                top:10rem;
+                background-color:red;
+                border: 2px solid black;
+                border-radius: 50%;
+            }   
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Animation </h1>
+    <h2>Animation Forwards</h2>
+    <div class="box">
+
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <h2>Animation Backwards</h2>
+    <div class="box2">
+
+    </div>
+</body>
+</html>
