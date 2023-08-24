@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Circle</title>
+    <style>
+        .masking{
+            -webkit-mask-image:radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+
+        .masking-1{
+            -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>The mask-image Property</h1>
+    <img class="masking" src="https://www.w3schools.com/css/img_5terre.jpg" alt="">
+    <br>
+    <img class="masking-1" src="https://www.w3schools.com/css/img_5terre.jpg" alt="">
+</body>
+</html>
