@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --blue:DodgerBlue;
+            --white:#f1f1f1;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            background-color: var(--blue);
+            margin: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .flex-container>div{
+            background-color: var(--white);
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Craete a Flex Conatiner</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>

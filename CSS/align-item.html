@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align item</title>
+    <style>
+        :root{
+            --keyur:'Courier New', Courier, monospace;
+            --blue:DodgerBlue;
+            --white:#f1f1f1;
+        }
+
+
+        .container
+        {
+            background-color: var(--blue);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 12rem;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .container>div{
+            background-color:var(--white);
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+            width: 100px;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The ALign-items Prperty</h1>
+    <div class="container">
+        <div><h1>1</h1></div>
+        <div><small>5</small></div>
+        <div><h3>10</h3></div>
+    </div>
+</body>
+</html>
