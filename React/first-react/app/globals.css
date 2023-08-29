@@ -1,0 +1,27 @@
+*{
+  margin: 1rem;
+  padding: 0;
+}
+
+.change{
+  background-color: gray;
+  padding: 1rem;
+  color: white;
+}
+
+button{
+  background-color: red;
+  color: white;
+  border-radius:20px;
+  border: 0px;
+  padding: 0.8rem;
+  margin: 0.5rem;
+}
+
+button:active{
+  background-color: orange;
+}
+
+.avtar{
+  border-radius: 50%;
+}
