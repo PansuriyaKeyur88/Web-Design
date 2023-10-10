@@ -9,8 +9,9 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Animation.css">
+    <script src="./script.js"></script>
 </head>
-
 <body>
     <!-- First Navbar -->
     <div class="contanier-fluid" style="background-color:whitesmoke">
@@ -55,7 +56,7 @@
                                 <a class="nav-link" aria-current="page" href="#conatct">Conatct</a>
                             </li>
                             <li class="nav-item mx-1 mt-2">
-                                <button type="button" class="book-table-btn">Book A Table</button>
+                                <button type="button" class="book-table-btn" onclick="myfunction()">Book A Table</button>
                             </li>
                         </ul>
                     </div>
@@ -402,7 +403,7 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 bg-dark text-white h-100 align-center ">
-                    <form>
+                    <form id="form">
                         <br>
                         <h4 style="font-family: 'Pacifico';color: orange;">Restoran--</h4>
                         <h1>Book A Table Online</h1>
@@ -715,6 +716,7 @@
             </div>
         </div>
     </div>
+    <div id="preloader"></div>
     <script>
 
     </script>
