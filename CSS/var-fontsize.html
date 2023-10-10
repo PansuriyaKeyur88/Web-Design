@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querize</title>
+    <style>
+        :root{
+            --blue:#1e90ff;
+            --white:#ffffff;
+        }
+
+        .container{
+            --bigsize:30px;
+        }
+
+        body{
+            background-color:var(--blue);
+        }
+        .container{
+            color:var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+            font-size: var(--bigsize);
+        }
+
+        h1{
+            border-bottom: 3px solid var(--blue);
+        }
+
+
+        button{
+            background-color: transparent;
+            border-color:var(--blue);
+            padding: 10px;
+            color:var(--blue);
+        }
+
+        @media screen and(min-width:450px) {
+            .container{
+                --bigsize:10rem;
+            }
+
+            :root{
+                --blue:green;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Var FontSize in Media Querize</h1>
+    <div class="container">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet quisquam laboriosam architecto id sed neque enim eaque est laudantium?</p>
+        <button>OnClick</button>
+    </div>
+</body>
+</html>

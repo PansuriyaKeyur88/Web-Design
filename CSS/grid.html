@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Structure</title>
+    <style>
+        .grid-structre{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding: 10px;
+            column-gap: 10px;
+            row-gap: 5px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        @media only screen and(man-width:500px) {
+            .grid-structre{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display:Grid</h1>
+    <div class="grid-structre">
+        <div class="grid-item grid-item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+
+</html>

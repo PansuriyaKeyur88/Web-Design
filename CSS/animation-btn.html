@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation btn</title>
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 25px;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            border: 0px;
+            color: white;
+            text-align: center;
+            outline: none;
+            background-color: #4CAF50;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+
+        .button-1 {
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+
+        .button-1:after {
+            content: "";
+            background: #f1f1f1;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+
+        .button-1:active {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Animation Button "Pressed Effect</h1>
+    <button type="button" class="button">Click Me</button>
+    <br><br><br><br>
+    <button type="button" class="button-1">Click Me</button>
+
+</body>
+
+</html>

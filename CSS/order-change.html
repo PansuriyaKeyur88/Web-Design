@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The order Property</title>
+    <style>
+        :root{
+            --blue:DodgerBlue;
+            --white:white;
+            --offwhite:#f1f1f1;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            background-color: var(--blue);
+            margin: 0.5rem;
+            flex-wrap:wrap;
+            justify-content: center;
+            justify-content: space-around;
+
+        }
+
+        .container>div{
+             background-color: var(--white);
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The order Property</h1>
+    <div class="container">
+        <div style="order: 3;" >1</div>
+        <div style="order: 1;" >2</div>
+        <div  style="order: 4;flex-shrink: 0;">3</div>
+        <div style="order: 2; flex-grow: 5;" >4</div>
+    </div>
+    <br><br>
+     <div class="container">
+        <div style="order: 3;" >1</div>
+        <div style="order: 1;" >2</div>
+        <div  style="flex-basis:200px;">3</div>
+        <div style="order: 2;" >4</div>
+    </div>
+    <br><br>
+     <div class="container">
+        <div style="order: 3;" >1</div>
+        <div style="order: 1;" >2</div>
+        <div style="align-items: center;">3</div>
+        <div style="order: 2;" >4</div>
+    </div>
+    
+</body>
+</html>

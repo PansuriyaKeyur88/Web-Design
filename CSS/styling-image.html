@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling image</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 5s ease;
+            background-color: blue;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+            width: 100%;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        /* Silder image */
+
+        .all{
+            position: relative;
+            width: 50%;
+        }
+
+        .upper{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 0%;
+            transition: 2s ease;
+            background-color: blue;
+        }
+
+        .img{
+            width: 50%;
+            display: block;
+            border: 2px solid black;
+        }
+
+        .text-1 {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .all:hover .upper{
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Fade in Overlay</h1>
+    <div class="container">
+        <img  class="image" src="data:image/jpeg;base64,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"
+            alt="">
+        <div class="overlay">
+            <div class="text">Keyur Pansuriya</div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Silder Image</h1>
+    <div class="all">
+        <img src="data:image/jpeg;base64,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" alt="" class="img">
+        <div class="upper">
+            <div class="text-1">
+                Keyur Pansuriya
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+

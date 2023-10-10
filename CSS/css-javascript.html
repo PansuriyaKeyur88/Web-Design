@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Change CSS Variable With JavaScript</title>
+    <style>
+        :root{
+            --blue:#1e90ff;
+            --white:#ffffff;
+        }
+
+        body{
+            background-color: var(--blue);
+        }
+
+        .container{
+            background-color: var(--white);
+            color:var(--blue);
+            padding: 15px;
+        }
+
+        h1{
+            border-bottom:2px solid var(--blue) ;
+        }
+
+        button{
+            color: var(--blue);
+            background-color: transparent;
+            border: 2px solid var(--blue);
+            padding: 5px;
+        }
+
+        button:hover{
+            --w:#ffffff;
+            /* //local varible  */
+            color: var(--w);
+            background-color:var(--blue);
+        }
+
+        button:active{
+            color: var(--white);
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The Traditional Way</h1>
+    <div class="container">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut deserunt nihil labore repudiandae, assumenda voluptatem aspernatur corporis sequi modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptates omnis porro debitis accusantium reiciendis officia accusamus sequi consequuntur. Pariatur?</p>
+        <button>Yes</button>
+        <button>No</button>
+        <br><br><br>
+        <button onclick="myfunction()">Get CSS Varible With JavaScript</button>
+        <button onclick="myfunction1()">Change CSS Varible With JavaSCript</button>
+    </div>
+    <script>
+        let a=document.querySelector(':root');
+        // document.write(a.value);
+
+        function myfunction()
+        {
+            let color=getComputedStyle(a);
+            alert("The Value Of -- is:white"+color.getPropertyValue('--white'));
+        }
+
+        function myfunction1()
+        {
+           a.style.setProperty('--blue', 'green');
+        }
+    </script>
+</body>
+</html>
