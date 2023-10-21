@@ -180,7 +180,7 @@ console.log(a.sort(compare))
 
 console.log(a.reverse())
 
-Array Match Random()
+//Array Match Random()
 
 let a=[55,1,2,3,45,6,78,9]
 console.log(a)
