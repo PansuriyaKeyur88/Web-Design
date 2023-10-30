@@ -4,17 +4,12 @@
 }
 
 body{
-    background: url(https://t3.ftcdn.net/jpg/04/99/00/16/360_F_499001665_e6HqHSLEblw7tTkWsLRN8JNMgJLLKKFq.jpg);
+    background: url("https://t3.ftcdn.net/jpg/04/99/00/16/360_F_499001665_e6HqHSLEblw7tTkWsLRN8JNMgJLLKKFq.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
-.heading{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    transform: translate(-30%,-30%);
-}
 
 #text{
     background-color: white;
@@ -37,14 +32,6 @@ body{
     font-size: 12vh;
 }
 
-.box{
-    display: flex;
-    position:absolute;
-    left: 50%;
-    top: 48%;
-    transform: translate(-50%,-50%);
-}
-
 .box-1 h1{
     background-color: rgb(240, 28, 28);
     color: white;
@@ -56,10 +43,13 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dot-1{
-    font-size: 4vh;
-    margin-left: 10px;
+.dot{
+    margin-left: 3rem;
     color: aliceblue;
+}
+
+.dot h1{
+    font-size: 3rem;
 }
 
 .box-2 h1{
@@ -72,12 +62,6 @@ body{
     margin-left: 10px;
     font-size: 8vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.dot-2{
-    font-size: 4vh;
-    margin-left: 10px;
-    color: aliceblue;
 }
 
 .box-3 h1{
@@ -94,39 +78,6 @@ body{
 }
 
 .tools{
-    display: flex;
-    position:absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%,-62%);
-    background-color:black;
-    width: 50vh;
-    border-radius: 5px;
-    height: 4vh;
-    border: 2px solid gray;
-}
-
-.tools-1 h3{
-    color: white;
-    padding-left: 30px;
-    padding-top: 5px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.tools-2{
-    display: flex;
-    padding-left: 55px;
-    padding-top: 5px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.tools-2 h3{
     color: white;
 }
 
-.tools-3{
-    color: white;
-    padding-left: 55px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 5px;
-}
